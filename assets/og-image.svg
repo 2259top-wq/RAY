@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a0f3c"/>
+      <stop offset="50%" stop-color="#0d0a1a"/>
+      <stop offset="100%" stop-color="#050310"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c9a227" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c9a227" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="15"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Glow -->
+  <ellipse cx="600" cy="315" rx="400" ry="250" fill="url(#glow)" filter="url(#blur)"/>
+
+  <!-- Stars -->
+  <circle cx="838" cy="303" r="1.8758117805380743" fill="#fff" opacity="0.74"/>
+  <circle cx="367" cy="396" r="1.7436191253859996" fill="#fff" opacity="0.42"/>
+  <circle cx="1114" cy="152" r="1.1261316055017332" fill="#fff" opacity="0.35"/>
+  <circle cx="52" cy="541" r="0.9339205510970763" fill="#fff" opacity="0.72"/>
+  <circle cx="205" cy="402" r="1.1083065752400505" fill="#fff" opacity="0.97"/>
+  <circle cx="500" cy="153" r="1.490017828551102" fill="#fff" opacity="0.35"/>
+  <circle cx="759" cy="416" r="1.8273259843308294" fill="#fff" opacity="0.53"/>
+  <circle cx="941" cy="591" r="1.5018160767148878" fill="#fff" opacity="0.87"/>
+  <circle cx="976" cy="366" r="1.2835987367251205" fill="#fff" opacity="0.34"/>
+  <circle cx="277" cy="21" r="1.1763102865620105" fill="#fff" opacity="0.39"/>
+  <circle cx="1145" cy="363" r="1.983231473868811" fill="#fff" opacity="0.62"/>
+  <circle cx="331" cy="103" r="1.3657539481232432" fill="#fff" opacity="0.98"/>
+  <circle cx="753" cy="574" r="1.4352483459931795" fill="#fff" opacity="0.56"/>
+  <circle cx="384" cy="176" r="1.3174871714425258" fill="#fff" opacity="0.56"/>
+  <circle cx="268" cy="136" r="1.9051726245240392" fill="#fff" opacity="0.31"/>
+  <circle cx="989" cy="255" r="1.700103903459119" fill="#fff" opacity="0.52"/>
+  <circle cx="978" cy="351" r="1.42936982281406" fill="#fff" opacity="0.85"/>
+  <circle cx="979" cy="471" r="0.5989036847370582" fill="#fff" opacity="0.65"/>
+  <circle cx="465" cy="573" r="1.865867624510004" fill="#fff" opacity="0.72"/>
+  <circle cx="31" cy="20" r="1.6297805560384062" fill="#fff" opacity="0.43"/>
+  <circle cx="495" cy="236" r="0.7222712945636387" fill="#fff" opacity="0.78"/>
+  <circle cx="745" cy="472" r="1.7306147607200737" fill="#fff" opacity="0.67"/>
+  <circle cx="460" cy="21" r="1.2481061964044236" fill="#fff" opacity="0.78"/>
+  <circle cx="1135" cy="512" r="1.7975686781874778" fill="#fff" opacity="0.75"/>
+  <circle cx="556" cy="364" r="1.0709662166560423" fill="#fff" opacity="0.69"/>
+  <circle cx="784" cy="124" r="0.5988858079508148" fill="#fff" opacity="0.97"/>
+  <circle cx="858" cy="191" r="1.2501256131476297" fill="#fff" opacity="0.96"/>
+  <circle cx="982" cy="565" r="1.9297049793938181" fill="#fff" opacity="0.37"/>
+  <circle cx="652" cy="583" r="1.566415514817443" fill="#fff" opacity="0.31"/>
+  <circle cx="556" cy="495" r="0.7630402283062687" fill="#fff" opacity="0.43"/>
+  <circle cx="464" cy="166" r="0.5445822751245633" fill="#fff" opacity="0.36"/>
+  <circle cx="81" cy="202" r="0.6499069370951065" fill="#fff" opacity="0.66"/>
+  <circle cx="940" cy="453" r="0.9401237191433802" fill="#fff" opacity="0.36"/>
+  <circle cx="569" cy="13" r="0.676578113937248" fill="#fff" opacity="0.48"/>
+  <circle cx="1177" cy="248" r="0.7348833177170326" fill="#fff" opacity="0.44"/>
+  <circle cx="944" cy="71" r="0.5121121116151099" fill="#fff" opacity="0.32"/>
+  <circle cx="925" cy="353" r="1.2071081159538914" fill="#fff" opacity="0.88"/>
+  <circle cx="388" cy="545" r="1.9808798640431706" fill="#fff" opacity="0.36"/>
+  <circle cx="878" cy="109" r="0.6527071984385258" fill="#fff" opacity="0.68"/>
+  <circle cx="170" cy="76" r="0.8936426883698867" fill="#fff" opacity="0.50"/>
+  <circle cx="537" cy="219" r="1.22776204523973" fill="#fff" opacity="0.85"/>
+  <circle cx="1043" cy="277" r="1.5191010261366942" fill="#fff" opacity="0.99"/>
+  <circle cx="1046" cy="299" r="1.3006873452388" fill="#fff" opacity="0.82"/>
+  <circle cx="1070" cy="578" r="0.6193692276511015" fill="#fff" opacity="0.75"/>
+  <circle cx="1120" cy="151" r="1.2832814472238256" fill="#fff" opacity="0.53"/>
+  <circle cx="701" cy="248" r="1.8071830001375402" fill="#fff" opacity="0.47"/>
+  <circle cx="554" cy="552" r="1.1006492269869794" fill="#fff" opacity="0.67"/>
+  <circle cx="324" cy="2" r="1.425223501735058" fill="#fff" opacity="0.37"/>
+  <circle cx="528" cy="322" r="1.3726980808595426" fill="#fff" opacity="0.68"/>
+  <circle cx="304" cy="610" r="0.5099901057663669" fill="#fff" opacity="0.87"/>
+  <circle cx="275" cy="548" r="0.9167379682231899" fill="#fff" opacity="0.71"/>
+  <circle cx="756" cy="269" r="1.3121073143985187" fill="#fff" opacity="0.93"/>
+  <circle cx="1079" cy="433" r="0.5600844072670602" fill="#fff" opacity="0.84"/>
+  <circle cx="556" cy="244" r="1.4012241149600142" fill="#fff" opacity="0.31"/>
+  <circle cx="1090" cy="419" r="1.931971081526288" fill="#fff" opacity="0.95"/>
+  <circle cx="369" cy="481" r="1.1711820361935128" fill="#fff" opacity="0.80"/>
+  <circle cx="702" cy="37" r="1.8295516021044158" fill="#fff" opacity="0.32"/>
+  <circle cx="558" cy="107" r="1.5212834384623335" fill="#fff" opacity="0.71"/>
+  <circle cx="475" cy="463" r="1.787861408586032" fill="#fff" opacity="0.67"/>
+  <circle cx="653" cy="425" r="1.1642226589562268" fill="#fff" opacity="0.50"/>
+  <circle cx="904" cy="559" r="1.7644727157049243" fill="#fff" opacity="0.48"/>
+  <circle cx="1021" cy="336" r="1.7702737221452873" fill="#fff" opacity="0.43"/>
+  <circle cx="159" cy="230" r="0.6983825028754791" fill="#fff" opacity="0.76"/>
+  <circle cx="869" cy="33" r="1.6963822489478413" fill="#fff" opacity="0.90"/>
+  <circle cx="675" cy="378" r="1.7507387153791334" fill="#fff" opacity="0.42"/>
+  <circle cx="578" cy="231" r="0.5660610521323468" fill="#fff" opacity="1.00"/>
+  <circle cx="16" cy="570" r="1.6640399336698903" fill="#fff" opacity="0.98"/>
+  <circle cx="369" cy="216" r="1.1134920915232065" fill="#fff" opacity="0.87"/>
+  <circle cx="306" cy="439" r="0.8443984601228739" fill="#fff" opacity="0.60"/>
+  <circle cx="946" cy="103" r="0.7154113849083034" fill="#fff" opacity="0.75"/>
+  <circle cx="259" cy="389" r="0.5703419409087032" fill="#fff" opacity="0.86"/>
+  <circle cx="340" cy="552" r="0.9440361065700553" fill="#fff" opacity="0.77"/>
+  <circle cx="548" cy="351" r="1.212575228661343" fill="#fff" opacity="0.47"/>
+  <circle cx="683" cy="545" r="1.9726877300097612" fill="#fff" opacity="0.65"/>
+  <circle cx="142" cy="373" r="1.3156647700358253" fill="#fff" opacity="0.79"/>
+  <circle cx="59" cy="258" r="1.5322935276705072" fill="#fff" opacity="0.72"/>
+  <circle cx="673" cy="479" r="0.6897790596956768" fill="#fff" opacity="0.94"/>
+  <circle cx="371" cy="387" r="1.6788507296746669" fill="#fff" opacity="0.48"/>
+  <circle cx="937" cy="213" r="1.5409147474720453" fill="#fff" opacity="0.44"/>
+  <circle cx="26" cy="581" r="1.755167826760053" fill="#fff" opacity="0.73"/>
+
+  <!-- Gold Border Frame -->
+  <rect x="20" y="20" width="1160" height="590" fill="none" stroke="#c9a227" stroke-width="2" opacity="0.6"/>
+  <rect x="30" y="30" width="1140" height="570" fill="none" stroke="#c9a227" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Corner ornaments -->
+  <text x="40" y="70" font-size="40" fill="#c9a227" opacity="0.7" font-family="serif">✦</text>
+  <text x="1120" y="70" font-size="40" fill="#c9a227" opacity="0.7" font-family="serif">✦</text>
+  <text x="40" y="610" font-size="40" fill="#c9a227" opacity="0.7" font-family="serif">✦</text>
+  <text x="1120" y="610" font-size="40" fill="#c9a227" opacity="0.7" font-family="serif">✦</text>
+
+  <!-- Main Title -->
+  <text x="600" y="200" font-size="72" fill="#f3e0b2" font-family="Georgia, serif" text-anchor="middle" font-weight="bold" letter-spacing="8">AETHERIA</text>
+  <text x="600" y="270" font-size="36" fill="#c9a227" font-family="serif" text-anchor="middle" letter-spacing="4">星 寰 塔 羅 學 院</text>
+
+  <!-- Divider -->
+  <line x1="200" y1="300" x2="1000" y2="300" stroke="#c9a227" stroke-width="1" opacity="0.6"/>
+  <text x="600" y="296" font-size="16" fill="#c9a227" font-family="serif" text-anchor="middle">✦ ✦ ✦</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="360" font-size="28" fill="#b8a9d9" font-family="serif" text-anchor="middle">78張完整塔羅牌 · Alphonse Mucha 風格插畫</text>
+  <text x="600" y="410" font-size="22" fill="#8a8a9a" font-family="serif" text-anchor="middle">互動牌陣占卜 · 每日一牌運勢 · 歷史檔案室</text>
+
+  <!-- Tag -->
+  <rect x="450" y="450" width="300" height="50" rx="25" fill="#c9a227" opacity="0.15" stroke="#c9a227" stroke-width="1"/>
+  <text x="600" y="482" font-size="20" fill="#c9a227" font-family="serif" text-anchor="middle" letter-spacing="2">免費 · 線上 · 互動</text>
+</svg>
