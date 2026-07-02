@@ -21,11 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
     img.src = imgUrl;
     img.onload = () => {
       element.classList.add('illustrated-card');
-      element.style.backgroundImage = `url('${imgUrl}')`;
+      element.style.background = `url('${imgUrl}') no-repeat center center`;
+      element.style.backgroundSize = 'cover';
     };
     img.onerror = () => {
       element.classList.remove('illustrated-card');
-      element.style.backgroundImage = '';
+      element.style.background = '';
+      element.style.backgroundSize = '';
     };
   }
 
@@ -1087,12 +1089,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Render hero card showcase dynamically
-  const showcaseCard = document.querySelector('.showcase-card.front');
+  const showcaseCard = document.querySelector('.showcase-card');
   if (showcaseCard) {
     const frontDesign = showcaseCard.querySelector('.card-front-design');
     if (frontDesign) {
-      frontDesign.classList.add('illustrated-card');
-      frontDesign.style.backgroundImage = "url('assets/card_0.png')";
+      checkAndApplyImage(frontDesign, 0); // Use the checkAndApplyImage helper for robust loading
     }
     
     // Add dynamic 3D tilt effect on hero showcase card

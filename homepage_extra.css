@@ -345,165 +345,493 @@
     padding: 70px 12px 24px !important;
   }
 
-  /* ── Hero ── */
+  /* ── Hero Cosmic Aurora Redesign ── */
   .hero-section {
     grid-template-columns: 1fr !important;
-    gap: 32px !important;
+    gap: 36px !important;
     text-align: center;
-    padding: 24px 0 !important;
+    padding: 30px 16px !important;
+    position: relative;
+    border-radius: 24px;
+    background: radial-gradient(circle at 50% -20%, rgba(167, 139, 250, 0.22), transparent 75%),
+                radial-gradient(circle at 50% 120%, rgba(223, 184, 108, 0.12), transparent 75%),
+                rgba(13, 8, 37, 0.6) !important;
+    border: 1px solid rgba(223, 184, 108, 0.15);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
   }
+
+  /* Aurora animated lights */
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%; width: 200%; height: 200%;
+    background: radial-gradient(circle at 30% 30%, rgba(124, 223, 192, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(155, 143, 204, 0.08) 0%, transparent 50%);
+    animation: auroraRotate 20s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+  @keyframes auroraRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Shooting star animation */
+  .hero-section::after {
+    content: '';
+    position: absolute;
+    top: -10%; left: 80%; width: 2px; height: 100px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    opacity: 0;
+    transform: rotate(-45deg);
+    animation: shootingStar 8s linear infinite;
+    pointer-events: none;
+  }
+  @keyframes shootingStar {
+    0%, 90% { opacity: 0; transform: translate(0, 0) rotate(-45deg); }
+    92% { opacity: 1; }
+    95% { opacity: 0; transform: translate(-300px, 300px) rotate(-45deg); }
+    100% { opacity: 0; }
+  }
+
+  .hero-content {
+    z-index: 2;
+    position: relative;
+  }
+
   .hero-title {
-    font-size: clamp(2rem, 8vw, 2.8rem) !important;
+    font-size: clamp(2rem, 8.5vw, 2.6rem) !important;
+    line-height: 1.25 !important;
+    letter-spacing: 2px;
   }
-  .hero-badge { font-size: 0.65rem; letter-spacing: 2px; }
-  .hero-desc { font-size: 0.9rem; }
+  .hero-badge {
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    padding: 6px 12px;
+    background: rgba(223, 184, 108, 0.1);
+    border: 1px solid rgba(223, 184, 108, 0.3);
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .hero-desc {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-top: 14px;
+    padding: 0 4px;
+  }
+
+  /* Stats Bar optimization */
   .hero-stats {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     gap: 0;
-    padding: 12px 8px;
+    padding: 14px 10px;
+    margin: 20px 0 24px;
+    background: rgba(0, 0, 0, 0.45);
+    border-color: rgba(223, 184, 108, 0.2);
   }
-  .hero-stat { padding: 0 10px; }
-  .stat-num { font-size: 1.3rem; }
+  .hero-stat {
+    padding: 6px 14px;
+    flex: 1 1 calc(50% - 2px);
+  }
+  .stat-num {
+    font-size: 1.5rem;
+    text-shadow: 0 0 8px var(--gold-glow);
+  }
+  .stat-label {
+    font-size: 0.68rem;
+  }
+  .hero-stat-divider {
+    display: none; /* Hide vertical dividers on wrap grid */
+  }
+
+  /* CTAs buttons */
   .hero-ctas {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    width: 100%;
   }
-  .hero-ctas .btn { width: 100%; max-width: 280px; }
+  .hero-ctas .btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px 20px;
+    font-size: 0.95rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
 
-  /* ── Showcase ── */
-  .hero-showcase { order: -1; }
+  /* ── 3D Floating Showcase ── */
+  .hero-showcase {
+    order: -1;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 10px;
+  }
   .showcase-trio {
-    transform: scale(0.85);
+    transform: scale(0.92);
     transform-origin: center;
+    perspective: 1000px;
   }
-  .showcase-card-mini { width: 80px; height: 124px; }
+  .showcase-card-mini {
+    width: 76px;
+    height: 118px;
+    border-radius: 8px;
+    border-color: rgba(223, 184, 108, 0.2);
+  }
+  
+  /* Floating & Tilting animation for main card */
+  .showcase-center {
+    animation: mobileFloat 4s ease-in-out infinite alternate;
+  }
+  @keyframes mobileFloat {
+    0% { transform: translateY(0px) rotateY(0deg) rotate(0deg); }
+    50% { transform: translateY(-8px) rotateY(5deg) rotate(1deg); }
+    100% { transform: translateY(-15px) rotateY(-5deg) rotate(-1deg); }
+  }
 
-  /* ── Features hex grid ── */
+  .showcase-glow-ring {
+    inset: -14px;
+    border-radius: 20px;
+    border-color: rgba(223, 184, 108, 0.4);
+    box-shadow: 0 0 30px rgba(223, 184, 108, 0.2);
+  }
+
+  .showcase-quote {
+    font-size: 0.8rem;
+    margin-top: 14px;
+    min-height: 28px;
+  }
+
+  /* ── Features hexagonal grid (Wow Tap Interaction) ── */
   .features-hex-grid {
     grid-template-columns: 1fr !important;
-    gap: 14px !important;
+    gap: 16px !important;
   }
-  .fhex-card { padding: 20px 18px; }
+  .fhex-card {
+    padding: 22px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(223, 184, 108, 0.15);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+    transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
+  }
+  /* Tap response */
+  .fhex-card:active {
+    transform: scale(0.96) translateY(2px);
+    background: rgba(223, 184, 108, 0.12) !important;
+    border-color: var(--gold) !important;
+    box-shadow: 0 4px 15px rgba(223, 184, 108, 0.15);
+  }
+  .fhex-card h3 {
+    font-size: 0.95rem;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .fhex-card p {
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+  .fhex-tags {
+    margin-top: 2px;
+  }
 
-  /* ── Card Gallery ── */
-  .card-gallery-strip { padding: 16px 0 20px; gap: 8px; }
-  .gallery-card-thumb { width: 68px; height: 104px; }
+  /* ── Card Gallery Strip ── */
+  .card-gallery-strip {
+    padding: 12px 0 16px;
+    gap: 10px;
+  }
+  .gallery-card-thumb {
+    width: 72px;
+    height: 110px;
+    border-radius: 6px;
+  }
+  .gallery-card-thumb:active {
+    transform: scale(0.95);
+    border-color: var(--gold);
+  }
 
-  /* ── Daily Tarot ── */
+  /* ── Daily Tarot Widget ── */
   .daily-tarot-section {
     grid-template-columns: 1fr !important;
-    padding: 24px 18px !important;
-    gap: 24px !important;
+    padding: 24px 20px !important;
+    gap: 28px !important;
+    border-radius: 20px;
+  }
+  .daily-tarot-intro h2 {
+    font-size: 1.3rem;
+  }
+  .daily-tarot-intro p {
+    font-size: 0.82rem;
   }
   .daily-tarot-card-space {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 24px !important;
   }
-  .daily-card-container { width: 140px; height: 210px; }
+  .daily-card-container {
+    width: 140px;
+    height: 216px;
+  }
 
   /* ── Guide Layout ── */
   .guide-layout {
     grid-template-columns: 1fr !important;
     gap: 20px !important;
   }
-  .guide-sidebar { display: none; }
+  .guide-sidebar {
+    display: none;
+  }
+
+  /* ── Library Filters Mobile Fix ── */
+  .sub-filter-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+  .sub-filter-row .filter-group {
+    flex-wrap: wrap !important;
+    gap: 8px 6px !important;
+    width: 100% !important;
+    display: flex !important;
+  }
+  .filter-label {
+    width: 100% !important;
+    display: block !important;
+    margin-bottom: 4px !important;
+    color: var(--gold) !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+  }
+  .filter-btn {
+    padding: 6px 12px !important;
+    font-size: 0.8rem !important;
+    border-radius: 20px !important;
+  }
 
   /* ── Library Grid ── */
   .library-grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 12px !important;
+    gap: 14px !important;
   }
-  .library-card { min-height: 220px; }
-  .library-card .card-artwork { height: 100px; }
+  .library-card {
+    min-height: 210px;
+    border-radius: 12px;
+  }
+  .library-card .card-artwork {
+    height: 100px;
+  }
+  .library-card h4 {
+    font-size: 0.85rem;
+  }
 
   /* ── Spread Options ── */
   .spread-options {
     grid-template-columns: 1fr !important;
-    gap: 12px !important;
+    gap: 14px !important;
   }
-  .spread-config-panel { padding: 20px 16px; }
-  .deck-mode-options { flex-direction: column; gap: 10px; }
+  .spread-config-panel {
+    padding: 22px 18px;
+    border-radius: 20px;
+  }
+  .deck-mode-options {
+    flex-direction: column;
+    gap: 12px;
+  }
 
   /* ── Drawing Board (Slots) ── */
   .slots-container {
-    gap: 8px !important;
+    gap: 10px !important;
     grid-template-columns: repeat(3, 1fr) !important;
   }
-  .slot { min-width: 0; }
-  .slot-card-wrapper { height: 140px; }
-  .slot-label--three .slot-title { font-size: 1rem !important; letter-spacing: 2px; }
-  .slot-label--three .slot-num { font-size: 1.1rem !important; }
-  .slot-label--three .slot-sub { display: none; }
-  .drawing-board { gap: 16px; }
-  .deck-area { display: flex; justify-content: center; }
+  .slot {
+    min-width: 0;
+  }
+  .slot-card-wrapper {
+    height: 135px;
+    border-radius: 8px;
+  }
+  .slot-label--three .slot-title {
+    font-size: 0.95rem !important;
+    letter-spacing: 1px;
+  }
+  .slot-label--three .slot-num {
+    font-size: 1.05rem !important;
+  }
+  .slot-label--three .slot-sub {
+    display: none;
+  }
+  .drawing-board {
+    gap: 20px;
+  }
+  .deck-area {
+    display: flex;
+    justify-content: center;
+  }
 
   /* ── Interpretation Panel ── */
   .card-analysis-row {
     grid-template-columns: 1fr !important;
     justify-items: center;
     text-align: center;
-    gap: 16px !important;
+    gap: 20px !important;
   }
-  .analysis-text-col { width: 100%; }
-  .analysis-card-title { justify-content: center; flex-wrap: wrap; gap: 6px; }
-  .analysis-advice-box { text-align: left; }
-  .rtb-inner { padding: 12px 14px; }
-  .rtb-time { flex-wrap: wrap; gap: 6px; font-size: 0.8rem; }
-  .interpretation-footer {
+  .analysis-text-col {
+    width: 100%;
+  }
+  .analysis-card-title {
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
   }
-  .interpretation-footer .btn { flex: 1 1 calc(50% - 5px); min-width: 120px; font-size: 0.8rem; }
+  .analysis-advice-box {
+    text-align: left;
+  }
+  .rtb-inner {
+    padding: 14px 16px;
+  }
+  .rtb-time {
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.8rem;
+  }
+  .interpretation-footer {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .interpretation-footer .btn {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 12px 16px;
+  }
 
   /* ── Synthesis Panel ── */
-  .synthesis-panel { padding: 20px 16px; }
-  .synthesis-body { font-size: 0.87rem; }
+  .synthesis-panel {
+    padding: 22px 18px;
+    border-radius: 16px;
+  }
+  .synthesis-body {
+    font-size: 0.88rem;
+    line-height: 1.75;
+  }
 
   /* ── Quiz ── */
-  .quiz-container { padding: 0; }
-  .quiz-start-panel, .quiz-gameplay-panel, .quiz-results-panel { padding: 20px 16px; }
-  .quiz-choices { gap: 10px; }
-  .quiz-choice-btn { padding: 12px 14px; font-size: 0.88rem; }
-  .leaderboard-entry { grid-template-columns: 20px 1fr auto; font-size: 0.8rem; }
-  .results-actions { flex-direction: column; }
-  .results-actions .btn { width: 100%; }
+  .quiz-container {
+    padding: 0;
+  }
+  .quiz-start-panel, .quiz-gameplay-panel, .quiz-results-panel {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+  .quiz-choices {
+    gap: 12px;
+  }
+  .quiz-choice-btn {
+    padding: 14px 16px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+  .leaderboard-entry {
+    grid-template-columns: 24px 1fr auto;
+    font-size: 0.84rem;
+  }
+  .results-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .results-actions .btn {
+    width: 100%;
+  }
 
   /* ── Modal ── */
   .modal-container {
-    width: 96vw !important;
-    max-width: 96vw !important;
-    padding: 20px 16px !important;
+    width: 95vw !important;
+    max-width: 95vw !important;
+    padding: 22px 16px !important;
     max-height: 88vh;
-    overflow-y: auto;
+    border-radius: 20px;
   }
-  .modal-wide { width: 96vw !important; }
-  .compare-selectors { grid-template-columns: 1fr !important; }
-  .compare-result { grid-template-columns: 1fr !important; }
-  .compare-divider { flex-direction: row; padding: 0; }
-  .compare-divider-line { width: 40px; height: 2px; }
+  .modal-wide {
+    width: 95vw !important;
+  }
+  .compare-selectors {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+  .compare-result {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  .compare-divider {
+    flex-direction: row;
+    padding: 8px 0;
+  }
+  .compare-divider-line {
+    width: 50px;
+    height: 2px;
+  }
 
   /* ── History Archive ── */
-  .archive-entry { flex-direction: column; gap: 8px; align-items: flex-start; }
+  .archive-entry {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: 12px;
+  }
 
   /* ── Footer ── */
-  footer .footer-container { flex-direction: column; gap: 16px; text-align: center; }
-  .footer-links { flex-wrap: wrap; justify-content: center; gap: 8px; }
+  footer .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 30px 16px 80px; /* Add bottom margin for mobile nav menu overlay */
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 
   /* ── Nav ── */
-  nav { display: none !important; }
-  .menu-toggle { display: block !important; }
+  nav {
+    display: none !important;
+  }
+  .menu-toggle {
+    display: block !important;
+  }
 }
 
-/* Extra small phones */
+/* Extra small phones screen fix */
 @media (max-width: 400px) {
-  .library-grid { grid-template-columns: 1fr !important; }
-  .hero-title { font-size: 1.8rem !important; }
-  .stat-num { font-size: 1.1rem; }
-  .showcase-trio { transform: scale(0.7); }
-  .hero-stats { padding: 10px 4px; }
-  .hero-stat { padding: 0 6px; }
+  .library-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-title {
+    font-size: 1.9rem !important;
+  }
+  .stat-num {
+    font-size: 1.2rem;
+  }
+  .showcase-trio {
+    transform: scale(0.78);
+  }
+  .hero-stats {
+    padding: 10px 4px;
+  }
+  .hero-stat {
+    padding: 6px 8px;
+  }
 }
