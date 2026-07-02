@@ -228,7 +228,7 @@
        字體 & 圖示
   ═══════════════════════════════════════════ -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="style.css?v=20260625_v4">
+  <link rel="stylesheet" href="style.css?v=20260702_v1">
 </head>
 <body>
   <!-- 無障礙：鍵盤跳過導覽 -->
@@ -303,89 +303,164 @@
     
     <!-- SECTION 1: HOME -->
     <section id="section-home" class="page-section active">
+
+      <!-- ══ HERO ══ -->
       <div class="hero-section">
         <div class="hero-content">
-          <div class="hero-badge">✦ 探索命運的維度 ✦</div>
-          <h1 class="hero-title">啟迪直覺與心靈的<br><span class="gold-text">奧秘之鏡</span></h1>
-          <p class="hero-desc">歡迎來到星寰塔羅學院。這裡是一處融合古老占星美學與現代科技互動的靜謐之所。在這裡，你將揭開大阿爾克那的神秘面紗，親手撫摸命運的齒輪，並在繁星的指引下，學會傾聽內心深處的智慧與呼喚。</p>
+          <div class="hero-badge">✦ 78張Mucha風格插畫 · 完整五維解讀 ✦</div>
+          <h1 class="hero-title">探索塔羅的<br><span class="gold-text">無限維度</span></h1>
+          <p class="hero-desc">星寰塔羅學院 — 融合 Alphonse Mucha 新藝術風格插畫與傳統卡巴拉智慧，提供78張完整牌卡的專業級解讀、互動占卜牌陣、每日能量指引。讓古老的神諭語言，照見你此刻的生命課題。</p>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="stat-num">78</span><span class="stat-label">張牌卡</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="stat-num">5</span><span class="stat-label">維度解讀</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="stat-num">4</span><span class="stat-label">種牌陣</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="stat-num">∞</span><span class="stat-label">心靈洞察</span></div>
+          </div>
           <div class="hero-ctas">
             <button class="btn btn-primary btn-lg" id="home-cta-spreads">
-              <i class="fa-solid fa-star"></i> 開始占卜模擬
+              <i class="fa-solid fa-wand-magic-sparkles"></i> 立即開始占卜
             </button>
-            <button class="btn btn-outline btn-lg" id="home-cta-guide">
-              <i class="fa-solid fa-book"></i> 探索基礎教學
+            <button class="btn btn-outline btn-lg" id="home-cta-library">
+              <i class="fa-solid fa-book-bible"></i> 瀏覽牌意圖書館
             </button>
           </div>
         </div>
-        
-        <!-- Interactive Card Showcase -->
+
+        <!-- Interactive Card Showcase (3 rotating cards) -->
         <div class="hero-showcase">
-          <div class="showcase-card-container">
-            <div class="showcase-card back">
-              <div class="card-inner">
-                <div class="card-front-design">
-                  <div class="card-glow"></div>
-                  <!-- Will be rendered dynamically via JS -->
-                </div>
-                <div class="card-back-design">
-                  <div class="card-back-pattern">
-                    <div class="astrological-circle"></div>
-                    <div class="inner-cross"></div>
-                    <div class="center-star">✦</div>
+          <div class="showcase-trio">
+            <div class="showcase-card-wrap showcase-left">
+              <div class="showcase-card-mini" id="showcase-mini-left">
+                <div class="card-back-pattern"><div class="astrological-circle"></div><div class="center-star">✦</div></div>
+              </div>
+            </div>
+            <div class="showcase-card-wrap showcase-center">
+              <div class="showcase-card back">
+                <div class="card-inner">
+                  <div class="card-front-design">
+                    <div class="card-header"><span class="card-num">0</span><span class="card-el">風</span></div>
+                    <div class="card-artwork" id="hero-showcase-art"></div>
+                    <div class="card-footer-info">
+                      <span class="card-cn-name">愚者</span>
+                      <span class="card-en-name">The Fool</span>
+                    </div>
+                  </div>
+                  <div class="card-back-design">
+                    <div class="card-back-pattern"><div class="astrological-circle"></div><div class="inner-cross"></div><div class="center-star">✦</div></div>
                   </div>
                 </div>
               </div>
+              <div class="showcase-glow-ring"></div>
             </div>
-            <div class="showcase-card front active-tilt">
-              <div class="card-inner">
-                <div class="card-front-design">
-                  <div class="card-header">
-                    <span class="card-num">0</span>
-                    <span class="card-el">風</span>
-                  </div>
-                  <div class="card-artwork" id="hero-showcase-art">
-                    <!-- Dynamic SVG for The Fool -->
-                  </div>
-                  <div class="card-footer-info">
-                    <span class="card-cn-name">愚者</span>
-                    <span class="card-en-name">The Fool</span>
-                  </div>
-                </div>
-                <div class="card-back-design">
-                  <div class="card-back-pattern">
-                    <div class="astrological-circle"></div>
-                    <div class="inner-cross"></div>
-                    <div class="center-star">✦</div>
-                  </div>
-                </div>
+            <div class="showcase-card-wrap showcase-right">
+              <div class="showcase-card-mini" id="showcase-mini-right">
+                <div class="card-back-pattern"><div class="astrological-circle"></div><div class="center-star">✦</div></div>
               </div>
             </div>
+          </div>
+          <!-- Rotating quote -->
+          <div class="showcase-quote" id="showcase-quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <span id="quote-text">牌不預測未來，它映照你內心已知的真相。</span>
           </div>
         </div>
       </div>
 
-      <!-- Quick Feature Grid -->
-      <div class="feature-grid">
-        <div class="feature-card glass-panel" id="feat-guide">
-          <div class="feat-icon"><i class="fa-solid fa-scroll"></i></div>
-          <h3>循序漸進的基礎教學</h3>
-          <p>從四大元素到正逆位解讀，快速掌握塔羅牌的運作核心與提問哲學。</p>
-          <span class="feat-link">閱讀指引 <i class="fa-solid fa-arrow-right"></i></span>
+      <!-- ══ 功能特色介紹 Feature Showcase ══ -->
+      <div class="features-showcase-section">
+        <div class="section-eyebrow">✦ 全功能平台 ✦</div>
+        <h2 class="features-section-title">你需要的一切，都在這裡</h2>
+        <div class="features-hex-grid">
+
+          <div class="fhex-card glass-panel" id="feat-library">
+            <div class="fhex-icon-ring">
+              <div class="fhex-icon"><i class="fa-solid fa-book-bible"></i></div>
+            </div>
+            <h3>78張完整牌意</h3>
+            <p>大阿爾克那22張 + 小阿爾克那56張，含愛情、事業、財運、健康五維度專業解析，正逆位完整對照。</p>
+            <div class="fhex-tags">
+              <span>正逆位</span><span>五維解讀</span><span>關鍵詞</span>
+            </div>
+            <span class="feat-link">查閱牌庫 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div class="fhex-card glass-panel" id="feat-spreads">
+            <div class="fhex-icon-ring" style="--feat-color:#a78bfa">
+              <div class="fhex-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            </div>
+            <h3>多種占卜牌陣</h3>
+            <p>單牌指引、三牌過去現在未來、週運7張、月運13張——AI 綜合解讀針對您的問題給出完整回答。</p>
+            <div class="fhex-tags">
+              <span>單牌</span><span>三牌</span><span>週運</span><span>月運</span>
+            </div>
+            <span class="feat-link">立即占卜 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div class="fhex-card glass-panel" id="feat-daily">
+            <div class="fhex-icon-ring" style="--feat-color:#34d399">
+              <div class="fhex-icon"><i class="fa-solid fa-sun"></i></div>
+            </div>
+            <h3>每日一牌能量</h3>
+            <p>每天專屬一張塔羅指引，LocalStorage 鎖定確保每日唯一性，搭配能量關鍵詞與星星啟示建言。</p>
+            <div class="fhex-tags">
+              <span>每日限定</span><span>能量指引</span>
+            </div>
+            <span class="feat-link">抽取今日牌 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div class="fhex-card glass-panel" id="feat-guide">
+            <div class="fhex-icon-ring" style="--feat-color:#fb923c">
+              <div class="fhex-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            </div>
+            <h3>系統化基礎教學</h3>
+            <p>從四大元素、數字象徵、宮廷牌解析到凱爾特十字牌陣，循序漸進建構完整塔羅知識體系。</p>
+            <div class="fhex-tags">
+              <span>四元素</span><span>數字學</span><span>牌陣教學</span>
+            </div>
+            <span class="feat-link">開始學習 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+          <div class="fhex-card glass-panel">
+            <div class="fhex-icon-ring" style="--feat-color:#f472b6">
+              <div class="fhex-icon"><i class="fa-solid fa-spa"></i></div>
+            </div>
+            <h3>冥想沉浸模式</h3>
+            <p>全螢幕單張牌沉浸觀想，搭配呼吸引導動畫與程序生成環境音樂，深化與牌卡的心靈連結。</p>
+            <div class="fhex-tags">
+              <span>全螢幕</span><span>呼吸引導</span><span>環境音樂</span>
+            </div>
+            <span class="feat-link">長按牌卡進入 <i class="fa-solid fa-spa"></i></span>
+          </div>
+
+          <div class="fhex-card glass-panel">
+            <div class="fhex-icon-ring" style="--feat-color:#60a5fa">
+              <div class="fhex-icon"><i class="fa-solid fa-box-archive"></i></div>
+            </div>
+            <h3>占卜歷史檔案室</h3>
+            <p>自動儲存每次占卜記錄含問題、牌陣類型與時間戳記，方便日後回顧對照，探索命運脈絡。</p>
+            <div class="fhex-tags">
+              <span>自動存檔</span><span>歷史回溯</span>
+            </div>
+            <span class="feat-link">查看存檔 <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
         </div>
-        <div class="feature-card glass-panel" id="feat-library">
-          <div class="feat-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-          <h3>22張大阿爾克那解讀</h3>
-          <p>提供豐富的象徵含義、正位與逆位、在愛情、事業與生活中的具體解答。</p>
-          <span class="feat-link">查閱牌庫 <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-        <div class="feature-card glass-panel" id="feat-spreads">
-          <div class="feat-icon"><i class="fa-solid fa-dice-d20"></i></div>
-          <h3>擬真 3D 牌陣占卜</h3>
-          <p>親自洗牌、抽牌並翻牌，支援單牌指引與三牌牌陣，探索過去現在未來。</p>
-          <span class="feat-link">立刻占卜 <i class="fa-solid fa-arrow-right"></i></span>
       </div>
 
-      <!-- Daily Tarot Section -->
+      <!-- ══ 牌組預覽 Card Gallery Strip ══ -->
+      <div class="card-gallery-section">
+        <div class="section-eyebrow">✦ Alphonse Mucha 風格插畫 ✦</div>
+        <h2 class="features-section-title">78張 Mucha 塔羅插畫一覽</h2>
+        <div class="card-gallery-strip" id="card-gallery-strip">
+          <!-- Populated by JS -->
+        </div>
+        <p class="gallery-caption">← 滑動瀏覽 · 點擊查看牌意 →</p>
+      </div>
+
+      <!-- ══ 每日一牌 Daily Tarot ══ -->
       <div class="daily-tarot-section glass-panel" id="daily-tarot-widget">
         <div class="daily-tarot-intro">
           <div class="daily-badge">✦ DAILY ENERGY ✦</div>
@@ -395,7 +470,6 @@
         <div class="daily-tarot-card-space">
           <div class="daily-card-container">
             <div class="daily-card-slot" id="daily-card-slot">
-              <!-- Interactive card back button -->
               <div class="deck-card-back clickable" id="daily-draw-btn">
                 <div class="card-back-pattern">
                   <div class="astrological-circle"></div>
@@ -406,16 +480,14 @@
           </div>
           <div class="daily-tarot-result hidden" id="daily-tarot-result">
             <h3 class="daily-card-title-text" id="daily-result-title">愚者 (正位)</h3>
-            <div class="daily-keywords" id="daily-result-keywords">
-              <!-- keywords tags -->
-            </div>
+            <div class="daily-keywords" id="daily-result-keywords"></div>
             <p class="daily-advice" id="daily-result-advice">保持純真與信任，勇敢冒險，但也請留意腳下的懸崖...</p>
             <span class="daily-status-locked"><i class="fa-solid fa-lock"></i> 今日運勢已鎖定，明天可再次抽取</span>
           </div>
         </div>
       </div>
 
-      <!-- History Archive Section -->
+      <!-- ══ 占卜歷史 History Archive ══ -->
       <div class="history-archive-section glass-panel" id="history-archive-panel">
         <div class="archive-header">
           <h3><i class="fa-solid fa-box-archive"></i> 星寰占卜檔案室</h3>
@@ -428,7 +500,11 @@
           </div>
         </div>
       </div>
+
+
     </section>
+
+
 
     <!-- SECTION 2: GUIDE -->
     <section id="section-guide" class="page-section">
@@ -989,22 +1065,22 @@
             </div>
 
             <div class="info-block card-meaning-block upright">
-              <h3 id="modal-info-upright-title">正位：自由與新起點</h3>
-              <p id="modal-info-upright-meaning">代表一個全新的開始、踏上旅程、心胸開放...</p>
+              <h3 id="modal-info-upright-title">正位 △</h3>
+              <p id="modal-info-upright-meaning">代表一個全新的開始...</p>
               <div class="meaning-details">
-                <p><strong><i class="fa-solid fa-heart"></i> 愛情解讀：</strong> <span id="modal-info-upright-love">一段充滿新鮮感的關係。</span></p>
-                <p><strong><i class="fa-solid fa-briefcase"></i> 事業解讀：</strong> <span id="modal-info-upright-career">適合開創新的事業。</span></p>
-                <p><strong><i class="fa-solid fa-compass"></i> 給你的啟示：</strong> <span id="modal-info-upright-advice">保持純真，勇敢冒險。</span></p>
+                <p><strong><i class="fa-solid fa-heart"></i> 關係・情感：</strong> <span id="modal-info-upright-love">一段關係。</span></p>
+                <p><strong><i class="fa-solid fa-briefcase"></i> 事業・財務：</strong> <span id="modal-info-upright-career">開創。</span></p>
+                <p><strong><i class="fa-solid fa-compass"></i> 偉特核心詮釋：</strong> <span id="modal-info-upright-advice">啟示。</span></p>
               </div>
             </div>
 
             <div class="info-block card-meaning-block reversed">
-              <h3 id="modal-info-reversed-title">逆位：魯莽與逃避責任</h3>
-              <p id="modal-info-reversed-meaning">代表盲目冒險、不顧後果...</p>
+              <h3 id="modal-info-reversed-title">逆位 ▽</h3>
+              <p id="modal-info-reversed-meaning">代表盲目冒險...</p>
               <div class="meaning-details">
-                <p><strong><i class="fa-solid fa-heart"></i> 愛情解讀：</strong> <span id="modal-info-reversed-love">關係中缺乏承諾。</span></p>
-                <p><strong><i class="fa-solid fa-briefcase"></i> 事業解讀：</strong> <span id="modal-info-reversed-career">缺乏計劃的創業。</span></p>
-                <p><strong><i class="fa-solid fa-compass"></i> 給你的啟示：</strong> <span id="modal-info-reversed-advice">行動前多做功課。</span></p>
+                <p><strong><i class="fa-solid fa-heart"></i> 關係・情感：</strong> <span id="modal-info-reversed-love">承諾。</span></p>
+                <p><strong><i class="fa-solid fa-briefcase"></i> 事業・財務：</strong> <span id="modal-info-reversed-career">創業。</span></p>
+                <p><strong><i class="fa-solid fa-compass"></i> 偉特核心詮釋：</strong> <span id="modal-info-reversed-advice">行動。</span></p>
               </div>
             </div>
           </div>
@@ -1058,6 +1134,7 @@
   <script src="cards.js?v=20260625_v4"></script>
   <script src="minor_cards.js?v=20260625_v4"></script>
   <script src="app.js?v=20260625_v4"></script>
+  <script src="homepage.js?v=20260702_v1"></script>
 
   <!-- ═══════════════════════════════════════════
        PWA Service Worker 註冊

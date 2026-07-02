@@ -1,1669 +1,1301 @@
 const minorCards = [
-  // ==========================================
-  // SUIT 1: WANDS (權杖 - 火元素 🔥) - ID 22 to 35
-  // ==========================================
+  // ==================== WANDS ====================
   {
     id: 22,
-    name: "權杖一",
-    englishName: "Ace of Wands",
-    number: "Ace",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["創造力", "新起點", "激情", "靈感", "行動"],
-    description: "一隻從雲端伸出的神聖之手，緊握著一根發芽的權杖。象徵著來自宇宙的原始能量、新的行動力以及創意的誕生。",
+    name: '權杖首牌',
+    englishName: 'Ace of Wands',
+    number: 'Ace',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一隻從雲中伸出的手握持一根發芽的權杖（木棒），棒上有嫩芽新葉，背景有遠山與城堡，顯示生命力蓬勃的原始能量。',
+    keywords: ['創造', '發明', '企業', '開始', '源頭', '誕生', '財富', '墮落', '頹廢', '毀滅'],
     upright: {
-      title: "正位：新計畫的開啟與無限潛能",
-      meaning: "代表強烈的行動力與新機會的降臨。此時你的靈感與熱情爆棚，適合啟動新工作、新企劃或開始冒險。相信直覺，勇敢跨出第一步。",
-      love: "一段充滿熱情與新鮮感的戀情，或是雙方關係進入一個充滿活力的全新階段。",
-      career: "職場上面臨新的商機、合約或創業契機。執行力極強，前途光明。",
-      advice: "不要猶豫，立刻把你的點子付諸行動，這是開始新局面的最佳時機。"
+      meaning: '【偉特原著·正位】\n原文：\'Creation, invention, enterprise, the powers which result in these; principle, beginning, source; birth, family, origin; also money, fortune, inheritance.\'\n\n直譯：創造、發明、企業及產生這些的力量；原則、開始、源頭；誕生、家族、起源；亦指金錢、財富、繼承。',
+      love: '【依原著關鍵詞】感情中充滿創造力（creation）與新的開始（beginning），新的關係充滿生命力，可能涉及家族（family）或家庭的建立（birth）。',
+      career: '【依原著關鍵詞】事業上充滿創造力（creation）與發明精神（invention），是企業（enterprise）新計劃的源頭（source），財富（fortune）與繼承（inheritance）的機遇。',
+      advice: '【偉特原著核心】權杖首牌代表純粹的起點能量——創造力（creation）在此最為強大，是行動的火花，把握這股原始的創業力量。'
     },
     reversed: {
-      title: "逆位：能量延遲、缺乏方向或熱情熄滅",
-      meaning: "代表雖然有想法，但缺乏執行力，或計劃因種種阻礙而延遲。此時你可能感到精力耗盡，或對目標感到迷茫、缺乏持續的動力。",
-      love: "熱情消退，關係變得平淡無奇，或者可能因為衝動、脾氣暴躁而引發不必要的口角。",
-      career: "工作進展受阻，創業計劃被迫延期。小心缺乏周詳計劃而導致半途而廢。",
-      advice: "重新審視內心的真實動機，先沉澱思緒並調整作息，不要盲目衝動行事。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 20 L50 130 M35 40 L65 40 M40 60 L60 60" stroke="#dfb86c" stroke-width="2" stroke-linecap="round"/>
-      <circle cx="50" cy="20" r="8" fill="url(#goldGrad)"/>
-      <path d="M30 75 Q40 65 50 75 Q60 65 70 75" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Fall, decadence, ruin, perdition, to perish; also a certain clouded joy.\'\n\n直譯：墮落、頹廢、毀滅、喪亡、滅亡；亦有某種蒙塵的喜悅。',
+      love: '【依原著關鍵詞】感情中充滿蒙塵的喜悅（clouded joy），美好開始蒙上陰影，關係面臨頹廢（decadence）與喪失（perdition）的風險。',
+      career: '【依原著關鍵詞】事業計劃墮落（fall）與毀滅（ruin），能量喪失，企業面臨沒落（decadence）與滅亡（to perish）的危機。',
+      advice: '【偉特原著核心】逆位的「蒙塵的喜悅」（clouded joy）——即使在衰落中仍有一絲喜悅，但需正視墮落的現實，及時挽救創業的火焰。'
+    }
   },
   {
     id: 23,
-    name: "權杖二",
-    englishName: "Two of Wands",
-    number: "2",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["規劃", "決定", "探索", "勇氣", "展望未來"],
-    description: "男子站在城堡頂端，手持地球儀，俯視著遠方的海洋。他身旁立著兩根權杖，象徵著在現有的成功基礎上，進行下一步的擴張與選擇。",
+    name: '權杖二',
+    englishName: 'Two of Wands',
+    number: '2',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一名男子站在城堡屋頂的垛口上，右手握持一個小地球，左手握一根權杖，另一根權杖固定在牆上。他俯瞰廣闊的領地，遠方有海洋與山脈。',
+    keywords: ['富裕', '財富', '壯麗', '痛苦', '疾病', '悲愁', '憂傷', '驚喜', '奇觀', '迷惑', '困擾', '恐懼'],
     upright: {
-      title: "正位：長遠規劃與做出選擇",
-      meaning: "你已經擁有了一定的成就，此時需要做出決定，選擇未來的發展方向。這張牌鼓勵你跳出舒適圈，放眼世界，為更長遠的目標做規劃。",
-      love: "關係穩定，雙方開始商討未來的共同計劃（如搬家、同居）；單身者可能在考慮是否要開啟一段新感情。",
-      career: "職場上面臨跨國合作、拓展業務的抉擇。適合做長期的戰略規劃與市場調查。",
-      advice: "放寬眼界，不要局限於眼前的利益，勇敢規劃更宏偉的版圖。"
+      meaning: '【偉特原著·正位】\n原文：\'On the one hand riches, fortune, magnificence; on the other physical suffering, disease, chagrin, sadness, mortification. The design gives one suggestion; here is a lord overlooking his dominion.\'\n\n直譯：一方面是富裕、財富、壯麗；另一方面是身體的痛苦、疾病、懊惱、悲愁、屈辱。圖像給出一個提示：此為領主俯視其領地。',
+      love: '【依原著關鍵詞】感情中同時存在壯麗（magnificence）與痛苦（suffering）——偉特將正反並列，愛情中的輝煌可能伴隨著隱藏的悲愁（sadness）與屈辱（mortification）。',
+      career: '【依原著關鍵詞】工作上擁有財富（fortune）與壯麗的成就（magnificence），如領主俯視領地，但同時需防疾病（disease）與痛苦（suffering）侵蝕。',
+      advice: '【偉特原著核心】偉特明確將「富裕壯麗」與「痛苦疾病」並置於同一牌——提醒俯視領地的領主，外表的掌控下可能隱藏著真實的苦難。'
     },
     reversed: {
-      title: "逆位：抗拒風險、計劃不周或猶豫不決",
-      meaning: "代表你害怕未知，遲遲不敢做出決定，或者因為計劃不夠周詳而遭遇挫折。也可能象徵原地踏步，錯失向外發展的良機。",
-      love: "雙方對未來的規劃缺乏共識，或者因為害怕承諾而讓感情陷入停滯的瓶頸期。",
-      career: "專案執行出現延誤，面臨不穩定的環境。此時不宜盲目擴張，應先穩固基本盤。",
-      advice: "克服內心的恐懼，別因為求穩而放棄了探索更大世界的機會。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M35 30 L35 120 M65 30 L65 120" stroke="#dfb86c" stroke-width="2" stroke-linecap="round"/>
-      <circle cx="50" cy="75" r="10" stroke="#dfb86c" stroke-width="1.5"/>
-      <line x1="45" y1="75" x2="55" y2="75" stroke="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Surprise, wonder, enchantment, emotion, trouble, fear.\'\n\n直譯：驚喜、奇觀、魔法般的迷惑、情緒激動、困擾、恐懼。',
+      love: '【依原著關鍵詞】感情中充滿驚喜（surprise）與魔法般的迷惑（enchantment），情緒激動（emotion），但伴隨困擾（trouble）與潛藏的恐懼（fear）。',
+      career: '【依原著關鍵詞】工作上遭遇意料之外的驚喜（surprise）與困擾（trouble），情緒性的反應（emotion）影響判斷，恐懼（fear）干擾決策。',
+      advice: '【偉特原著核心】逆位的「魔法般的迷惑」（enchantment）——驚喜與奇觀可能令人失去理智，需在情緒的洶湧中保持清醒。'
+    }
   },
   {
     id: 24,
-    name: "權杖三",
-    englishName: "Three of Wands",
-    number: "3",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["展望", "合作", "擴張", "出海", "收穫前景"],
-    description: "男子背對我們站在懸崖上，看著三艘商船在大海中航行。三根權杖穩穩立在土地中，代表 his 探索已經起航，正在等待成功的成果傳回。",
+    name: '權杖三',
+    englishName: 'Three of Wands',
+    number: '3',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一名男子背對觀者，站在懸崖邊，俯視海洋中的船隻。他的一手搭在其中一根權杖上，周圍共有三根權杖，神情從容地望向遠方，等待遠航的船回來。',
+    keywords: ['穩固的力量', '企業', '努力', '貿易', '商業', '發現', '合作', '結束困境', '停止逆境'],
     upright: {
-      title: "正位：行動起航與前景光明",
-      meaning: "代表你的計劃已經付諸實行，並且開始看到正面的反饋。此時適合進行團隊合作、跨領域擴張或拓展國際貿易，未來前景非常值得期待。",
-      love: "雙方關係朝著目標穩步前行，有著共同的信念。也可能代表遠距離戀愛即將迎來重逢。",
-      career: "業務進展順利，有開拓海外市場、升遷或與大機構合作的機會。過去的努力已開始有回報。",
-      advice: "保持信心，繼續堅持目前的航向，你所期待的收穫正在向你駛來。"
+      meaning: '【偉特原著·正位】\n原文：\'Established strength, enterprise, effort, trade, commerce, discovery; also able co-operation in business.\'\n\n直譯：穩固的力量、企業精神、努力、貿易、商業、發現；亦指商業上的有效合作。',
+      love: '【依原著關鍵詞】感情中建立在穩固的力量（established strength）上，雙方的努力（effort）帶來發現（discovery），有效的合作（able co-operation）深化關係。',
+      career: '【依原著關鍵詞】工作上穩固的力量（established strength）支撐企業（enterprise）的發展，貿易（trade）與商業（commerce）前景良好，有效合作（able co-operation）是關鍵。',
+      advice: '【偉特原著核心】偉特強調「穩固的力量」（established strength）——不是衝動的開始，而是已建立的基礎上持續努力，有效合作是成功的秘訣。'
     },
     reversed: {
-      title: "逆位：計劃受阻、期望落空或遠景迷茫",
-      meaning: "代表期望的事情出現延遲或取消，海外計劃或合夥關係進展不順。你可能感到努力沒有得到應有的回報，或者是目標偏離了軌道。",
-      love: "感情中出現遠距離的隔閡，或者雙方對未來的憧憬產生分歧，缺乏前行的共同熱情。",
-      career: "工作上面臨供應鏈斷裂或項目進度延宕。需要回頭檢查之前的規劃是否有漏洞。",
-      advice: "不要氣餒，當前的障礙只是暫時的，重新調整策略，耐心地解決根本問題。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M25 30 L25 120 M50 20 L50 130 M75 30 L75 120" stroke="#dfb86c" stroke-width="2" stroke-linecap="round"/>
-      <path d="M15 120 Q50 110 85 120" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'The end of troubles, suspension or cessation of adversity, toil and disappointment.\'\n\n直譯：困難的結束、逆境的暫停或停止、辛勞與失望。',
+      love: '【依原著關鍵詞】感情中困難的結束（end of troubles）帶來暫時的喘息，但辛勞（toil）與失望（disappointment）伴隨著逆境的停止（cessation of adversity）。',
+      career: '【依原著關鍵詞】工作上逆境暫停（suspension of adversity），但辛勞（toil）與失望（disappointment）留下痕跡，是否真正結束尚待觀察。',
+      advice: '【偉特原著核心】逆位的「困難的結束」——這是一個模糊的正面信號，逆境暫停但辛勞依在，需在喘息中為下一階段做好準備。'
+    }
   },
   {
     id: 25,
-    name: "權杖四",
-    englishName: "Four of Wands",
-    number: "4",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["慶祝", "穩定", "和諧", "家庭", "歸屬感"],
-    description: "四根權杖立在前景，上面掛著豐盛的花環。遠方的人們在城堡前歡慶，象徵著階段性的成功、家庭的和諧與平靜安穩的生活。",
+    name: '權杖四',
+    englishName: 'Four of Wands',
+    number: '4',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】四根插在地上的權杖構成門廊，上面掛滿花環與花朵，遠方有城堡。兩名女子在門廊前歡舞慶祝，手持花束，背景中有更多慶祝的人群。',
+    keywords: ['鄉村生活', '避風港', '家庭豐收', '休憩', '和諧', '繁榮', '平和', '增加', '幸福', '美麗'],
     upright: {
-      title: "正位：慶祝成功與溫馨和諧",
-      meaning: "代表一個階段性目標的圓滿達成，帶來了穩定與和平。這是一張代表聚會、婚禮、喬遷或團隊慶功的吉牌，象徵著充滿安全感與歸屬感的時光。",
-      love: "關係極為和諧、穩定，論及婚嫁或共同建立溫馨的家庭。單身者有望在聚會中結識良緣。",
-      career: "專案圓滿收尾，收穫滿意的成果。團隊合作無間，工作環境令人感到愉快且充滿支持。",
-      advice: "與身邊的人一同慶祝這個好時刻，感恩當下的豐盛與穩定，並好好享受家庭生活。"
+      meaning: '【偉特原著·正位】\n原文：\'Country life, haven of refuge, a species of domestic harvest-home, repose, concord, harmony, prosperity, peace.\'\n\n直譯：鄉村生活、避風港、家庭豐收節慶、休憩、和睦、和諧、繁榮、和平。',
+      love: '【依原著關鍵詞】感情中充滿和諧（harmony）與和平（peace），如避風港（haven of refuge）般的安穩，是偉特最明確描述家庭幸福的牌之一。',
+      career: '【依原著關鍵詞】工作上帶來繁榮（prosperity）與和睦（concord），如豐收節（harvest-home）般的成就感，是努力後的休憩（repose）時刻。',
+      advice: '【偉特原著核心】偉特的「避風港」（haven of refuge）——此牌代表真實可觸的安全感與慶祝，是紮實建立的基礎所帶來的喜悅。'
     },
     reversed: {
-      title: "逆位：小爭吵、家庭短暫失和或慶祝延後",
-      meaning: "代表雖然整體局勢依舊穩定，但內部出現了小摩擦或小爭執（如家庭內部的觀念分歧）。慶祝活動可能會被推遲，或者你感到雖然外在圓滿，內心卻缺乏平靜。",
-      love: "感情基礎依然穩固，但日常生活中會因為家務、細節產生口角。需要多一些包容與溝通。",
-      career: "工作成果達標但過程有些摩擦，或者慶功宴延期。要注意職場內部人際關係的和諧度。",
-      advice: "包容不完美，主動釋出善意，家和萬事興，用溫柔的溝通來化解日常的不和諧。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 30 L20 120 M40 30 L40 120 M60 30 L60 120 M80 30 L80 120" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M15 45 Q50 35 85 45" stroke="#dfb86c" stroke-width="2" fill="none"/>
-      <circle cx="50" cy="40" r="4" fill="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'The meaning remains unaltered; it is prosperity, increase, felicity, beauty, embellishment.\'\n\n直譯：含義不變；即繁榮、增加、幸福、美麗、修飾美化。',
+      love: '【依原著關鍵詞】感情中逆位依然帶來幸福（felicity）與美麗（beauty），繁榮（prosperity）持續，只是以不同的方式呈現或進一步增添（embellishment）。',
+      career: '【依原著關鍵詞】工作上繁榮（prosperity）與增長（increase）持續，逆位意義不變，依然是積極正面的結果，只是表現形式可能有所修飾（embellishment）。',
+      advice: '【偉特原著核心】偉特明確說明此牌「逆位含義不變」——這是塔羅中少數正逆位均為正面意義的牌，繁榮與幸福在任何方向都成立。'
+    }
   },
   {
     id: 26,
-    name: "權杖五",
-    englishName: "Five of Wands",
-    number: "5",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["衝突", "競爭", "混亂", "意見不合", "奮鬥"],
-    description: "五個年輕人各持權杖互相比劃，場面看似混亂。他們並非在生死搏鬥，而是在進行一場意見的交鋒、競爭或創意的碰撞。",
+    name: '權杖五',
+    englishName: 'Five of Wands',
+    number: '5',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】五名男子各持一根權杖，看似在進行混亂的打鬥或競技（但無人受傷），動作混亂卻充滿活力，象徵激烈的競爭或辯論。',
+    keywords: ['模仿', '爭鬥', '追求財富', '人生戰場', '黃金', '收穫', '富裕', '訴訟', '爭執', '詭計'],
     upright: {
-      title: "正位：競爭激烈與意見碰撞",
-      meaning: "代表你目前處於一個充滿挑戰與競爭的環境中。每個人都在爭奪發言權，意見分歧大，導致局勢混亂。然而，這也是激發創意、突破瓶頸的必要過程，只要積極應對，能帶來成長。",
-      love: "情侶間出現頻繁的口角，或是在感情中面臨競爭者。雙方溝通出現分歧，需要尋求良性的妥協。",
-      career: "職場上面臨激烈的市場競爭、提案比拼或部門間的權力鬥爭。工作環境吵雜、考驗重重。",
-      advice: "不要害怕衝突與競爭，將其視為磨練能力的舞台。保持冷靜，用實力證明自己的價值。"
+      meaning: '【偉特原著·正位】\n原文：\'Imitation, struggle of the search after riches and fortune, the battle of life; also gold, gain, opulence.\'\n\n直譯：模仿、追求財富的奮鬥、人生的戰鬥；亦指黃金、收穫、富裕。',
+      love: '【依原著關鍵詞】感情中充滿競爭（struggle）與模仿（imitation），關係是人生戰場（battle of life）的縮影，但競爭也帶來豐碩的成果（gain, opulence）。',
+      career: '【依原著關鍵詞】工作上是激烈的競爭（struggle）與人生戰場（battle of life），追求財富（search after riches）的過程中，黃金（gold）與富裕（opulence）可及。',
+      advice: '【偉特原著核心】偉特將「奮鬥」與「黃金富裕」並置——五號牌的戰鬥是獲得財富的必經之路，競爭是人生的基本構成，不必迴避。'
     },
     reversed: {
-      title: "逆位：衝突化解、逃避競爭或內耗",
-      meaning: "代表混亂的局面開始平息，意見逐漸達成一致，或者相反地，代表你選擇逃避競爭，導致內心產生自我懷疑或不必要的精神內耗。",
-      love: "雙方決定停止冷戰或無意義的爭吵，願意靜下心來溝通。或者是刻意迴避矛盾，埋下隱患。",
-      career: "團隊內部的矛盾得到和緩，工作重新步入正軌。也代表你試圖置身事外，不願參與惡性競爭。",
-      advice: "停止無意義的爭鬥與內耗，尋求共識，把精力集中在真正能解決問題的行動上。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 20 L80 130 M80 20 L20 130 M50 15 L50 135 M15 75 L85 75" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Litigation, disputes, trickery, contradiction.\'\n\n直譯：訴訟、糾紛、詭計、矛盾對立。',
+      love: '【依原著關鍵詞】感情中陷入糾紛（disputes）與矛盾對立（contradiction），可能有詭計（trickery）在其中，關係充滿不誠實的對抗。',
+      career: '【依原著關鍵詞】工作上面臨訴訟（litigation）與糾紛（disputes），詭計（trickery）與矛盾（contradiction）使局勢複雜化。',
+      advice: '【偉特原著核心】逆位的「詭計」（trickery）——正位的光明競爭變為暗箭傷人，訴訟與糾紛取代了坦蕩的奮鬥，需謹防不誠實的對手。'
+    }
   },
   {
     id: 27,
-    name: "權杖六",
-    englishName: "Six of Wands",
-    number: "6",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["勝利", "榮譽", "公開認可", "自信", "成就"],
-    description: "一位騎士頭戴桂冠，騎著白馬凱旋歸來。他手持掛著花環的權杖，身旁有群眾歡呼，象徵著獲得公開的成功、名聲與眾人的高度認可。",
+    name: '權杖六',
+    englishName: 'Six of Wands',
+    number: '6',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一名騎士騎著白馬，頭戴月桂冠，手持裝飾著月桂花環的權杖，身後有步行的從者各持權杖護送。這是凱旋歸來的隊伍，展示勝利者的榮耀。',
+    keywords: ['凱旋的消息', '勝利', '月桂冠', '恐懼', '叛徒', '不忠', '延誤'],
     upright: {
-      title: "正位：凱旋歸來與獲得榮譽",
-      meaning: "這是一張極為自信且代表勝利的牌。你過去的付出得到了回報，並獲得了主管、同事或社會的公開表揚與讚賞。你的才華正備受矚目，自信心處於巔峰。",
-      love: "感情發展順利，獲得家人或朋友的公開支持與祝福。單身者有望在社交場合成為焦點，吸引愛慕者。",
-      career: "工作上取得重大突破，專案成功並獲得公司的表彰。升職加薪，或是順利通過關鍵考試。",
-      advice: "大方接受眾人的讚美與榮譽，這是你應得的。保持自信，繼續帶領團隊穩步前行。"
+      meaning: '【偉特原著·正位】\n原文：\'Triumphal news or a victory; also the crown which is carried on the wand.\'\n\n直譯：凱旋的消息或勝利；亦指被戴在權杖上的冠冕。',
+      love: '【依原著關鍵詞】感情中帶來勝利（victory）的消息，關係中的付出獲得榮耀（crown）的回報，愛情的凱旋時刻到來。',
+      career: '【依原著關鍵詞】工作上帶來凱旋的消息（triumphal news）與勝利（victory），努力獲得認可，如月桂冠（crown）般的榮耀加身。',
+      advice: '【偉特原著核心】偉特直接點出「凱旋的冠冕」（crown carried on the wand）——這是奮鬥後真實的勝利，接受屬於你的榮耀，公開慶祝你的成就。'
     },
     reversed: {
-      title: "逆位：落榜、缺乏認可、虛榮或名譽受損",
-      meaning: "代表你可能付出了努力但功勞被忽視，或者面臨失敗、競爭落選。這張牌也警告你避免過度膨脹、流於虛榮，否則容易招致旁人的反感。",
-      love: "感情中出現挫折，可能因為過於自我中心而忽略伴侶的感受。關係缺乏外界的祝福。",
-      career: "工作項目成效不彰，或者面臨承諾落空的窘境。要注意避免為了面子而掩蓋錯誤。",
-      advice: "勝不驕敗不餒，誠實地面對不足。先沉澱自我，默默累積實力，等待下一次的凱旋。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 20 L50 130" stroke="#dfb86c" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="50" cy="40" r="15" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M40 30 L60 50 M60 30 L40 50" stroke="#dfb86c" stroke-width="1"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Apprehension, fear, as of a victorious enemy at the gate; treachery, disloyalty; also indefinite delay.\'\n\n直譯：憂慮、恐懼，如同勝利的敵人兵臨城下；背叛、不忠；亦指無限期的延誤。',
+      love: '【依原著關鍵詞】感情中充滿憂慮（apprehension）與對背叛（treachery）的恐懼，不忠（disloyalty）的陰影籠罩，關係陷入無限期的延誤（indefinite delay）。',
+      career: '【依原著關鍵詞】工作上感受到敵人兵臨城下的恐懼（fear of a victorious enemy），背叛（treachery）與不忠（disloyalty）可能在職場出現，計劃無限期延誤。',
+      advice: '【偉特原著核心】逆位的「勝利的敵人兵臨城下」——勝利反轉，需警惕背叛與不忠，延誤在此是被迫的，需積極應對潛在的威脅。'
+    }
   },
   {
     id: 28,
-    name: "權杖七",
-    englishName: "Seven of Wands",
-    number: "7",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["防守", "堅持立場", "勇氣", "以一擋百", "克服挑戰"],
-    description: "男子站在高處，手持權杖採取防守姿態，對抗下方湧上的六根權杖。他腳穿不一樣的鞋子，象徵雖然事出匆忙，但他依然佔據有利的地形，堅定地捍衛自己的立場。",
+    name: '權杖七',
+    englishName: 'Seven of Wands',
+    number: '7',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一名男子站在高地上，用一根權杖防禦從下方舉起的六根權杖。他占據制高點，雖被圍攻但仍勇敢抵抗，表情堅毅。',
+    keywords: ['英勇', '討論', '口頭爭論', '談判', '競爭', '成功', '困惑', '困窘', '焦慮', '猶豫不決'],
     upright: {
-      title: "正位：堅守立場與迎接挑戰",
-      meaning: "你目前正面臨重重的挑戰、質疑或競爭，但你處於有利的位置。這張牌要求你展現勇氣與毅力，堅守你的核心信念與觀點。只要你不退縮，必能克服萬難、捍衛成果。",
-      love: "感情面臨外界（如家人、流言）的反對或考驗，需要雙方共同拿出勇氣去捍衛彼此的承諾。",
-      career: "職場上被推到風口浪尖，面臨許多競爭對手的挑戰或主管的質疑。頂住壓力，捍衛你的提案。",
-      advice: "不要退讓！你正站在正義與優勢的一方，堅信自己的選擇，勇敢迎戰。"
+      meaning: '【偉特原著·正位】\n原文：\'Valour; discussion and wordy strife; in business—negotiations, war of trade, barter, competition; also success, for the combatant is on top.\'\n\n直譯：英勇；討論與言辭上的爭論；在商業上——談判、商業戰爭、以物易物、競爭；亦指成功，因為戰鬥者占據上風。',
+      love: '【依原著關鍵詞】感情中需要英勇（valour）捍衛，為愛而戰，在口頭爭論（wordy strife）中堅守立場，因占據制高點而成功（success）。',
+      career: '【依原著關鍵詞】工作上充滿商業競爭（competition）與談判（negotiations），英勇（valour）面對商業戰爭（war of trade），因占據優勢而獲得成功（success）。',
+      advice: '【偉特原著核心】偉特明確指出「戰鬥者占據上風故而成功」——七號牌的關鍵是保持優勢地位，用英勇面對挑戰，制高點帶來勝利。'
     },
     reversed: {
-      title: "逆位：力不從心、放棄抵抗或優勢流失",
-      meaning: "代表你面臨的壓力過大，感到精疲力竭，開始動搖並想要妥協或放棄。你也可能因為缺乏準備，被競爭對手奪去了主導權。",
-      love: "感情中感到疲憊，面對外界的壓力選擇退縮，或者因為頻繁的爭吵而失去了繼續堅持的信念。",
-      career: "工作上招架不住沉重的工作量或競爭對手的攻勢。提案遭到否決，感到力不從心。",
-      advice: "如果目前的立場真的讓你難以支撐，退一步重整旗鼓並非壞事。別盲目硬撐，適時尋求盟友支持。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 20 L50 110" stroke="#dfb86c" stroke-width="2.5"/>
-      <path d="M20 120 L80 120 M30 110 L45 130 M70 110 L55 130" stroke="#dfb86c" stroke-width="2"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Perplexity, embarrassments, anxiety. Also a caution against indecision.\'\n\n直譯：困惑、困窘、焦慮。亦是對猶豫不決的警告。',
+      love: '【依原著關鍵詞】感情中陷入困惑（perplexity）與焦慮（anxiety），尷尬的處境（embarrassments）使人不知所措，猶豫不決（indecision）使局勢惡化。',
+      career: '【依原著關鍵詞】工作上困惑（perplexity）與困窘（embarrassments）纏身，焦慮（anxiety）影響判斷，偉特特別警告勿猶豫不決（indecision）。',
+      advice: '【偉特原著核心】偉特明確「警告猶豫不決」（caution against indecision）——制高點因優柔寡斷而失守，果斷才是化解困惑的唯一出路。'
+    }
   },
   {
     id: 29,
-    name: "權杖八",
-    englishName: "Eight of Wands",
-    number: "8",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["迅速", "航空旅行", "訊息", "進展飛快", "能量釋放"],
-    description: "八根權杖斜斜地劃過晴朗的天空，朝著地面飛速落下。背景乾淨無雲，象徵阻礙消除，事情正在以極快的速度前行。",
+    name: '權杖八',
+    englishName: 'Eight of Wands',
+    number: '8',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】八根權杖平行斜飛穿越天空，無人持握，急速飛向地面。背景是平靜的藍天與遠方的平原河流，象徵快速的行動與傳訊。',
+    keywords: ['行動', '迅速', '急速', '希望', '愛的箭矢', '嫉妒', '內部糾紛', '爭吵'],
     upright: {
-      title: "正位：進展迅速與迎來好消息",
-      meaning: "這是一張代表「速度」與「溝通」的牌。所有拖延已久的計劃現在都將全速推進，阻礙完全消除。你將會收到重要且令人興奮的郵件、合約或消息。也非常適合出差、航空旅行或度假。",
-      love: "感情進展飛快，可能迅速墜入愛河、步入熱戀，或是遠距離戀愛者即將見面。訊息交流極為頻繁。",
-      career: "專案進度突飛猛進，決策迅速落實。商務出差順利，能快刀斬亂麻地解決堆積的事務。",
-      advice: "順應這股快速流動的能量，果斷做決定。打鐵趁熱，把手邊的事務迅速處理完畢。"
+      meaning: '【偉特原著·正位】\n原文：\'Activity in undertakings, the path of such activity, swiftness; great haste, great hope, speed towards an end which promises assured felicity; generally, that which is on the move; also the arrows of love.\'\n\n直譯：行動中的活力與路徑、迅速；極大的急速、極大的希望、朝向承諾確定幸福的終點急速前進；泛指一切運動中的事物；亦指愛的箭矢。',
+      love: '【依原著關鍵詞】偉特明確提及「愛的箭矢」（arrows of love）——感情中快速發展（swiftness），充滿希望（great hope），朝向確定的幸福（assured felicity）疾速前進。',
+      career: '【依原著關鍵詞】工作上充滿極大的急速（great haste）與活力，事情快速推進（swiftness），承諾帶來確定的幸福（assured felicity）。',
+      advice: '【偉特原著核心】偉特的「朝向確定幸福的終點急速前進」——這是塔羅中最快速的牌，強調動能與希望的結合，一切事物都在加速運動。'
     },
     reversed: {
-      title: "逆位：阻礙重重、延誤、溝通不暢或衝動出錯",
-      meaning: "代表計劃因突發因素而嚴重滯礙或延誤。訊息傳遞錯誤，容易產生雞同鴨講的誤會。這張牌也警告你避免因操之過急而做出草率的決策。",
-      love: "感情中出現冷戰或誤會，訊息已讀不回。或者關係中出現進展過快而缺乏踏實的安全感。",
-      career: "工作上面臨突發性的卡關、物流延誤或合約卡關。此時切忌急躁，越急越容易出差錯。",
-      advice: "慢下來！當前不宜強行推進，耐心地等待混亂理清，仔細檢查溝通的每一個細節。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 30 L45 110 M30 20 L60 100 M45 10 L75 90 M60 20 L90 100" stroke="#dfb86c" stroke-width="1.5" stroke-linecap="round"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Arrows of jealousy, internal dispute, stings of conscience, quarrels.\'\n\n直譯：嫉妒的箭矢、內部糾紛、良心的刺痛、爭吵。',
+      love: '【依原著關鍵詞】感情中嫉妒的箭矢（arrows of jealousy）傷害關係，爭吵（quarrels）與良心的刺痛（stings of conscience）使愛情蒙塵。',
+      career: '【依原著關鍵詞】工作上出現內部糾紛（internal dispute）與爭吵（quarrels），良心的刺痛（stings of conscience）暗示不道德的競爭手段。',
+      advice: '【偉特原著核心】逆位將「愛的箭矢」轉為「嫉妒的箭矢」——同樣的速度與力量，方向反轉後帶來的是傷害與糾紛，需警惕嫉妒驅動的行動。'
+    }
   },
   {
     id: 30,
-    name: "權杖九",
-    englishName: "Nine of Wands",
-    number: "9",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["防禦", "毅力", "最後防線", "身心疲憊", "堅持"],
-    description: "一名頭部受傷包紮的衛兵，雙手緊握權杖，警惕地看著四周。他背後立著八根權杖，雖然他已經傷痕累累、疲憊不堪，但他依然沒有放棄，堅守著最後的防線。",
+    name: '權杖九',
+    englishName: 'Nine of Wands',
+    number: '9',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一名受傷的男子頭部包紮，手扶一根權杖，背後有八根權杖形成柵欄。他的眼神警惕地四望，雖已疲憊但仍堅守陣地，準備迎接下一波攻擊。',
+    keywords: ['抵抗的力量', '勇敢面對', '延誤', '暫停', '阻礙', '逆境', '災難'],
     upright: {
-      title: "正位：堅持到底與最後的考驗",
-      meaning: "代表你此時感到身心極為疲憊，但你距離終點只有一步之遙。這張牌鼓勵你咬緊牙關、展現最後的毅力。雖然過去的戰鬥讓你受了傷，但你已經建立好了防線，只要堅持下去，勝利就在眼前。",
-      love: "感情中曾受過傷害，讓你此時防備心極重，不敢輕易敞開心扉。然而，這也是考驗彼此忠誠的時刻。",
-      career: "工作上面臨最後衝刺的高壓階段，雖然筋疲力竭但不能鬆懈。堅守崗位，妥善防範潛在危機。",
-      advice: "再堅持一下！別在前功盡棄的邊緣放棄，你比自己想像的更堅強，守護好你的成果。"
+      meaning: '【偉特原著·正位】\n原文：\'Strength in opposition. If attacked, the person will meet an onslaught boldly; also delay, suspension, adjournment.\'\n\n直譯：抵抗中的力量。若遭攻擊，此人將勇敢地迎戰；亦指延誤、暫停、延期。',
+      love: '【依原著關鍵詞】感情中展現抵抗中的力量（strength in opposition），若受到攻擊則勇敢迎戰（meet an onslaught boldly），但關係可能經歷延誤（delay）與暫停（suspension）。',
+      career: '【依原著關鍵詞】工作上展現在對抗中的力量（strength in opposition），勇於面對挑戰，但需接受延誤（delay）與延期（adjournment）是過程的一部分。',
+      advice: '【偉特原著核心】偉特的「勇敢迎戰」（meet an onslaught boldly）——九號牌的戰士已疲憊但未倒下，這種在逆境中持守的力量是最深刻的勇氣。'
     },
     reversed: {
-      title: "逆位：防禦瓦解、精疲力竭或頑固抗拒",
-      meaning: "代表壓力超出了極限，防禦終於崩潰，或者你因為固執己見而抗拒改變。你也可能感到無力再戰，選擇徹底放棄。",
-      love: "防備心防徹底瓦解，願意卸下面具溝通；或者因為心灰意冷，決定結束這段痛苦糾纏的關係。",
-      career: "工作徹底透支，面臨崩潰或離職。或者因為拒絕聽取建議，導致專案在最後關頭面臨失敗。",
-      advice: "適時的休息與求助不是軟弱。承認自己的極限，卸下不必要的重擔，先讓身心得到修復。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="20" y="30" width="60" height="90" rx="3" stroke="#dfb86c" stroke-width="1" stroke-dasharray="3 3"/>
-      <path d="M50 15 L50 135" stroke="#dfb86c" stroke-width="2.5" stroke-linecap="round"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Obstacles, adversity, calamity.\'\n\n直譯：障礙、逆境、災難。',
+      love: '【依原著關鍵詞】感情中遭遇嚴重的障礙（obstacles）與逆境（adversity），災難（calamity）性的衝擊使關係難以為繼。',
+      career: '【依原著關鍵詞】工作上障礙（obstacles）、逆境（adversity）與災難（calamity）接踵而至，已疲憊的力量在此遭受最嚴峻的考驗。',
+      advice: '【偉特原著核心】逆位的「災難」（calamity）——抵抗力量的崩潰帶來全面的逆境，需評估是否繼續堅守或尋求新的策略。'
+    }
   },
   {
     id: 31,
-    name: "權杖十",
-    englishName: "Ten of Wands",
-    number: "10",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["重擔", "責任", "精疲力竭", "過度承諾", "奮力前行"],
-    description: "男子吃力地抱著十根沉重的權杖，彎著腰，一步一步艱難地走向遠方的城堡。他被權杖遮擋了視線，雖然城堡近在眼前，但他感到無比沉重與疲憊。",
+    name: '權杖十',
+    englishName: 'Ten of Wands',
+    number: '10',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一名男子彎腰費力地抱著十根權杖向前走，身體被重負壓彎，遠方有城鎮的輪廓。他看不見前方的路，只能低頭承受重量，象徵過度的負擔。',
+    keywords: ['壓迫', '財富', '收穫', '成功', '偽裝', '欺詐', '背信', '困難', '陰謀'],
     upright: {
-      title: "正位：背負重擔與責任過重",
-      meaning: "代表你目前承擔了過多的責任、工作或壓力。你習慣把所有事情往自己身上攬（過度承諾），導致此時寸步難行、精疲力竭。雖然目標（城堡）就在前方，但你需要學會分權與釋放壓力。",
-      love: "感情中感到無比沉重，可能是一方承擔了所有的經濟或情感包袱，讓這段關係變成了沉重的負擔。",
-      career: "職場上工作量嚴重超載，經常加班，精疲力竭。雖然責任感很強，但已經超出了身體的負荷。",
-      advice: "重新評估你的工作與生活。學會拒絕與分工，把不屬於你的權杖放下，才能順利走到終點。"
+      meaning: '【偉特原著·正位】\n原文：\'Oppression simply, but also fortune, gain, any kind of success, and then it is the oppression of these things; also a card of false-seeming, disguise, perfidy.\'\n\n直譯：簡單的壓迫，但亦指財富、收穫、任何形式的成功，此時即為這些事物所帶來的壓迫；亦是假象、偽裝、背信棄義之牌。',
+      love: '【依原著關鍵詞】感情中的成功（success）帶來壓迫（oppression）的負擔，偽裝（disguise）與背信（perfidy）可能潛藏在表面的成就之下。',
+      career: '【依原著關鍵詞】工作上財富（fortune）與成功（gain）帶來沉重的壓迫（oppression），偉特特別指出「假象與背信」——成功的背後可能有不誠實的代價。',
+      advice: '【偉特原著核心】偉特獨特地指出「成功的壓迫」與「背信棄義」並存——十號牌提醒：過度的承擔與不誠實手段取得的成功，最終都是無法持久的重負。'
     },
     reversed: {
-      title: "逆位：釋放重擔、崩潰或逃避責任",
-      meaning: "代表你終於決定放下沉重的負擔，進行分工或拒絕不合理的要求。在極端情況下，也代表因為重擔過重而徹底崩潰，或者選擇逃避責任。",
-      love: "決定不再獨自承受，與伴侶共同分擔問題，關係得到喘息；或者因為不堪重負而選擇分手解脫。",
-      career: "成功推掉不合理的工作，重整職涯生活。或者因為壓力過大而選擇辭職、專案被迫放棄。",
-      advice: "主動釋放壓力是明智的選擇。釐清輕重緩急，只留下核心的任務，別讓責任感壓垮你的健康。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 20 L50 130 M25 20 L50 130 M35 20 L50 130 M45 20 L50 130 M55 20 L50 130 M65 20 L50 130 M75 20 L50 130 M85 20 L50 130" stroke="#dfb86c" stroke-width="1.2"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Contrarieties, difficulties, intrigues.\'\n\n直譯：對立、困難、陰謀詭計。',
+      love: '【依原著關鍵詞】感情中充滿對立（contrarieties）與困難（difficulties），陰謀（intrigues）在關係背後運作，使一切更加複雜。',
+      career: '【依原著關鍵詞】工作上對立（contrarieties）與困難（difficulties）阻礙前進，陰謀詭計（intrigues）使工作環境充滿不信任。',
+      advice: '【偉特原著核心】逆位的「陰謀」（intrigues）——重負的壓迫轉化為幕後的操縱與陰謀，需謹防職場或關係中的不正當手段。'
+    }
   },
   {
     id: 32,
-    name: "權杖侍從",
-    englishName: "Page of Wands",
-    number: "Page",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["熱情", "探索者", "冒險", "好消息", "純真熱忱"],
-    description: "年輕的侍從雙手握著權杖，專注地看著權杖頂端長出的綠芽。他身穿繪滿蠑螈（火之精靈）的長袍，腳踏荒涼但充滿希望的黃色土地。",
+    name: '權杖侍衛',
+    englishName: 'Page of Wands',
+    number: 'Page',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一名年輕人身著花紋上衣，頭戴羽毛帽，雙手握持一根長杖，凝視著其頂端。背景是沙漠與三座金字塔形的山丘，充滿冒險精神。',
+    keywords: ['黑髮少年', '忠實', '愛人', '使者', '郵差', '家族消息', '軼事', '公告', '不穩定'],
     upright: {
-      title: "正位：探索新事物與充滿活力的消息",
-      meaning: "代表一位充滿好奇心、熱情且勇於冒險的年輕人，或者預示著你即將開啟一個新的興趣、學習計劃或收到令人振奮的創意消息。這張牌鼓勵你保持純真與熱情，大膽探索未知。",
-      love: "一段充滿童趣、新鮮感與激情的感情。單身者可能遇到活潑、主動且熱愛冒險的年輕對象。",
-      career: "適合開始新的學習項目、考取證照或嘗試從未接觸過的新職務。工作中充滿了新鮮的創意靈感。",
-      advice: "保持對世界的好奇心，像個孩子一樣去學習新事物，用你的熱情去點燃新的計畫。"
+      meaning: '【偉特原著·正位】\n原文：\'Dark young man, faithful, a lover, an envoy, a postman; beside a man, he will bear favourable testimony; dangerous rival if followed by Page of Cups; may signify family intelligence.\'\n\n直譯：黑髮的年輕男子、忠實、愛人、使者、郵差；在男性旁邊時，將帶來有利的證詞；若跟隨聖杯侍衛則是危險的對手；可能象徵家族消息。',
+      love: '【依原著關鍵詞】感情中代表忠實（faithful）的愛人（lover），若跟隨聖杯侍衛則成為危險的對手（dangerous rival），家族消息（family intelligence）可能影響感情。',
+      career: '【依原著關鍵詞】工作上作為使者（envoy）帶來消息，忠實地（faithful）執行任務，可能帶來有利的證詞（favourable testimony）。',
+      advice: '【偉特原著核心】偉特特別注意「若跟隨聖杯侍衛則是危險對手」——侍衛牌需結合周圍牌來解讀，單純看此牌是忠實的使者與傳訊者。'
     },
     reversed: {
-      title: "逆位：三分鐘熱度、焦躁不安或壞消息",
-      meaning: "代表你空有熱情但缺乏耐心，容易三分鐘熱度、半途而廢。你也可能表現得過於焦躁、任性或魯莽，導致計劃受挫。有時也代表收到令人失望的消息。",
-      love: "感情中缺乏成熟度，關係不夠穩定，或者因為脾氣衝動、缺乏耐性而產生短暫的摩擦。",
-      career: "工作執行力不佳，想法流於表面，缺乏持續努力的耐力。不宜急於推進未成熟的計劃。",
-      advice: "保持對世界的好奇心，像個孩子一樣去學習新事物，用你的熱情去點燃新的計畫。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 40 L50 130" stroke="#dfb86c" stroke-width="2"/>
-      <circle cx="50" cy="30" r="10" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <path d="M35 120 L65 120" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Anecdotes, announcements, evil news. Also indecision and instability.\'\n\n直譯：軼事、公告、壞消息。亦指猶豫不決與不穩定。',
+      love: '【依原著關鍵詞】感情中帶來壞消息（evil news），猶豫不決（indecision）與不穩定（instability）使關係缺乏可靠性。',
+      career: '【依原著關鍵詞】工作上的公告（announcements）帶來壞消息（evil news），不穩定（instability）與猶豫不決（indecision）影響工作表現。',
+      advice: '【偉特原著核心】逆位的「壞消息與不穩定」——忠實的信使變為不可靠的消息來源，猶豫不決使重要信息無法及時傳達。'
+    }
   },
   {
     id: 33,
-    name: "權杖騎士",
-    englishName: "Knight of Wands",
-    number: "Knight",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["衝勁", "行動派", "冒險家", "衝動", "追求挑戰"],
-    description: "騎士身穿盔甲，披著火紅色的披風，手持權杖，胯下的紅馬正奮力向前奔躍。他代表著無所畏懼的勇氣、風風火火的行動力與渴望征服的野心。",
+    name: '權杖騎士',
+    englishName: 'Knight of Wands',
+    number: 'Knight',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一名年輕騎士身著金色盔甲，盔甲裝飾有火蜥蜴圖案，騎馬躍起，揮舞一根權杖。背景是沙漠景觀與三座金字塔形山丘，充滿衝勁與動力。',
+    keywords: ['離開', '缺席', '出走', '移民', '友善', '換居所', '決裂', '分裂', '中斷', '不和'],
     upright: {
-      title: "正位：勇往直前與強大的執行力",
-      meaning: "代表一位充滿魅力、行動力極強、無所畏懼的開拓者。此時你的決策與執行速度極快，適合開展新項目、出差、旅行或迎接高難度的挑戰。你的衝勁將能帶領你突破重圍。",
-      love: "一段充滿激情、進展神速但可能略顯短暫的戀情。伴侶性格熱烈、主動且具侵略性。",
-      career: "工作效率極高，執行力爆表。適合創業、拓展新業務或解決緊急危機。但要留意細節的處理。",
-      advice: "發揮你的勇氣與衝勁，果斷出擊。但請記得在全速奔跑時，稍微留心前方的路況。"
+      meaning: '【偉特原著·正位】\n原文：\'Departure, absence, flight, emigration. A dark young man, friendly. Change of residence.\'\n\n直譯：離開、缺席、出走、移民。黑髮的年輕男子、友善。居所的改變。',
+      love: '【依原著關鍵詞】感情中可能面臨分離（departure, absence）或移居（emigration）帶來的距離，但代表此人是友善（friendly）的黑髮年輕男子。',
+      career: '【依原著關鍵詞】工作上有離職（departure）或出走（flight）的可能，居所的改變（change of residence）可能帶來新的工作機遇。',
+      advice: '【偉特原著核心】偉特的「出走與移民」——騎士的能量是衝動的行動，此牌預示著一個快速的離開或遷移，變動即將到來。'
     },
     reversed: {
-      title: "逆位：魯莽衝動、脾氣暴躁、阻礙或半途而廢",
-      meaning: "代表你過於急躁、剛愎自用，導致行事莽撞、出錯。這張牌也警告你，脾氣容易失控暴躁，或者在專案執行中因為缺乏規劃而半途而廢、虎頭蛇尾。",
-      love: "感情中出現激烈的爭吵，可能因為控制欲過強或脾氣暴躁傷害對方。關係中缺乏長遠承諾的耐性。",
-      career: "工作上決策過於草率，引發後續危機。或者因為做事衝動，與同事、客戶發生劇烈衝突。",
-      advice: "勒住奔馳的韁繩！在做出決定前先深呼吸，理清利弊，切勿意氣用事。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 30 L50 120" stroke="#dfb86c" stroke-width="2"/>
-      <path d="M35 50 L50 25 L65 50 Z" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <circle cx="50" cy="125" r="5" stroke="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Rupture, division, interruption, discord.\'\n\n直譯：決裂、分裂、中斷、不和。',
+      love: '【依原著關鍵詞】感情中發生決裂（rupture）與分裂（division），關係被中斷（interruption），不和（discord）使雙方越走越遠。',
+      career: '【依原著關鍵詞】工作上發生中斷（interruption）與決裂（rupture），合作關係分裂（division），工作環境充滿不和（discord）。',
+      advice: '【偉特原著核心】逆位的「決裂」（rupture）——衝動的行動造成不可挽回的斷裂，中斷與不和是倉促行事的後果。'
+    }
   },
   {
     id: 34,
-    name: "權杖皇后",
-    englishName: "Queen of Wands",
-    number: "Queen",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["熱情", "自信", "社交天后", "慷慨", "獨立女性"],
-    description: "皇后端坐在寶座上，一手持權杖，另一手拿著象徵生命力的向日葵，腳旁站著一隻黑貓。她神情溫和但充滿自信，散發著溫暖與慈悲的力量。",
+    name: '權杖王后',
+    englishName: 'Queen of Wands',
+    number: 'Queen',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一名女王端坐於飾有獅子與向日葵的寶座上，手持權杖與向日葵，腳邊有一隻黑貓。她神情自信而直接，既展現出溫暖又不失權威。',
+    keywords: ['黑髮女子', '友善', '貞潔', '愛戀', '榮耀', '節儉', '反對', '嫉妒', '欺騙', '不忠'],
     upright: {
-      title: "正位：自信熱情與獨立自主",
-      meaning: "代表一位充滿魅力、自信、熱情且慷慨的女性形象。她熱愛生活，擅長社交，具備優秀的領導力與感染力。這張牌也鼓勵你展現個人魅力，勇敢追求獨立與事業，用熱情照亮身邊的人。",
-      love: "一段充滿活力、互相支持且自信大方的感情。伴侶溫暖、開朗且極具吸引力。",
-      career: "在職場上展現優秀的社交手腕與領導力，深受同事與下屬愛戴。創意與親和力是你的最大優勢。",
-      advice: "展現你的自信與微笑，主動關懷他人，發揮你的創造力，你就是舞台的主角。"
+      meaning: '【偉特原著·正位】\n原文：\'A dark woman, countrywoman, friendly, chaste, loving, honourable; if beside a man, well disposed towards him; love of money, or a certain success in business.\'\n\n直譯：黑髮女子、農村婦女、友善、貞潔、深情、榮耀；若在男性旁邊，對其態度良好；愛財或在商業上有一定成功。',
+      love: '【依原著關鍵詞】感情中代表友善（friendly）、貞潔（chaste）且深情（loving）的女性，若在男性旁邊對其態度良好，是真誠且榮耀（honourable）的伴侶。',
+      career: '【依原著關鍵詞】工作上展現對金錢的熱愛（love of money）與商業上的成功（success in business），友善且榮耀的態度在職場贏得尊重。',
+      advice: '【偉特原著核心】偉特的「農村婦女」象徵踏實的實踐者——她的成功來自真實的勞動與貞潔的品格，而非投機取巧。'
     },
     reversed: {
-      title: "逆位：嫉妒心強、情緒起伏或掌控欲",
-      meaning: "代表情緒起伏不定、控制欲過強，或者因為缺乏安全感而產生強烈的嫉妒與猜忌。有時也象徵才華遭到壓抑，或在社交中顯得過於強勢、咄咄逼人。",
-      love: "感情中出現猜忌、佔有欲過強，或者因為脾氣古怪、情緒化而讓伴侶感到極大壓力。",
-      career: "管理方式過於專斷，容易引發下屬反彈。在人際交往中要注意避免說長道短或挑撥離間。",
-      advice: "收斂你的強勢與控制欲。真正的自信不需要透過貶低或掌控他人來證明，學會溫和待人。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 20 L50 120" stroke="#dfb86c" stroke-width="2"/>
-      <circle cx="50" cy="45" r="20" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M40 80 Q50 65 60 80" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Good, economical, obliging, serviceable; also opposition, jealousy, deceit and infidelity.\'\n\n直譯：善良、節儉、樂於助人、實用；亦指反對、嫉妒、欺騙與不忠。',
+      love: '【依原著關鍵詞】感情中可能是善良節儉的女性（good, economical），但偉特同時列出「嫉妒、欺騙與不忠」，需辨別哪種能量主導。',
+      career: '【依原著關鍵詞】工作上樂於助人（obliging）且實用（serviceable），但反對（opposition）可能來自嫉妒（jealousy）與欺騙（deceit）的同僚。',
+      advice: '【偉特原著核心】偉特在逆位同時給出正反雙面——善良與欺騙並存，需結合周圍牌陣判斷哪種特質在當前情境中主導。'
+    }
   },
   {
     id: 35,
-    name: "權杖國王",
-    englishName: "King of Wands",
-    number: "King",
-    suit: "wands",
-    element: "火",
-    elementSymbol: "🔥",
-    keywords: ["領袖魅力", "遠見", "企業家精神", "果斷", "權威"],
-    description: "國王坐在雕刻著獅子與蠑螈的寶座上，手持權杖，目光遠大。他身穿火紅色長袍，神情果斷，代表著卓越的領導才能、遠見以及掌控全局的智慧。",
+    name: '權杖國王',
+    englishName: 'King of Wands',
+    number: 'King',
+    suit: 'wands',
+    element: '火',
+    icon: '🔥',
+    description: '【偉特原著·圖像】一名國王端坐於飾有獅子與火蜥蜴的寶座上，手持開花的權杖，身著黃色袍服飾有火蜥蜴圖案。他的神情充滿威權與自信，凝視前方。',
+    keywords: ['黑髮男子', '友善', '農村紳士', '已婚', '誠實', '嚴肅', '慈愛', '耐心'],
     upright: {
-      title: "正位：雄心壯志與卓越領袖",
-      meaning: "代表一位成熟、果斷、充滿遠見且極具領袖魅力的決策者。你目前處於主導地位，具備帶領團隊走向成功的智慧。這張牌鼓勵你大膽制定宏偉目標，用你的遠見與執行力開拓疆土。",
-      love: "穩定、忠誠且充滿保護欲的伴侶關係。國王代表一位可靠、有肩膀且願意為未來奮鬥的伴侶。",
-      career: "職場上展現卓越的決策力與管理長才，適合端任創業者、部門主管或專案負責人。前途無量。",
-      advice: "發揮你的領導風範，果斷決策，勇於承擔責任，帶領團隊堅定地朝目標前行。"
+      meaning: '【偉特原著·正位】\n原文：\'Dark man, friendly, countryman, generally married, honest and conscientious; honesty; may mean news concerning an unexpected heritage.\'\n\n直譯：黑髮男子、友善、鄉紳、通常已婚、誠實且盡責；誠實；可能指關於意外遺產的消息。',
+      love: '【依原著關鍵詞】感情中代表誠實（honest）、盡責（conscientious）且通常已婚（generally married）的成熟男性，友善（friendly）且可靠。',
+      career: '【依原著關鍵詞】工作上代表誠實（honesty）的商業夥伴或上司，可能帶來意外遺產（unexpected heritage）的消息，是可信賴的人物。',
+      advice: '【偉特原著核心】偉特的「誠實且盡責」（honest and conscientious）——國王的力量建立在真實的品格上，不是表演，而是一貫的行為準則。'
     },
     reversed: {
-      title: "逆位：獨裁專制、剛愎自用或缺乏擔當",
-      meaning: "代表管理方式過於專制、暴躁，拒絕聽取他人意見，流於剛愎自用。在另一種情況下，也代表遇到困難時推卸責任、懦弱無能，失去了原有的權威。",
-      love: "感情中出現大男人/大女人主義，控制欲極強，容易因為脾氣暴躁引發劇烈衝突。",
-      career: "決策失誤且拒絕認錯，管理粗暴引發團隊反彈。小心因一意孤行而招致嚴重的商業損失。",
-      advice: "放下你的傲慢與固執，多傾聽團隊與伴侶的聲音。真正的威嚴來自於包容與智慧，而非強權壓制。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 15 L50 135" stroke="#dfb86c" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M30 35 H70 M30 115 H70" stroke="#dfb86c" stroke-width="2"/>
-      <path d="M50 15 L35 35 M50 15 L65 35" stroke="#dfb86c" stroke-width="2"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Good, but severe; austere, yet tolerant.\'\n\n直譯：善良但嚴厲；嚴峻卻包容。',
+      love: '【依原著關鍵詞】感情中展現善良（good）但嚴厲（severe）的一面，嚴峻（austere）的要求下卻帶有包容（tolerant），是複雜的情感特質。',
+      career: '【依原著關鍵詞】工作上是善良但嚴厲（severe）的領導者，嚴峻（austere）的管理風格卻帶有包容（tolerant）的一面。',
+      advice: '【偉特原著核心】逆位的「嚴峻卻包容」——這不是衝突而是並存，嚴格的標準與包容的心態可以同時存在，是成熟領導者的特質。'
+    }
   },
 
-  // ==========================================
-  // SUIT 2: CUPS (聖杯 - 水元素 💧) - ID 36 to 49
-  // ==========================================
+  // ==================== CUPS ====================
   {
     id: 36,
-    name: "聖杯一",
-    englishName: "Ace of Cups",
-    number: "Ace",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["愛", "直覺", "新情感", "精神滋養", "和諧"],
-    description: "一隻雲中伸出的神聖之手，平托著一枚溢出五道水流（代表五感）的聖杯。象徵著純潔的愛、豐沛的情感注入以及潛意識的覺醒。",
+    name: '聖杯首牌',
+    englishName: 'Ace of Cups',
+    number: 'Ace',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一隻從雲中伸出的手捧持一個巨大的聖杯，杯口有鴿子（口銜餅）俯衝而下，杯中溢出五道水流（象徵五官與感知），下方是有百合花的水池。',
+    keywords: ['真心之家', '喜悅', '滿足', '居所', '滋養', '豐盛', '聖桌', '幸福', '假心', '不穩定', '革命'],
     upright: {
-      title: "正位：情感注入與新關係開啟",
-      meaning: "代表愛、喜悅與心靈滿足的起點。你可能即將開始一段美好的新戀情、建立深厚的友誼，或是內心充滿了和平與創造力。適合聆聽直覺，打開心扉接納情感的滋養。",
-      love: "一段充滿愛意、心靈契合的新關係，或是現有感情進入更加甜蜜、深化的階段。",
-      career: "工作環境友善和諧，有機會遇到投緣的合作夥伴。從事藝術、寫作或治癒相關行業的靈感源源不絕。",
-      advice: "慷慨地給予愛，大膽地表達你的真實感受，讓喜悅在你的生命中流淌。"
+      meaning: '【偉特原著·正位】\n原文：\'House of the true heart, joy, content, abode, nourishment, abundance, fertility; Holy Table, felicity hereof.\'\n\n直譯：真心之家、喜悅、滿足、居所、滋養、豐盛、生育力；聖桌（聖餐），其幸福。',
+      love: '【依原著關鍵詞】感情中充滿「真心之家」（house of the true heart）的溫暖，喜悅（joy）、滋養（nourishment）與豐盛（abundance），是聖杯首牌描述純粹之愛的核心。',
+      career: '【依原著關鍵詞】工作上帶來豐盛（abundance）與生育力（fertility），居所的建立（abode），滋養性的工作環境充滿喜悅（joy）與滿足（content）。',
+      advice: '【偉特原著核心】「真心之家」（house of the true heart）是偉特對聖杯首牌的定義——真實的情感是最深沉的豐盛，聖餐的幸福象徵心靈的滿足。'
     },
     reversed: {
-      title: "逆位：情感空虛、壓抑、失望或愛意受阻",
-      meaning: "代表你感到內心空虛、焦慮或缺乏精神滋養。你可能在壓抑自己的情感，不敢輕易愛人或被愛，或者面臨情感上的失落與失望。",
-      love: "感情中出現隔閡，感到被冷落或缺乏精神交流。小心遇到只知索取、缺乏真心的人。",
-      career: "工作中缺乏熱情，感到空虛、壓抑。人際關係出現小摩擦，小心情緒化影響專業判斷。",
-      advice: "先回頭滋養自己。在尋求外界的愛之前，先學會接納並擁抱自己內心深處的脆弱。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30 40 C30 70, 70 70, 70 40 Z M50 70 L50 110 M35 110 L65 110" stroke="#dfb86c" stroke-width="2" fill="none"/>
-      <path d="M35 40 Q50 30 65 40" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'House of the false heart, mutation, instability, revolution.\'\n\n直譯：假心之家、變動、不穩定、革命。',
+      love: '【依原著關鍵詞】感情中是「假心之家」（house of the false heart），表面的愛掩蓋不穩定（instability）與變動（mutation），關係面臨革命性的翻轉（revolution）。',
+      career: '【依原著關鍵詞】工作上不穩定（instability）與變動（mutation）頻繁，局勢面臨革命性的改變（revolution），基礎的假象將被揭露。',
+      advice: '【偉特原著核心】逆位的「假心之家」（house of the false heart）——偉特以對比定義逆位，不真實的情感基礎必然帶來動盪與革命性的崩潰。'
+    }
   },
   {
     id: 37,
-    name: "聖杯二",
-    englishName: "Two of Cups",
-    number: "2",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["結合", "和諧", "吸引力", "夥伴關係", "互相信任"],
-    description: "一對男女面對面站立，共同舉起手中的聖杯。他們上方懸掛著雙蛇杖與有翼獅子頭，象徵著兩股能量的完美調和、平等的溝通與靈魂的吸引。",
+    name: '聖杯二',
+    englishName: 'Two of Cups',
+    number: '2',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一男一女相對而立，各自手持聖杯，共同舉杯。上方飄有赫密斯雙蛇杖（caduceus），頂部是獅子頭，象徵靈魂的結合與治癒的力量。',
+    keywords: ['愛', '激情', '友誼', '親和', '結合', '和諧', '共情'],
     upright: {
-      title: "正位：心靈契合與完美合作",
-      meaning: "這是一張代表「連結」與「和諧」的極佳吉牌。不論在感情、友誼還是商業合作上，都代表著平等互惠、彼此信任與深度契合的狀態。溝通極為順暢。",
-      love: "互許終身、彼此吸引且心靈相通的戀情。非常適合告白、求婚或化解之前的矛盾。",
-      career: "職場上遇到契合的合作夥伴或貴人，雙方合作愉快，合約簽署順利，能達成雙贏。",
-      advice: "珍惜眼前與你產生共鳴的人，用真誠與信任去維繫這段和諧的合作與感情關係。"
+      meaning: '【偉特原著·正位】\n原文：\'Love, passion, friendship, affinity, union, concord, sympathy, the interrelation of the sexes.\'\n\n直譯：愛、激情、友誼、親和、結合、和諧、共情、男女關係的相互聯繫。',
+      love: '【依原著關鍵詞】感情中充滿愛（love）、激情（passion）與深刻的親和（affinity），是男女之間最完美的相互聯繫（interrelation of the sexes），結合（union）與和諧（concord）。',
+      career: '【依原著關鍵詞】工作上建立友誼（friendship）與和諧（concord）的夥伴關係，共情（sympathy）與親和（affinity）帶來良好的合作基礎。',
+      advice: '【偉特原著核心】偉特列出「男女關係的相互聯繫」（interrelation of the sexes）——二號牌代表兩種能量的完美對應，這種聯繫本身即是一種神聖的治癒。'
     },
     reversed: {
-      title: "逆位：關係失衡、溝通不良、誤會或合作破裂",
-      meaning: "代表雙方的信任基礎出現動搖，產生了誤會、分歧或溝通障礙。關係失去了原本的平衡，可能面臨爭執、冷戰，甚至是夥伴關係的終止。",
-      love: "感情中出現猜忌、信任危機，或是因為小細節而冷戰。彼此缺乏足夠的情感交流。",
-      career: "合作協議進展不順，團隊內部產生嫌隙。小心合夥人之間出現利益分歧或溝通障礙。",
-      advice: "冷靜下來，找出讓彼此關係失衡的根本原因，誠實且不帶情緒地進行一次深度對話。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M25 50 C25 70, 45 70, 45 50 Z M25 50 L45 50 M35 70 L35 90 M25 90 H45" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M55 50 C55 70, 75 70, 75 50 Z M55 50 L75 50 M65 70 L65 90 M55 90 H75" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Passion.\'\n\n直譯：激情。',
+      love: '【依原著關鍵詞】感情中逆位僅剩「激情」（passion）——偉特極簡的逆位暗示，愛的完整性消失，只剩下純粹的肉體激情或單方面的熱情。',
+      career: '【依原著關鍵詞】工作上過度的熱情（passion）可能使關係失衡，缺乏理性的配合。',
+      advice: '【偉特原著核心】偉特逆位僅給一個詞——「激情」，這是塔羅中最簡潔的逆位說明，暗示正位的多元和諧在逆位中縮減為單一的原始衝動。'
+    }
   },
   {
     id: 38,
-    name: "聖杯三",
-    englishName: "Three of Cups",
-    number: "3",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["慶祝", "友情", "聚會", "分享喜悅", "豐盛"],
-    description: "三位女子在豐收的果園中共同舉杯，臉上洋溢著歡樂的笑容。她們圍成一圈，象徵著女性情誼的互助、歡樂的共享以及物質與情感的雙重豐盛。",
+    name: '聖杯三',
+    englishName: 'Three of Cups',
+    number: '3',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】三名女子在花果豐盛的地方共同舉杯慶祝，她們圍成圓形、翩翩起舞，各自手持聖杯，面帶喜悅，象徵友誼、節慶與共同的豐收。',
+    keywords: ['圓滿', '豐盛', '完美', '快樂', '勝利', '實現', '安慰', '治癒', '過度享樂'],
     upright: {
-      title: "正位：聚會狂歡與友情滋養",
-      meaning: "代表社交活動活躍、友情帶來的滋養與慶祝好消息的時刻。此時非常適合與志同道合的朋友聚會、分享喜悅。也代表某個合作項目取得了令人欣慰的成果。",
-      love: "感情生活充滿歡樂、輕鬆。可能在朋友聚會中發展出戀情。對於伴侶而言，代表關係獲得朋友圈的祝福。",
-      career: "工作氛圍融洽，團隊合作愉快，適合舉辦慶功宴。也代表業務推廣獲得了良好的口碑傳播。",
-      advice: "與你的朋友共同分享這份喜悅。在人際交往中保持慷慨與熱情，群體的支持是你的溫暖後盾。"
+      meaning: '【偉特原著·正位】\n原文：\'The conclusion of any matter in plenty, perfection and merriment; happy issue, victory, fulfilment, solace, healing.\'\n\n直譯：事物在豐盛中的圓滿結束、完美與歡愉；快樂的結果、勝利、實現、安慰、治癒。',
+      love: '【依原著關鍵詞】感情中事情在豐盛中圓滿結束（conclusion in plenty），帶來勝利（victory）與實現（fulfilment），是快樂的結果（happy issue），帶來治癒（healing）。',
+      career: '【依原著關鍵詞】工作上事務圓滿結束（conclusion），在豐盛（plenty）與完美（perfection）中達成目標，獲得勝利（victory）的實現（fulfilment）。',
+      advice: '【偉特原著核心】偉特的「治癒」（healing）——三號杯牌不只是慶祝，其深層意涵是完整性的恢復，在共同的喜悅中，傷口得以癒合。'
     },
     reversed: {
-      title: "逆位：過度縱慾、小團體排擠、八卦口舌或聚會延期",
-      meaning: "代表社交過度導致精力與金錢浪費（如宿醉、過度消費），或者面臨朋友間的小圈子排擠、流言蜚語與八卦糾紛。也可能暗示社交關係流於表面。",
-      love: "感情中要小心第三者的介入，或者因為過度熱衷於朋友聚會而冷落了伴侶，引發摩擦。",
-      career: "職場內部出現流言氛圍或勾心鬥角，小團體林立。工作效率因過度社交而受到影響。",
-      advice: "適度減少無效社交，遠離八卦是非圈。將精力重新聚焦於真正有意義的人際連結與工作中。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="30" cy="50" r="10" stroke="#dfb86c" stroke-width="1.5"/>
-      <circle cx="70" cy="50" r="10" stroke="#dfb86c" stroke-width="1.5"/>
-      <circle cx="50" cy="85" r="10" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Expedition, dispatch, achievement, end. Excess in physical enjoyment.\'\n\n直譯：迅速、快速完成、成就、終結。過度的肉體享樂。',
+      love: '【依原著關鍵詞】感情中迅速（expedition）地進展或結束（end），可能因過度的肉體享樂（excess in physical enjoyment）而失去深度。',
+      career: '【依原著關鍵詞】工作上快速完成（dispatch）與成就（achievement），但過度的享樂（excess）暗示慶祝過頭，可能影響後續工作的穩定性。',
+      advice: '【偉特原著核心】逆位的「過度肉體享樂」（excess in physical enjoyment）——慶祝本身無可厚非，但過度沉溺會使真實的成就蒙塵。'
+    }
   },
   {
     id: 39,
-    name: "聖杯四",
-    englishName: "Four of Cups",
-    number: "4",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["冷淡", "無視機會", "內省", "不滿足", "無聊"],
-    description: "男子雙手交叉坐在樹下，神情落寞。他前方擺著三個聖杯，但他對其視而不見；此時一隻手從雲端伸出，遞給他第四個聖杯，他依舊緊閉雙眼、無視眼前的機會。",
+    name: '聖杯四',
+    englishName: 'Four of Cups',
+    number: '4',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一名青年坐在樹下，雙臂交叉，沉思地凝視面前的三個聖杯。一隻神秘的手從雲中伸出，捧著第四個聖杯，但青年渾然不覺，陷入自己的思緒中。',
+    keywords: ['厭倦', '厭惡', '嫌惡', '想象中的苦惱', '混合的歡樂', '新奇', '預兆', '新指引', '新關係'],
     upright: {
-      title: "正位：心灰意冷與忽視眼前的機會",
-      meaning: "代表你目前對生活感到厭倦、不滿足或冷淡。你可能沉溺在過去的失望中，自我封閉，以至於對外界主動送上門的新機會、新好意完全視而不見。這是一聲警鐘，提醒你抬起頭看世界。",
-      love: "感情進入倦怠期，覺得現狀平淡無聊，對伴侶的付出感到麻木。單身者可能因為挑剔而拒絕桃花。",
-      career: "對工作失去熱情，感到職業倦怠、缺乏挑戰。忽視了身邊潛在的晉升或轉型機會。",
-      advice: "打開心扉，停止自我沉溺。換個視角，或許宇宙正把最適合你的拼圖送到你面前。"
+      meaning: '【偉特原著·正位】\n原文：\'Weariness, disgust, aversion, imaginary vexations; a card of blended pleasure.\'\n\n直譯：厭倦、厭惡、嫌惡、想象中的苦惱；混合的歡樂之牌。',
+      love: '【依原著關鍵詞】感情中的厭倦（weariness）與嫌惡（disgust）——對現有關係感到饜足，想象中的苦惱（imaginary vexations）蒙蔽了真實的幸福，是「混合的歡樂」。',
+      career: '【依原著關鍵詞】工作上厭倦（weariness）現狀，對工作感到嫌惡（disgust），但苦惱可能是想象（imaginary vexations）而非真實，仍有混合的歡樂（blended pleasure）存在。',
+      advice: '【偉特原著核心】偉特的「想象中的苦惱」（imaginary vexations）——四號杯提醒，不滿往往來自內心的投射而非真實的狀況，雲中的第四個聖杯被忽視了。'
     },
     reversed: {
-      title: "逆位：重新出發、打開心扉、接受機會或走出低谷",
-      meaning: "代表你終於決定告別消極與冷淡，重新打開心扉接納世界。你開始注意到了身邊的機會，願意採取行動、與人連結，生活重新注入了活力。",
-      love: "走出感情的陰霾或倦怠期，願意主動修補關係；單身者開始調整心態，準備好迎接新戀情。",
-      career: "重拾工作熱情，主動尋求突破與新企劃。願意接受挑戰，職涯出現新的轉機。",
-      advice: "勇敢跨出自我封閉的壁壘，積極地迎向外界的善意與機會，新的旅程正要開始。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30 80 H70 M30 95 H70" stroke="#dfb86c" stroke-width="1.5"/>
-      <circle cx="50" cy="50" r="10" stroke="#dfb86c" stroke-dasharray="3 3"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Novelty, presage, new instruction, new relations.\'\n\n直譯：新奇、預兆、新的指引、新的關係。',
+      love: '【依原著關鍵詞】感情中帶來新奇（novelty）的關係（new relations），預兆（presage）指向新的情感方向，厭倦感消散，重新對愛充滿興趣。',
+      career: '【依原著關鍵詞】工作上獲得新的指引（new instruction）與新的關係（new relations），新奇（novelty）打破了停滯，帶來預兆（presage）性的轉機。',
+      advice: '【偉特原著核心】逆位的「新奇」（novelty）——從厭倦中覺醒，新的指引到來，雲中的聖杯終於被看見並接受。'
+    }
   },
   {
     id: 40,
-    name: "聖杯五",
-    englishName: "Five of Cups",
-    number: "5",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["失望", "悲傷", "專注失去", "後悔", "希望長存"],
-    description: "一個身披黑斗篷的男子低頭哀悼地上三個傾倒的聖杯，紅綠色的液體流出。但他身後其實還立著兩個完好的聖杯，遠處有通往城堡的橋樑。只要他轉過身，就能看見希望。",
+    name: '聖杯五',
+    englishName: 'Five of Cups',
+    number: '5',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一名黑袍男子低頭哀悼，面前有三個倒下的聖杯（液體流出），身後有兩個仍然完好直立的聖杯。遠方有橋梁與城堡。他只看見失去，未見身後尚存的。',
+    keywords: ['損失', '剩餘', '遺產', '傳承', '婚姻', '苦澀', '消息', '聯盟', '回歸', '錯誤計劃'],
     upright: {
-      title: "正位：沉溺悲傷與忽視擁有的希望",
-      meaning: "這是一張代表失望與悲傷的牌。你可能剛剛遭遇了挫折、分手或損失，此時正無比痛心，只看著失去的部分（傾倒的三杯）。但聖杯五告訴你：希望並未完全幻滅，轉過身，你身後還有寶貴的資產（立起的兩杯）與出路。",
-      love: "感情面臨破裂、失戀或嚴重的失望。你正沉浸在後悔與悲傷中，忽視了身邊其他關心你的人。",
-      career: "專案失敗、合夥破裂或投資蒙受損失。此時不宜怨天尤人，應理性評估剩下的資源與出路。",
-      advice: "允許自己悲傷，但也請別忘了擦乾眼淚、轉身看看。你並沒有一無所有，希望依然長存。"
+      meaning: '【偉特原著·正位】\n原文：\'Loss, but something remains over; three have been taken, but two are left; inheritance, patrimony, transmission, but not corresponding to expectations; possibly marriage, but not without bitterness or frustration.\'\n\n直譯：損失，但有所剩餘；三個被取走，但兩個尚留；遺產、祖業、傳承，但不符合期望；可能是婚姻，但不乏苦澀或挫折。',
+      love: '【依原著關鍵詞】偉特明確指出「可能是婚姻，但不乏苦澀或挫折」——感情中損失（loss）依然存在，但身後尚有兩個聖杯（something remains），不應只看見失去。',
+      career: '【依原著關鍵詞】工作上遺產（inheritance）或傳承（transmission）不如期望（not corresponding to expectations），損失真實存在，但尚有剩餘（something remains over）可把握。',
+      advice: '【偉特原著核心】偉特的「三個被取，兩個尚留」——五號杯的核心教導是：悲傷是真實的，但尚存的美好同樣真實，轉身看見剩餘才能前進。'
     },
     reversed: {
-      title: "逆位：走出悲傷、釋懷、直面未來或復合",
-      meaning: "代表最痛苦的黑暗期已經過去。你開始原諒自己與他人，放下過去的包袱，轉過身接納剩下的兩杯，並準備踏上通往未來的橋樑。有時也代表關係的修復或破鏡重圓。",
-      love: "告別失戀的陰影，心靈得到療癒，準備重新投入社交；或者是與伴侶冰釋前嫌、達成復合。",
-      career: "從失敗的陰影中走出來，總結教訓，利用剩餘的資源重振旗鼓。工作狀態逐漸回歸正軌。",
-      advice: "勇敢地對過去告別，大步向前邁進。廢墟中長出的新芽往往更加堅韌。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30 60 L45 80 M55 80 L70 60" stroke="#dfb86c" stroke-width="2"/>
-      <circle cx="50" cy="110" r="10" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'News, alliances, affinity, affiliation, ancestry, return, false projects.\'\n\n直譯：消息、聯盟、親和、歸屬、祖源、回歸、錯誤的計劃。',
+      love: '【依原著關鍵詞】感情中帶來回歸（return）與新的聯盟（alliances），親和（affinity）重建，但需警惕錯誤的計劃（false projects）。',
+      career: '【依原著關鍵詞】工作上帶來消息（news）與新的聯盟（alliances），歸屬感（affiliation）重建，但錯誤的計劃（false projects）可能帶來新的損失。',
+      advice: '【偉特原著核心】逆位的「錯誤的計劃」（false projects）——從悲傷中回歸是好事，但在重建時需辨別哪些計劃是真實可行的，哪些是逃避的幻覺。'
+    }
   },
   {
     id: 41,
-    name: "聖杯六",
-    englishName: "Six of Cups",
-    number: "6",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["懷舊", "童年", "無私的愛", "安全感", "溫馨重逢"],
-    description: "在古老莊園的背景下，一個年長的男孩將裝滿白花的聖杯溫柔地遞給年幼的小女孩。四周擺放著另外五個盛滿鮮花的聖杯，洋溢著純真、溫馨與懷舊的氣息。",
+    name: '聖杯六',
+    englishName: 'Six of Cups',
+    number: '6',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一名男孩將一個裝滿白花的聖杯遞給一個小女孩，他們在花園中，周圍有五個也裝滿白花的聖杯。背景有老人走遠，象徵過去的美好記憶。',
+    keywords: ['過去', '記憶', '童年', '幸福', '享樂', '消逝的事物', '未來', '更新', '即將發生'],
     upright: {
-      title: "正位：無私的饋贈與溫馨懷舊",
-      meaning: "代表純真、無私的愛、安全感以及童年回憶的溫暖。你此時可能會收到來自他人的善意幫助、精緻禮物，或者與老朋友、舊情人溫馨重逢。這張牌鼓勵你用最純真、無防備的心去關懷他人。",
-      love: "充滿安全感、互相滋養且純真無邪的戀情。有時代表與舊愛復合，或是青梅竹馬般的感情連結。",
-      career: "工作環境溫馨，同事間互相幫助，毫無利害算計。也代表適合回到熟悉的領域發展或與老客戶重整合作。",
-      advice: "像個孩子一樣保持善良與慷慨。主動向需要幫助的人伸出援手，傳遞溫暖的能量。"
+      meaning: '【偉特原著·正位】\n原文：\'A card of the past and of memories, looking back on childhood; happiness, enjoyment, but coming rather from the past; things that have vanished.\'\n\n直譯：過去與記憶之牌，回望童年；幸福、享樂，但更多來自過去；已消逝之物。',
+      love: '【依原著關鍵詞】感情中的幸福（happiness）更多來自過去（the past）的記憶（memories），可能是舊情人的重現，或以童年（childhood）的純真眼光看待愛情。',
+      career: '【依原著關鍵詞】工作上的動力來自過去的美好經驗（memories），享樂（enjoyment）的感覺回歸，但需注意不要過度沉溺於已消逝的事物（things that have vanished）。',
+      advice: '【偉特原著核心】偉特的「已消逝之物」（things that have vanished）——六號杯是回憶的牌，美好的過去值得珍視，但不應因此無法向前。'
     },
     reversed: {
-      title: "逆位：沉溺過去、抗拒長大、告別童年或展望未來",
-      meaning: "代表你過度「活在過去」的陰影或光環中，拒絕面對現實的責任與改變。在積極方面，代表你終於決定打破懷舊的執著，告別過去，勇敢迎向未來的現實挑戰。",
-      love: "感情中總是拿現任與前任比較，或是沉溺在過去的回憶中原地踏步。你需要學會活在當下。",
-      career: "工作觀念守舊，抗拒學習新技術或新架構。需要打破舒適圈，適應現代的職場節奏。",
-      advice: "過去的溫暖是你的基石，而不是束縛你的圍牆。大步跨出回憶，創造全新的當下。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="50" cy="50" r="15" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M45 40 L55 60 M55 40 L45 60" stroke="#dfb86c" stroke-width="1"/>
-      <path d="M30 110 H70" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'The future, renewal, that which will come to pass presently.\'\n\n直譯：未來、更新、即將發生之事。',
+      love: '【依原著關鍵詞】感情中轉向未來（the future），更新（renewal）帶來新的可能，即將發生的事（that which will come to pass presently）令人期待。',
+      career: '【依原著關鍵詞】工作上目光轉向未來（the future），更新（renewal）的能量到來，即將發生的變化（that which will come to pass presently）帶來新的機遇。',
+      advice: '【偉特原著核心】逆位的「未來與更新」——正位回望過去，逆位轉向未來，這是有趣的翻轉，提醒放下記憶，擁抱即將到來的新事物。'
+    }
   },
   {
     id: 42,
-    name: "聖杯七",
-    englishName: "Seven of Cups",
-    number: "7",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["幻象", "選擇過多", "白日夢", "誘惑", "不切實際"],
-    description: "男子面對漂浮在雲端的七個聖杯，杯中分別裝著城堡、珠寶、花環、惡魔、龍、靈魂與蛇。他被眼前的種種幻象與選擇弄得眼花繚亂、不知所措。",
+    name: '聖杯七',
+    englishName: 'Seven of Cups',
+    number: '7',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一個人的黑色剪影仰望雲中漂浮的七個聖杯，每個杯中盛有不同的幻象：城堡、寶石、月桂花環、女人、蛇、龍、人頭。所有幻象皆不真實，浮現在雲霧之中。',
+    keywords: ['仙境的恩賜', '反射的意象', '情感', '想象', '短暫', '不持久', '願望', '意志', '決心', '計劃'],
     upright: {
-      title: "正位：選擇繁多與虛無的幻象",
-      meaning: "代表你正面臨許多誘人的機會或選擇，但它們大多只是空中樓閣（白日夢）。你容易被表象的華麗所獲得，產生不切實際的幻想。此時必須回歸理性，撥開迷霧，看清本質再做決定。",
-      love: "感情中充滿了浪漫的幻想或不切實際的期待，容易陷入多角曖昧、挑花眼的狀態。需防範虛情假意。",
-      career: "工作上面臨很多看似美好的合作邀約或投資管道，但多數缺乏可行性。切忌好大喜功、眼高手低。",
-      advice: "把腳踏回實地。從眾多幻想中挑選一個最具可行性的目標，腳踏實地地執行，否則將流於空談。"
+      meaning: '【偉特原著·正位】\n原文：\'Fairy favours, images of reflection, sentiment, imagination, things seen in the glass of contemplation; some attainment in these degrees, but nothing permanent or substantial.\'\n\n直譯：仙境的恩賜、反射的意象、情感、想象、在沉思之鏡中看見的事物；在這些層面有所成就，但無一持久或實質。',
+      love: '【依原著關鍵詞】感情中充滿想象（imagination）與情感（sentiment），如「沉思之鏡中的意象」——七個幻象中的愛不真實，有一定的成就（some attainment）但不持久（nothing permanent）。',
+      career: '【依原著關鍵詞】工作上充滿幻想（imagination）的計劃，有所成就（some attainment）但缺乏實質（nothing substantial），「仙境的恩賜」難以在現實世界中穩固。',
+      advice: '【偉特原著核心】偉特的「無一持久或實質」——七號杯的核心警示是：所有看似迷人的選擇都只是幻象，需分辨哪些是真實可行的，哪些只是情感的投射。'
     },
     reversed: {
-      title: "逆位：看清現實、撥雲見日、做出明智選擇",
-      meaning: "代表幻象破滅，朧朦的霧氣褪去。你終於看清了現實的真貌，不再被虛榮與誘惑牽著鼻子走，並能基於務實的態度做出明確且正確的抉擇。",
-      love: "對感情的幻想清醒過來，看清伴侶的真實面貌並做出理智決定。告別曖昧不清的多角關係。",
-      career: "理清紛亂的業務方向，排除不可行的方案。做決定時更具務實精神，專案重回正軌。",
-      advice: "接受真實的現實，即使它沒有幻想中那般完美。專注於你能真正掌控的事務上。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="20" cy="40" r="8" stroke="#dfb86c" opacity="0.5"/>
-      <circle cx="50" cy="30" r="8" stroke="#dfb86c" opacity="0.5"/>
-      <circle cx="80" cy="40" r="8" stroke="#dfb86c" opacity="0.5"/>
-      <circle cx="35" cy="70" r="8" stroke="#dfb86c" opacity="0.5"/>
-      <circle cx="65" cy="70" r="8" stroke="#dfb86c" opacity="0.5"/>
-      <circle cx="50" cy="110" r="10" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Desire, will, determination, project.\'\n\n直譯：願望、意志、決心、計劃。',
+      love: '【依原著關鍵詞】感情中從幻象（七個杯）中清醒，展現清晰的意志（will）與決心（determination），將願望（desire）化為具體的計劃（project）。',
+      career: '【依原著關鍵詞】工作上從空洞的幻想中回歸，以意志（will）與決心（determination）推進具體的計劃（project），願望（desire）化為行動。',
+      advice: '【偉特原著核心】逆位的「決心」（determination）——從幻象的迷霧中走出，清醒地選擇一個方向並付諸行動，這正是七號杯的超越之道。'
+    }
   },
   {
     id: 43,
-    name: "聖杯八",
-    englishName: "Eight of Cups",
-    number: "8",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["追尋", "主動放棄", "心靈之旅", "尋求真理", "告別舊局"],
-    description: "在明月當空的夜色下，男子手持拐杖，轉身背對前方排列整齊的八個聖杯，走向險峻的山脈。他選擇放棄眼前已有的物質或情感滿足，獨自踏上追尋更高心靈真理的旅程。",
+    name: '聖杯八',
+    englishName: 'Eight of Cups',
+    number: '8',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一名男子在月夜下離去，背對八個整齊排列的聖杯（顯示中間有一個空缺），他轉向左方朝山地走去。月亮表情憂鬱，帶有蝕缺。整個畫面充滿離棄與尋找的氛圍。',
+    keywords: ['事情的衰退', '輕描淡寫', '喜悅', '溫和', '膽怯', '榮譽', '謙遜', '偉大的喜悅', '宴饗'],
     upright: {
-      title: "正位：轉身離去與追尋心靈的圓滿",
-      meaning: "代表一種「主動的離去」。雖然現有的局面（工作、感情）看似不錯，但你的內心深處感到不再被滋養。這張牌鼓勵你鼓起勇氣，放棄不再適合你心靈成長的舊結構，踏上尋求更深層精神意義的旅程。",
-      love: "決定離開一段平淡、不再有共鳴或無法滋養你靈魂的感情。雖然有些不捨，但這是主動的抉擇。",
-      career: "主動離職、跳槽或放棄手邊已有的成就，轉向更有心靈滿足感或符合真實志趣的全新領域。",
-      advice: "聽從你內心的呼喚。如果眼前的杯子已經無法裝載你的熱情，勇敢轉身，去尋找你的聖山。"
+      meaning: '【偉特原著·正位】\n原文：\'The decline of a matter, or that a matter which has been thought important is really of slight consequence; also joy, mildness, timidity, honour, modesty.\'\n\n直譯：事情的衰退，或一件被認為重要的事實際上無關緊要；亦指喜悅、溫和、膽怯、榮譽、謙遜。',
+      love: '【依原著關鍵詞】感情中的衰退（decline），或原本以為重要的關係實際上無關緊要（slight consequence）；但偉特也列出「喜悅、榮譽、謙遜」——離去可能是平靜而有尊嚴的。',
+      career: '【依原著關鍵詞】工作上事情的衰退（decline），看似重要的項目實際輕如鴻毛（slight consequence），以溫和（mildness）與謙遜（modesty）面對轉變。',
+      advice: '【偉特原著核心】偉特的矛盾並置——「衰退」與「喜悅、榮譽」同時出現，提醒有些離去是正確的，放下不值得的並非失敗，而是誠實的榮耀。'
     },
     reversed: {
-      title: "逆位：拒絕放手、留戀現狀、害怕改變或重回舊路",
-      meaning: "代表你明知目前的環境已無法滋養你，卻因為害怕未知的冒險與恐懼，選擇繼續留下來、委曲求全。你也可能在轉身出走後，因為挫折而重新回到舊有的生活模式中。",
-      love: "感情名存實亡，但因為恐懼孤獨或依賴物質，遲遲不敢提出分手，關係卡在痛苦的停滯中。",
-      career: "工作毫無前景與熱情，但因為貪圖穩定的薪水而抗拒轉型，日復一日地消耗自我能量。",
-      advice: "恐懼是阻礙你成長的唯一樊籬。相信自己的力量，當斷則斷，別讓一時的求穩耽誤了靈魂的開拓。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 110 H85 M40 110 L50 80 L60 110" stroke="#dfb86c" stroke-width="1.5"/>
-      <circle cx="50" cy="40" r="12" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M43 40 Q50 48 57 40" stroke="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Great joy, happiness, feasting.\'\n\n直譯：極大的喜悅、幸福、宴饗。',
+      love: '【依原著關鍵詞】感情中帶來極大的喜悅（great joy）與幸福（happiness），是慶祝與宴饗（feasting）的時刻，情感的飽足令人歡欣。',
+      career: '【依原著關鍵詞】工作上帶來極大的喜悅（great joy）與慶祝（feasting），幸福（happiness）來自工作的成果，是豐盛的時刻。',
+      advice: '【偉特原著核心】逆位的「極大的喜悅」（great joy）——正位的衰退與離去，逆位轉化為盛大的歡慶，這種翻轉提醒：有時告別後反而迎來真正的喜悅。'
+    }
   },
   {
     id: 44,
-    name: "聖杯九",
-    englishName: "Nine of Cups",
-    number: "9",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["願望實現", "滿足", "享樂", "物質豐盛", "得意自滿"],
-    description: "一名商人裝扮的男子雙手抱胸，滿面笑容地端坐在椅子上。他身後的拱形架子上整齊排列著九個聖杯，象徵著他的所有願望皆已達成，正自滿地享受著豐盛的成果。",
+    name: '聖杯九',
+    englishName: 'Nine of Cups',
+    number: '9',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一名胖乎乎的男子滿意地坐在中央，身後的半弧形架子上整齊陳列九個聖杯。他雙臂交叉，面帶自得其樂的笑容，象徵物質與感官的完全滿足。',
+    keywords: ['和諧', '滿足', '肉體的舒適', '勝利', '成功', '優勢', '滿足感', '真理', '忠誠', '自由'],
     upright: {
-      title: "正位：心想事成與自滿得意",
-      meaning: "這張牌被稱為塔羅牌中的「許願牌」。代表你的願望即將實現，精神與物質層面都獲得了極大的滿足。你充滿自信，享受美食、舒適的生活與感官的快樂。但也要小心別流於自負。",
-      love: "令人滿足、甜蜜且充滿快樂的感情。單身者有望結識符合心意、讓你感到無比自豪的對象。",
-      career: "專案大獲成功，財務收益豐厚。你的專業能力獲得極大的肯定，處於事業的黃金期。",
-      advice: "盡情享受這個豐收的時刻，感謝宇宙的眷顧。同時保持慷慨，與他人分享你的喜悅與幸運。"
+      meaning: '【偉特原著·正位】\n原文：\'Concord, contentment, physical bien-être; also victory, success, advantage; satisfaction for the Querent.\'\n\n直譯：和諧、滿足、肉體的舒適；亦指勝利、成功、優勢；對問事者的滿足。',
+      love: '【依原著關鍵詞】感情中帶來和諧（concord）與滿足（contentment），肉體與情感的舒適（physical bien-être）俱全，是問事者在感情上獲得的滿足（satisfaction for the Querent）。',
+      career: '【依原著關鍵詞】工作上勝利（victory）、成功（success）與優勢（advantage）集於一身，問事者獲得應有的滿足（satisfaction），是愿望實現之牌。',
+      advice: '【偉特原著核心】「對問事者的滿足」（satisfaction for the Querent）——九號杯被稱為「愿望之牌」，此時的滿足是真實而全面的，珍視並感恩這份圓滿。'
     },
     reversed: {
-      title: "逆位：物質滿足但內心空虛、虛榮、過度沉溺",
-      meaning: "代表雖然外在的物質或名利都已得到，但你的內心深處依然感到空虛、不滿足。也警告你避免暴飲暴食、過度縱慾、花費無度，或因為自滿而招致他人反感。",
-      love: "表面上看似幸福，實則缺乏深度的情感共鳴；或者伴侶間有一方過於自我中心、虛榮自大。",
-      career: "專案達標但沒有帶來預期的成就感。要注意避免在取得成功後流於傲慢，招惹小人嫉妒。",
-      advice: "回歸內心的真實需求。物質的奢華無法填補精神的空缺，尋求更具靈魂深度的連結與成長。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 50 C20 40, 80 40, 80 50 C80 90, 20 90, 20 50" stroke="#dfb86c" stroke-width="2" fill="none"/>
-      <rect x="35" y="85" width="30" height="35" rx="3" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Truth, loyalty, liberty; but the readings vary and include mistakes, imperfections.\'\n\n直譯：真理、忠誠、自由；但解讀有分歧，包括錯誤、不完美。',
+      love: '【依原著關鍵詞】感情中真理（truth）與忠誠（loyalty）浮現，但偉特注明「解讀有分歧」——可能是真實的自由（liberty），也可能是錯誤（mistakes）與不完美（imperfections）。',
+      career: '【依原著關鍵詞】工作上真理（truth）得到彰顯，但需注意錯誤（mistakes）與不完美（imperfections），解讀視具體情況而定。',
+      advice: '【偉特原著核心】偉特罕見地在逆位中給出分歧的解讀——「解讀有分歧」（readings vary）提醒占卜者需結合整體牌陣，不可單獨以逆位定論。'
+    }
   },
   {
     id: 45,
-    name: "聖杯十",
-    englishName: "Ten of Cups",
-    number: "10",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["家庭圓滿", "終極幸福", "愛與和諧", "情感歸宿", "和平"],
-    description: "彩虹橫跨晴朗的天空，上面排列著十個閃耀的聖杯。地面上一對恩愛的夫妻張開雙手，身旁兩個孩童快樂地起舞，遠處是綠意盎然的家園，象徵著情感的終極圓滿與家庭的和諧。",
+    name: '聖杯十',
+    englishName: 'Ten of Cups',
+    number: '10',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一對夫婦攜手站立，望向遠處彩虹般的十個聖杯弧形（在天空中顯現），兩個孩子在旁歡舞。背景是美麗的鄉間與河流。整個圖像充滿家庭幸福的圓滿。',
+    keywords: ['滿足', '整個心靈的平靜', '人類愛與友誼的完美', '城鄉', '暴力', '憤慨', '不誠實'],
     upright: {
-      title: "正位：闔家團圓與終極情感歸宿",
-      meaning: "這是大阿爾克那與小阿爾克那中最代表「情感圓滿」的牌。象徵著純潔的愛、家庭的和諧、人際關係的和樂與靈魂的平靜。你身邊充滿了溫暖的愛意，迎來和平與幸福的頂峰。",
-      love: "美滿、恩愛且獲得所有人祝福的婚姻與伴侶關係。彼此坦誠相對，是靈魂與家庭的雙重圓滿。",
-      career: "工作氛圍像大家庭般溫馨融洽，團隊默契極佳。適合從事與家庭、美滿生活或社群福利相關的項目。",
-      advice: "珍惜你身邊的家人與伴侶，慷慨地表達你的愛。在和諧的關係中汲取前行的無限能量。"
+      meaning: '【偉特原著·正位】\n原文：\'Contentment, repose of the entire heart; the perfection of that state; also perfection of human love and friendship; also the town, the country, or the province inhabited by the Querent.\'\n\n直譯：滿足、整個心靈的平靜；該狀態的完美；亦指人類愛與友誼的完美；亦指問事者居住的城鎮、鄉村或省份。',
+      love: '【依原著關鍵詞】感情中達到人類愛與友誼的完美（perfection of human love and friendship），整個心靈的平靜（repose of the entire heart），是情感圓滿的最高點。',
+      career: '【依原著關鍵詞】工作上帶來整體的滿足（contentment）與平靜，問事者在所居之地（town, country, province）建立了圓滿的生活基礎。',
+      advice: '【偉特原著核心】「整個心靈的平靜」（repose of the entire heart）——十號杯是聖杯組的終點，代表情感與家庭生活的最高圓滿，珍視這份真實的幸福。'
     },
     reversed: {
-      title: "逆位：家庭摩擦、人際失和、美夢破滅或價值觀分歧",
-      meaning: "代表和諧的表面下出現了裂痕。家庭內部可能發生爭吵，價值觀產生分歧，或者人際關係中出現了不和睦的雜音。你感到心靈的平靜受到了干擾。",
-      love: "關係出現小摩擦或溝通冷淡。雙方對「幸福」的定義產生分歧，家庭氛圍顯得有些緊張。",
-      career: "團隊內部溝通出現障礙，工作氛圍冷淡、缺乏互信。需要花精力去協調內部的人際糾紛。",
-      advice: "主動去修補裂痕。放下爭執，多站在家人的角度換位思考，愛與包容是唯一的解藥。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 80 Q50 30 85 80" stroke="#dfb86c" stroke-width="3" fill="none" stroke-linecap="round"/>
-      <circle cx="50" cy="55" r="8" fill="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Repose of the false heart, indignation, violence.\'\n\n直譯：假心的平靜、憤慨、暴力。',
+      love: '【依原著關鍵詞】感情中是「假心的平靜」（repose of the false heart），表面的和諧掩蓋憤慨（indignation）與暴力（violence），幸福的外表下充滿不誠實。',
+      career: '【依原著關鍵詞】工作上表面的滿足是「假心的平靜」，內在的憤慨（indignation）與潛在的暴力（violence）正在積累，需防衝突爆發。',
+      advice: '【偉特原著核心】逆位的「假心的平靜」對應正位的「整個心靈的平靜」——相同的字詞加上「假心」，揭示虛假的圓滿終究難以持久。'
+    }
   },
   {
     id: 46,
-    name: "聖杯侍從",
-    englishName: "Page of Cups",
-    number: "Page",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["感性", "直覺", "新消息", "藝術創意", "情感萌芽"],
-    description: "年輕的侍從身穿繪滿百合花長袍，手持聖杯，一隻小魚從杯中探出頭來看著他。他神情溫柔、好奇，背後是波浪起伏的海洋，代表著直覺與情感的萌芽。",
+    name: '聖杯侍衛',
+    englishName: 'Page of Cups',
+    number: 'Page',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一名身著花紋上衣的年輕人，手持一個聖杯，杯中伸出一條魚（魚正在看著他，他也看著魚）。他站在海邊，神情專注而略帶驚奇，象徵直覺的信息來自潛意識。',
+    keywords: ['膚色白淨', '研習', '消息', '申請', '反思', '冥想', '趣味', '依戀', '誘惑', '欺騙'],
     upright: {
-      title: "正位：敏感直覺與藝術靈感的誕生",
-      meaning: "代表一位感性、溫柔、充滿直覺與藝術天賦的年輕人。也預示著你即將收到與情感、婚禮、懷孕相關的好消息，或是靈魂深處萌發了新的創意點子。請相信你的直覺與夢境。",
-      love: "一段溫柔、浪漫且充滿心靈交流的戀情。單身者可能遇到溫柔體貼、具藝術氣息的對象。",
-      career: "工作中展現出優秀的直覺與美感。非常適合從事藝術設計、寫作或心理諮商，創意靈感源源不絕。",
-      advice: "傾聽你內心的聲音與直覺，多做夢與創作，用最純真的感性去體會生命的美好。"
+      meaning: '【偉特原著·正位】\n原文：\'Fair, pleasing, somewhat effeminate youth, of studious and intent aspect; news, message; application, reflection, meditation; also directed to business.\'\n\n直譯：白淨、討喜、略帶陰柔的年輕人，神情認真而專注；消息、信息；申請、反思、冥想；亦指導向商業。',
+      love: '【依原著關鍵詞】感情中代表白淨討喜（fair, pleasing）且略帶陰柔（effeminate）的年輕人，帶來消息（news）與信息（message），反思（reflection）與冥想（meditation）深化情感。',
+      career: '【依原著關鍵詞】工作上帶來消息（news）與申請（application），以反思（reflection）與冥想（meditation）為工作方式，亦涉及商業（business）。',
+      advice: '【偉特原著核心】偉特的「認真而專注的神情」（studious and intent aspect）——聖杯侍衛的信息來自直覺的深處，需以冥想與反思接收。'
     },
     reversed: {
-      title: "逆位：情感氾濫、逃避現實、玻璃心、誘惑或創意受阻",
-      meaning: "代表你過於敏感、情緒化，容易受傷（玻璃心），或者沉溺於幻想中、逃避現實的責任。有時也代表你的創造力遭到阻滯，或在感情中表現得不夠成熟。",
-      love: "感情中過於依賴、作鬧，或是情緒起伏大給對方造成沉重壓力。小心遇到甜言蜜語的誘惑。",
-      career: "工作效率因情緒化受到影響，缺乏務實的執行力。需要注意克制職場上的玻璃心心態。",
-      advice: "學會為你的感性與直覺拉起理性的防線。正視現實問題，不要在情緒泛濫時做重大決定。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M35 80 C35 95, 65 95, 65 80 Z" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <circle cx="50" cy="50" r="10" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M47 50 C47 55, 53 55, 53 50" stroke="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Taste, inclination, attachment, seduction, deception, artifice.\'\n\n直譯：品味、傾向、依戀、誘惑、欺騙、人為手段。',
+      love: '【依原著關鍵詞】感情中的依戀（attachment）化為誘惑（seduction）與欺騙（deception），人為手段（artifice）取代了真誠的溝通，需警惕操縱性的魅力。',
+      career: '【依原著關鍵詞】工作上的品味（taste）與傾向（inclination）可能淪為欺騙（deception）與人為手段（artifice），需辨別真誠與操縱。',
+      advice: '【偉特原著核心】逆位的「欺騙與人為手段」——直覺的信使在逆位中化為誘惑與欺騙，美麗的表面下可能是精心設計的操縱。'
+    }
   },
   {
     id: 47,
-    name: "聖杯騎士",
-    englishName: "Knight of Cups",
-    number: "Knight",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["白馬王子", "浪漫", "邀請", "直覺", "尋求共鳴"],
-    description: "騎士身穿繪有紅色魚圖案的斗篷，胯下的白馬正優雅、緩慢地前行。他雙手捧著聖杯，神情深情且專注，象徵著浪漫的邀請、心靈的信使與溫柔的情感承諾。",
+    name: '聖杯騎士',
+    englishName: 'Knight of Cups',
+    number: 'Knight',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一名騎士騎著白馬緩慢前進，手持一個聖杯，神情溫柔而帶有詩意。他的頭盔與靴子上有翅膀，盔甲上有魚的圖案。白馬步伐優雅，整個畫面充滿浪漫主義的氣息。',
+    keywords: ['到來', '接近', '使者', '提案', '態度', '邀請', '詭計', '詐騙', '欺詐', '重複'],
     upright: {
-      title: "正位：浪漫的邀請與心靈的共鳴",
-      meaning: "代表一位溫柔、體貼、充滿浪漫情懷與藝術家氣質的開拓者（白馬王子）。也預示著你即將收到某個令人欣喜的情感邀請（如約會、表白、聚會）或是一次深入心靈的對話機會。",
-      love: "極具儀式感、充滿詩意與溫柔呵護的戀情。彼此精神契合度極高，非常適合表白或加深感情。",
-      career: "職場上面臨新合約的邀請或良性的合作談判。你的親和力與談判技巧將是取得成功的關鍵。",
-      advice: "大方地接受外界的邀請與好意，用真誠與溫柔去打動你身邊的人，相信愛的力量。"
+      meaning: '【偉特原著·正位】\n原文：\'Arrival, approach—sometimes that of a messenger; advances, proposition, demeanour, invitation, incitement.\'\n\n直譯：到來、接近——有時是使者的到來；進展、提案、態度、邀請、誘發。',
+      love: '【依原著關鍵詞】感情中充滿浪漫的到來（arrival）與邀請（invitation），提案（proposition）充滿詩意，態度（demeanour）溫柔，是感情中的美好進展（advances）。',
+      career: '【依原著關鍵詞】工作上迎來到來（arrival）與進展（advances），提案（proposition）帶來新機遇，邀請（invitation）打開新的大門。',
+      advice: '【偉特原著核心】偉特的「誘發」（incitement）——聖杯騎士不只是浪漫，他的到來會激發行動與情感，需辨別這股誘發力量的真實動機。'
     },
     reversed: {
-      title: "逆位：不切實際、情感騙子、情緒化或承諾落空",
-      meaning: "代表一位甜言蜜語但缺乏責任感的情感逃避者（小心情感騙子）。也可能象徵你目前過於情緒化、反覆無常，或者你的期待過高，導致收到的邀請最終落空。",
-      love: "感情中充滿了甜言蜜語的虛假承諾，或是對方忽冷忽熱、不願承擔責任。注意防範情感操弄。",
-      career: "工作談判卡關，合作協議雷聲大雨點小，缺乏實質的落地執行。防範不切實際的商業誘惑。",
-      advice: "聽其言觀其行。在投入情感或簽署協議前，用理性去權衡對方的真實誠信度，切忌被表象迷惑。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30 60 C30 80, 70 80, 70 60 Z M50 80 L50 110 M35 110 H65" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <path d="M50 25 L35 45 H65 Z" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Trickery, artifice, subtlety, swindling, duplicity, fraud.\'\n\n直譯：詭計、人為手段、機敏（狡猾）、欺詐、欺騙（兩面性）、詐騙。',
+      love: '【依原著關鍵詞】感情中的浪漫接近變為詭計（trickery）與欺騙（duplicity），詐騙（swindling）與詐騙（fraud）的警示——浪漫騎士的逆位是最危險的操縱者。',
+      career: '【依原著關鍵詞】工作上出現詭計（trickery）與詐騙（fraud），機敏（subtlety）化為狡猾，欺騙（duplicity）使合作關係破裂。',
+      advice: '【偉特原著核心】逆位的「欺騙與詐騙」——浪漫的外表下是最精密的詐騙，聖杯騎士逆位是偉特整副牌中最明確的欺騙警示。'
+    }
   },
   {
     id: 48,
-    name: "聖杯皇后",
-    englishName: "Queen of Cups",
-    number: "Queen",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["同理心", "直覺敏銳", "溫柔慈悲", "潛意識天后", "傾聽者"],
-    description: "皇后坐在海邊的寶座上，神情溫柔專注地端詳著手中緊閉的精美聖杯。她身後是平靜無波的海洋，腳踏彩色的鵝卵石，代表著卓越的同理心、深不可測的直覺與陰性治癒力。",
+    name: '聖杯王后',
+    englishName: 'Queen of Cups',
+    number: 'Queen',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一名白皙美麗的女王坐在海邊寶座上，手捧一個精緻的封閉式聖杯（與其他牌的開放聖杯不同），她凝視著它，神情充滿夢幻的洞察。寶座上有人魚與貝殼裝飾。',
+    keywords: ['善良', '白淨', '誠實', '奉獻', '視覺的天賦', '成功', '幸福', '智慧', '美德', '邪惡', '腐敗'],
     upright: {
-      title: "正位：卓越的直覺與溫柔的治癒力量",
-      meaning: "代表一位極具同理心、溫柔、慈悲且直覺無比敏銳的女性形象。她是一位極佳的傾聽者，能洞察他人潛意識的悲喜。這張牌鼓勵你傾聽內在直覺，用愛與關懷去治癒自己與身邊的人。",
-      love: "充滿包容、體貼且精神深度契合的感情。雙方能感同身受地支持彼此，是穩定的情感支柱。",
-      career: "在工作中展現出優秀的協調與心理諮商天賦，深受信任。適合從事治癒、心理學、寫作或藝術創作。",
-      advice: "相信你的第一直覺。用溫柔與包容的心去傾聽他人，你的同理心擁有強大的治癒魔力。"
+      meaning: '【偉特原著·正位】\n原文：\'Good, fair woman; honest, devoted woman, who will do service to the Querent; loving intelligence, and hence the gift of vision; success, happiness, pleasure; also wisdom, virtue; a perfect spouse and a good mother.\'\n\n直譯：善良白淨的女性；誠實、奉獻的女性，將為問事者效勞；充滿愛的智識，因此具有視覺的天賦；成功、幸福、喜悅；亦指智慧、美德；完美的配偶與好母親。',
+      love: '【依原著關鍵詞】偉特明確稱其為「完美的配偶與好母親」——感情中代表誠實（honest）、奉獻（devoted）且充滿愛的智慧（loving intelligence）的女性，具有視覺的天賦（gift of vision）。',
+      career: '【依原著關鍵詞】工作上善良（good）且誠實（honest），以奉獻（devoted）的精神為問事者服務，充滿愛的智識帶來成功（success）與幸福（happiness）。',
+      advice: '【偉特原著核心】「充滿愛的智識，因此具有視覺的天賦」——聖杯王后的洞察力來自她深厚的情感與智慧的結合，是直覺與理智並重的完整女性。'
     },
     reversed: {
-      title: "逆位：過度敏感、情緒勒索、玻璃心或失去直覺",
-      meaning: "代表你目前情緒過於敏感脆弱，容易陷入胡思亂想，表現為情緒勒索、猜忌或過度依賴他人。也可能代表你關閉了心靈的通道，無法客觀地感知世界。",
-      love: "感情中出現情緒勒索或作鬧，試圖以脆弱來控制對方。雙方關係因情緒不穩定而產生隔閡。",
-      career: "工作上容易因為小事而感到受挫、玻璃心碎。要注意避免將個人情緒帶入職場專業判斷中。",
-      advice: "拉開情感的界線，學會獨立。停止無意義的猜疑與內耗，重新建立內心的平靜防禦。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30 65 C30 85, 70 85, 70 65 Z M50 85 L50 115" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <circle cx="50" cy="40" r="15" stroke="#dfb86c" stroke-width="1.5" stroke-dasharray="4 2"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Good woman; otherwise, distinguished woman but one not to be trusted; perverse woman; vice, dishonour, depravity.\'\n\n直譯：善良女性；否則是傑出但不可信任的女性；乖僻的女性；惡習、恥辱、墮落。',
+      love: '【依原著關鍵詞】感情中可能是傑出但不可信任（not to be trusted）的女性，乖僻（perverse）的行為帶來恥辱（dishonour）與墮落（depravity）。',
+      career: '【依原著關鍵詞】工作上出現傑出但不可信任的合作對象，惡習（vice）與恥辱（dishonour）潛藏在傑出表現的背後。',
+      advice: '【偉特原著核心】偉特的「傑出但不可信任」——美麗的外表與真實的品格可能完全相反，視覺的天賦在逆位中可能化為操縱他人的工具。'
+    }
   },
   {
     id: 49,
-    name: "聖杯國王",
-    englishName: "King of Cups",
-    number: "King",
-    suit: "cups",
-    element: "水",
-    elementSymbol: "💧",
-    keywords: ["情感掌控", "沉穩包容", "諮商導師", "冷靜理性", "外交手腕"],
-    description: "國王坐在漂浮於波濤洶湧海面的石製寶座上，神情無比平靜，一隻魚躍出水面。他手持權杖，脖子上掛著魚形項鍊，象徵雖然處於情緒的風浪中，他依然能用理智掌控情感。",
+    name: '聖杯國王',
+    englishName: 'King of Cups',
+    number: 'King',
+    suit: 'cups',
+    element: '水',
+    icon: '💧',
+    description: '【偉特原著·圖像】一名國王坐在水中的石制王座上，身著藍袍，右手持聖杯，左手持權杖。海浪在他周圍翻湧，遠方有一艘船，左邊有一條跳躍的魚。他處於情感的波濤中卻穩坐不動。',
+    keywords: ['白淨男子', '商業', '法律', '神學', '公平', '藝術', '科學', '不誠實', '詐騙', '不義', '醜聞'],
     upright: {
-      title: "正位：情感沉穩與掌控情緒的智者",
-      meaning: "代表一位情感成熟、沉穩包容、冷靜且極具外交手腕的決策者。你目前有能力在危機或情緒風暴中保持絕對的冷靜，用智慧調和衝突。他也是一位值得信賴的精神導師或諮商師。",
-      love: "穩定、忠誠且經濟基礎極為優渥的伴侶關係。國王代表一位可靠、有肩膀且願意為未來奮鬥的伴侶。",
-      career: "在職場上展現優秀的管理與危機處理才能，擅長調解團隊衝突。商務談判遊刃有餘，深孚眾望。",
-      advice: "保持冷靜與客觀。用包容與同理心去對待衝突的各方，你的沉穩是安定局勢的最大力量。"
+      meaning: '【偉特原著·正位】\n原文：\'Fair man, man of business, law, or divinity; responsible, disposed to oblige the Querent; also equity, art and science; creative intelligence.\'\n\n直譯：白淨男子、商人、法律或神學領域的男性；負責任，傾向於幫助問事者；亦指公平、藝術與科學；創造性的智識。',
+      love: '【依原著關鍵詞】感情中代表負責任（responsible）且願意幫助（disposed to oblige）問事者的男性，以公平（equity）與創造性智識（creative intelligence）對待感情。',
+      career: '【依原著關鍵詞】工作上是商人（man of business）、法律或神學的代表，責任感強（responsible），以藝術（art）、科學（science）與創造性智識（creative intelligence）推動事業。',
+      advice: '【偉特原著核心】「創造性的智識」（creative intelligence）——聖杯國王結合了情感的深度與智慧的廣度，他的力量在於以創造力整合感性與理性。'
     },
     reversed: {
-      title: "逆位：情感操弄、情緒失控、雙標或冷酷無情",
-      meaning: "代表情感面具下的冷酷與操弄。你可能在利用他人的同理心進行情感欺騙（雙標），或者你體內的情緒風暴徹底失控，表現為陰鬱、暴躁或極度的冷漠無情。",
-      love: "關係中存在情感欺騙、冷暴力或情緒操弄。伴侶表現得陰晴不定、虛偽或過度冷酷。",
-      career: "職場上面臨雙標的主管或虛偽的合作夥伴。要注意防範背後的商業陷阱或不誠實的利益協商。",
-      advice: "誠實面對自己的內在情緒。停止一切虛偽的情感操弄與冷暴力，用坦誠的態度去解決實質問題。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M25 60 C25 85, 75 85, 75 60 Z M50 85 L50 115" stroke="#dfb86c" stroke-width="2" fill="none"/>
-      <path d="M35 30 L50 15 L65 30" stroke="#dfb86c" stroke-width="2"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Dishonest, double-dealing man; roguery, exaction, injustice, vice, scandal, pillage, considerable loss.\'\n\n直譯：不誠實、兩面派的男性；無賴行徑、勒索、不公義、惡習、醜聞、掠奪、重大損失。',
+      love: '【依原著關鍵詞】感情中出現不誠實（dishonest）且兩面派（double-dealing）的男性，無賴行徑（roguery）與醜聞（scandal）可能毀滅關係，帶來重大損失（considerable loss）。',
+      career: '【依原著關鍵詞】工作上遭遇無賴行徑（roguery）與勒索（exaction），不公義（injustice）與掠奪（pillage）帶來重大損失（considerable loss），惡習（vice）與醜聞（scandal）並發。',
+      advice: '【偉特原著核心】逆位的「勒索與掠奪」——創造性的智識在逆位中化為精密的掠奪，「重大損失」（considerable loss）是最終的警示，需提前識別不誠實的跡象。'
+    }
   },
 
-  // ==========================================
-  // SUIT 3: SWORDS (寶劍 - 風元素 💨) - ID 50 to 63
-  // ==========================================
+  // ==================== SWORDS ====================
   {
     id: 50,
-    name: "寶劍一",
-    englishName: "Ace of Swords",
-    number: "Ace",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["突破", "理智", "決定性力量", "真理", "雙刃劍"],
-    description: "一隻雲中伸出的神聖之手，緊握著一柄直插雲霄的金色寶劍，劍尖戴著皇冠與桂冠。象徵著理性的力量、決定性的突破與真理的顯現。",
+    name: '寶劍首牌',
+    englishName: 'Ace of Swords',
+    number: 'Ace',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一隻從雲中伸出的手握持一把豎直的寶劍，劍尖附近有王冠，冠上掛有橄欖枝（勝利）與棕櫚枝（殉道），周圍有六個希伯來字母（偉特認為象徵神聖名號）飄散。',
+    keywords: ['勝利', '征服', '力量的極致', '強大的力量', '愛與恨', '概念', '分娩', '增加', '繁多'],
     upright: {
-      title: "正位：思緒清晰與關鍵性突破",
-      meaning: "代表心智力量的爆發、真理顯現與思緒的徹底清晰。你即將做出一個極為關鍵、理性的決定，並在困境中取得突破性的進展。這是一張代表正義與力量的牌，但也提醒你理智是把雙刃劍。",
-      love: "關係中迎來坦誠的溝通，打破之前的猜忌與模糊地帶。雙方決定客觀、理性地規劃未來。",
-      career: "工作上面臨關鍵決策，適合簽署合約、進行法律分析或技術突破。用邏輯與事實說服他人。",
-      advice: "保持絕對的理智與客觀，直面核心事實，用最鋒利的決斷力去斬斷混亂的糾葛。"
+      meaning: '【偉特原著·正位】\n原文：\'Triumph, the excessive degree in everything, conquest, triumph of force; a card of great force, in love as well as in hatred.\'\n\n直譯：勝利、一切事物中的極致程度、征服、力量的勝利；一張在愛與恨中都具有強大力量的牌。',
+      love: '【依原著關鍵詞】感情中充滿強大的力量（great force），偉特明確指出「在愛與恨中都具有強大力量」——這股力量是雙向的，愛可以極致，恨亦可以極致。',
+      career: '【依原著關鍵詞】工作上以極致的力量（excessive degree）征服（conquest），勝利（triumph of force）來自強大的意志力，在一切事物中追求最高度。',
+      advice: '【偉特原著核心】「在愛與恨中都具有強大力量」——寶劍首牌的力量是中性的，極致（excessive degree）本身是其特質，方向由持劍者決定。'
     },
     reversed: {
-      title: "逆位：混亂模糊、錯誤決策、言詞犀利或力量濫用",
-      meaning: "代表思緒混亂，缺乏清晰的視野，容易做出偏頗的錯誤決定。你也可能在溝通中表現得過於犀利、刻薄，用言語刺傷他人，或者感到無能為力。",
-      love: "感情中出現雞同鴨講的爭吵，或者因為言詞犀利、說話太傷人而給對方留下難以磨滅的傷口。",
-      career: "決策失誤，忽視了合約中的關鍵漏洞。工作進展受阻，缺乏清晰的執行方向。",
-      advice: "先停下來。在思緒未清晰前不要做重大決定。收斂你的言語鋒芒，避免意氣用事傷害他人。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 20 L50 115 M35 115 L65 115 M50 115 L50 135 M40 135 L60 135" stroke="#dfb86c" stroke-width="2" stroke-linecap="round"/>
-      <path d="M45 25 L50 15 L55 25 Z" fill="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'The same, but the results are disastrous; also conception, childbirth, augmentation, multiplicity.\'\n\n直譯：相同，但結果是災難性的；亦指概念、分娩、增加、繁多。',
+      love: '【依原著關鍵詞】感情中同樣強大的力量（the same）帶來災難性的結果（results are disastrous），極致的愛或恨造成無可挽回的破壞。',
+      career: '【依原著關鍵詞】工作上相同的征服力量（the same），但結果災難性（disastrous），概念（conception）的誕生（childbirth）帶來增加（augmentation）的複雜性。',
+      advice: '【偉特原著核心】逆位的「相同但結果災難」——偉特明確說明力量未變，只是方向與結果出了問題，極致的力量在失控時必然帶來極致的破壞。'
+    }
   },
   {
     id: 51,
-    name: "寶劍二",
-    englishName: "Two of Swords",
-    number: "2",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["僵局", "逃避抉擇", "情感壓抑", "平衡", "交叉路口"],
-    description: "女子蒙上雙眼，雙手交叉各持一柄沉重的寶劍，背對著波濤起伏的海洋與新月。她坐在石椅上，代表著內心的封閉、僵局以及抗拒做出選擇。",
+    name: '寶劍二',
+    englishName: 'Two of Swords',
+    number: '2',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名被蒙住眼睛的女子端坐，雙臂交叉各持一把寶劍，劍尖朝上。她背對大海，身後有月亮。她的平衡是強制的靜止，拒絕看見的靜默對峙。',
+    keywords: ['順從', '均衡', '勇氣', '友誼', '柔情', '親密', '偽裝', '謊言', '不忠'],
     upright: {
-      title: "正位：陷入僵局與抗拒抉擇",
-      meaning: "代表你目前處於左右為難的尷尬境地，陷入了僵局。你試圖透過「蒙上雙眼」來逃避做選擇，或者在過度壓抑自己的情感，假裝看不見眼前的矛盾。然而，逃避無法解決根本問題。",
-      love: "關係陷入冷戰或僵局，雙方抗拒溝通核心矛盾，假裝一切安好；單身者可能在兩個對象中猶豫不決。",
-      career: "職場上面臨左右為難的兩難抉擇（如兩份工作的挑選、兩個項目的取捨），進展停滯不前。",
-      advice: "解開蒙眼的布，勇敢面對真實的矛盾。不要因為害怕受傷或出錯而抗拒做決定。"
+      meaning: '【偉特原著·正位】\n原文：\'Conformity and the equipoise which it suggests, courage, friendship, concord in a state of arms; also tenderness, affection, intimacy.\'\n\n直譯：順從及其所暗示的均衡、勇氣、友誼、武裝狀態中的和諧；亦指柔情、情誼、親密。',
+      love: '【依原著關鍵詞】感情中以強制的均衡（equipoise）維持表面的和諧（concord），偉特也列出柔情（tenderness）與親密（intimacy），暗示這種平衡中有真實的情感連結。',
+      career: '【依原著關鍵詞】工作上以順從（conformity）與均衡（equipoise）維持和諧，需要在對立的力量中保持勇氣（courage）與友誼（friendship）。',
+      advice: '【偉特原著核心】「武裝狀態中的和諧」（concord in a state of arms）——這種平靜是防禦性的靜止，不是真正的和平，需勇氣才能打破對峙。'
     },
     reversed: {
-      title: "逆位：打破僵局、看清真相、被迫做出選擇",
-      meaning: "代表僵局終於被打破。你決定解開眼前的蒙布，看清事情的真相，並被迫在兩個艱難的選項中做出明確的決定。雖然做決定的過程有些痛苦，但這會帶領你重新前行。",
-      love: "決定不再冷戰，坦誠地討論核心衝突；或者是做出了明智決定，結束一段不上不下的曖昧關係。",
-      career: "職場僵局化解，被迫在壓力下做出選擇。重整資源，專案重新啟動前行。",
-      advice: "接受抉擇帶來的代價，不要再往回看。大步跨出第一步，任何決定都比一直停在原地好。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M25 40 L50 110 M75 40 L50 110 M35 110 H65" stroke="#dfb86c" stroke-width="1.5" stroke-linecap="round"/>
-      <circle cx="50" cy="30" r="4" fill="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Imposture, falsehood, duplicity, disloyalty.\'\n\n直譯：偽裝、謊言、兩面性、不忠。',
+      love: '【依原著關鍵詞】感情中的均衡被打破，偽裝（imposture）與謊言（falsehood）浮現，兩面性（duplicity）與不忠（disloyalty）毀壞了原本的「友誼與親密」。',
+      career: '【依原著關鍵詞】工作上偽裝（imposture）與兩面性（duplicity）取代了真誠的合作，謊言（falsehood）與不忠（disloyalty）破壞團隊關係。',
+      advice: '【偉特原著核心】逆位的「兩面性」（duplicity）——蒙眼的平衡一旦打破，隱藏其後的謊言與不忠便無所遁形。'
+    }
   },
   {
     id: 52,
-    name: "寶劍三",
-    englishName: "Three of Swords",
-    number: "3",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["心碎", "悲傷", "背叛", "失去", "言詞傷害"],
-    description: "一顆巨大的紅心懸掛在風雨交加的空中，被三柄寶劍狠狠地刺穿。象徵著最直觀的痛苦、心碎、背叛與情感上的創傷。",
+    name: '寶劍三',
+    englishName: 'Three of Swords',
+    number: '3',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】三把寶劍刺穿一顆心形，背景是烏雲與雨。圖像極為直接，象徵心痛、分離與苦難，是偉特最直觀的圖像之一。',
+    keywords: ['移除', '缺席', '延誤', '分裂', '分散', '精神錯亂', '失誤', '損失', '錯亂'],
     upright: {
-      title: "正位：心碎、失戀與情感創傷",
-      meaning: "這是一張代表「痛楚」的牌。你可能剛剛經歷了失戀、被朋友或伴侶背叛、或者是聽到了令人無比痛心的言語傷害。這張牌要求你勇敢地哭出來，直面這份心碎，它是心靈淨化必經的考驗。",
-      love: "經歷分手、嚴重的爭吵或伴侶的不忠，感到無比的心碎與痛苦。關係面臨嚴嚴的信任瓦解。",
-      career: "工作上面臨被解雇、專案失敗、合夥背叛或遭受不公平的言論中傷。需要承受心理打擊。",
-      advice: "接納這份痛苦，不要試圖用理智壓抑它。痛哭是心靈治癒的開始，風雨過後，彩虹終會顯現。"
+      meaning: '【偉特原著·正位】\n原文：\'Removal, absence, delay, division, rupture, dispersion.\'\n\n直譯：移除、缺席、延誤、分裂、決裂、分散。',
+      love: '【依原著關鍵詞】感情中的分裂（division）與決裂（rupture），缺席（absence）造成心痛，分散（dispersion）使關係無法凝聚，延誤（delay）使痛苦延長。',
+      career: '【依原著關鍵詞】工作上的移除（removal）、缺席（absence）與延誤（delay），計劃遭到分裂（division）與分散（dispersion）的打擊。',
+      advice: '【偉特原著核心】偉特以「移除」（removal）居首——三號劍的核心是某種東西被強行取走，這種痛苦是真實的，接受它是療癒的第一步。'
     },
     reversed: {
-      title: "逆位：傷口癒合、釋懷、寬恕或拖延痛苦",
-      meaning: "代表痛苦的頂峰已經過去，你開始學會原諒與釋懷，傷口正在慢慢癒合。但在某些情況下，也代表你依然沉溺在過去的創傷中不願放手，拖延了自我救贖的時間。",
-      love: "開始走出失戀或背叛的陰影，原諒對方的傷害，心靈重新迎來陽光；或者決定徹底放手。",
-      career: "工作危機開始化解，職場糾紛平息。你重新建立起信心，總結經驗，重整自我軌道。",
-      advice: "原諒別人是放過自己。把刺入心中的寶劍拔出來，讓時間來撫平所有的創傷，大步向前。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 20 L50 110 M35 40 L65 90 M65 40 L35 90" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M30 65 Q50 85 70 65" stroke="#dfb86c" stroke-width="1" fill="none"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Mental alienation, error, loss, distraction, disorder, confusion.\'\n\n直譯：精神疏離、錯誤、損失、分心、混亂、困惑。',
+      love: '【依原著關鍵詞】感情中精神疏離（mental alienation）使人無法真正連結，混亂（confusion）與困惑（disorder）中發生錯誤（error），帶來損失（loss）。',
+      career: '【依原著關鍵詞】工作上精神分心（distraction）與混亂（disorder），錯誤（error）頻發，損失（loss）因困惑（confusion）而加深。',
+      advice: '【偉特原著核心】逆位的「精神疏離」（mental alienation）——心靈的痛苦在逆位中轉化為更難處理的精神混亂，需先恢復內在的清明才能面對外在的混亂。'
+    }
   },
   {
     id: 53,
-    name: "寶劍四",
-    englishName: "Four of Swords",
-    number: "4",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["休息", "沉潛", "冥想", "恢復精力", "退回內心"],
-    description: "一名騎士的石雕像躺在教堂的墓碑上，雙手合十。牆上懸掛著三柄寶劍，另一柄寶劍橫躺在他身側，代表他正處於一個暫時退隱、休養生息的靜止狀態。",
+    name: '寶劍四',
+    englishName: 'Four of Swords',
+    number: '4',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名騎士的雕像靜臥在石棺上（手合十如祈禱），棺側刻有浮雕，上方牆上有彩色玻璃窗。三把寶劍懸掛在他身旁，一把在身下。整個畫面充滿安靜退隱的氣氛。',
+    keywords: ['警覺', '退隱', '孤獨', '隱士的安息', '流亡', '墓地', '智慧的管理', '節儉', '遺囑'],
     upright: {
-      title: "正位：暫時沉潛與休養生息",
-      meaning: "經歷了寶劍三的風雨和心碎，此時你需要的是「休息」與「靜心」。這不是失敗的放棄，而是為了恢復精力的暫時沉潛。適合進行冥想、獨處、安排休假或出院療養，給大腦放個假。",
-      love: "感情進入冷靜期，雙方需要各自的空間來整理思緒。不宜在情緒激動時強行推進問題的溝通。",
-      career: "工作上面臨瓶頸或高壓，身體發出亞健康警訊。適合請假休息、調整節奏或進行長遠的策略深思。",
-      advice: "給自己放個假，停止外界的一切爭鬥。在安靜的獨處中，你的心智力量將會重新充滿。"
+      meaning: '【偉特原著·正位】\n原文：\'Vigilance, retreat, solitude, hermit\'s repose, exile, tomb and coffin.\'\n\n直譯：警覺、退隱、孤獨、隱士的安息、流亡、墓地與棺木。',
+      love: '【依原著關鍵詞】感情中需要退隱（retreat）與孤獨（solitude），暫時的休息（hermit\'s repose）是必要的，關係可能因流亡（exile）或分離而暫停。',
+      career: '【依原著關鍵詞】工作上以退隱（retreat）與警覺（vigilance）面對局勢，暫時的孤獨安息（hermit\'s repose）是蓄積力量的必要手段。',
+      advice: '【偉特原著核心】偉特的「墓地與棺木」——四號劍的休息不是死亡，而是如騎士雕像般的靜止積蓄，在孤獨中警覺地等待復甦的時機。'
     },
     reversed: {
-      title: "逆位：重返戰場、恢復行動、過度勞累或失眠",
-      meaning: "代表休息時間結束，你準備重新投入繁忙的生活與戰場中。然而，在極端情況下，也警告你因為過度焦慮、抗拒休息而導致身心透支、失眠或精力耗盡。",
-      love: "冷靜期結束，決定主動打破沈默，重啟溝通；或者是因為焦慮，繼續在關係中折騰不休。",
-      career: "銷假上班，重新投入高強度的工作節奏中。但要注意避免一回歸就給自己安排過重的工作量。",
-      advice: "重回戰場時請循序漸進。在忙碌中也要留出呼吸的空隙，照顧好自己的身體與心靈。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 110 H80" stroke="#dfb86c" stroke-width="2"/>
-      <path d="M50 30 L50 110 M35 50 L35 110 M65 50 L65 110" stroke="#dfb86c" stroke-width="1.2"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Wise administration, circumspection, economy, avarice, precaution, testament.\'\n\n直譯：智慧的管理、謹慎周密、節儉、吝嗇、謹慎預防、遺囑。',
+      love: '【依原著關鍵詞】感情中以智慧管理（wise administration）與謹慎（circumspection）應對，但吝嗇（avarice）可能使感情缺乏溫度，需防過度謹慎（precaution）反成障礙。',
+      career: '【依原著關鍵詞】工作上智慧的管理（wise administration）與節儉（economy）帶來效益，謹慎預防（precaution）降低風險，但需警惕淪為吝嗇（avarice）。',
+      advice: '【偉特原著核心】逆位的「遺囑」（testament）——退隱後的重新管理，以智慧整頓，但偉特列出「吝嗇」警示：謹慎與吝嗇之間的界線需要智慧辨別。'
+    }
   },
   {
     id: 54,
-    name: "寶劍五",
-    englishName: "Five of Swords",
-    number: "5",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["慘勝", "自私", "衝突", "雙輸局面", "尊嚴流失"],
-    description: "一名男子露出得意的笑容，正收集地上散落的寶劍。遠方兩個人低頭沮喪地離去，天空布滿烏雲。他雖然贏得了這場爭鬥，但付出了失去信任與人際關係的慘痛代價。",
+    name: '寶劍五',
+    englishName: 'Five of Swords',
+    number: '5',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名得意的男子拾起三把寶劍，另有兩把在地上。兩名失敗者在遠方低頭而去，背景烏雲。勝利者的表情有些不懷好意，展示了一場勝之不武的勝利。',
+    keywords: ['退化', '毀滅', '撤銷', '恥辱', '不榮耀', '損失', '失敗', '埋葬'],
     upright: {
-      title: "正位：傷人傷己的慘勝與人際破裂",
-      meaning: "這是一張代表「衝突」與「雙輸」的牌。你可能在一場爭吵或競爭中獲得了勝利，但你的做法過於自私、冷酷，徹底傷害了對方的尊嚴，導致人際關係破裂。這是一場沒有真正贏家的慘勝。",
-      love: "雙方為爭一時口舌之快而惡言相向，雖然你吵贏了，但卻讓伴侶心灰意冷，感情留下了嚴重的裂痕。",
-      career: "職場上出現惡性競爭、排擠他人或自私的爭奪。雖然暫時保住了專案，但失去了團隊的信任。",
-      advice: "得饒人處且饒人。在爭吵中贏了對錯，卻輸了感情與人心，這真的是你想要的勝利嗎？"
+      meaning: '【偉特原著·正位】\n原文：\'Degradation, destruction, revocation, infamy, dishonour, loss; also defeat.\'\n\n直譯：退化、毀滅、撤銷、惡名、不榮耀、損失；亦指失敗。',
+      love: '【依原著關鍵詞】感情中充滿退化（degradation）與恥辱（dishonour），可能是一段帶來惡名（infamy）的關係，或在感情的對抗中遭受失敗（defeat）與損失（loss）。',
+      career: '【依原著關鍵詞】工作上面臨毀滅（destruction）、撤銷（revocation）與不榮耀（dishonour），可能是惡名（infamy）纏身的失敗（defeat），帶來嚴重損失（loss）。',
+      advice: '【偉特原著核心】偉特以「退化」（degradation）居首——五號劍的勝利是空洞的，或自己在退化中失敗，這種不榮耀的結局需要正視而非掩飾。'
     },
     reversed: {
-      title: "逆位：停火妥協、停止惡性爭吵、雙輸後的反省",
-      meaning: "代表混亂的局面開始平息，意見逐漸達成一致，或者相反地，代表你開始反省自己之前的自私行行徑，試圖修補關係。也可能象徵徹底退出這場沒有意義的爭鬥。",
-      love: "決定不再互相折磨，停止冷戰與翻舊帳，願意各退一步；或者理智地分手，不再互相傷害。",
-      career: "職場的惡性競爭宣告結束，各方決定坐下來商討和解方案。重新整理團隊合作的默契。",
-      advice: "主動放下爭強好勝的心。承認錯誤、退讓一步並非軟弱，而是有智慧的大度表現。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 120 L50 20 L85 120 Z" stroke="#dfb86c" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
-      <path d="M50 20 L50 120" stroke="#dfb86c" stroke-width="2.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'The same; burial and obsequies.\'\n\n直譯：相同；埋葬與喪禮。',
+      love: '【依原著關鍵詞】感情中逆位含義相同，加上「埋葬與喪禮」——關係的終結已成定局，需以莊重的姿態送別這段關係。',
+      career: '【依原著關鍵詞】工作上逆位意義相同，埋葬（burial）代表事業或計劃的徹底終結，喪禮（obsequies）象徵正式的告別儀式。',
+      advice: '【偉特原著核心】逆位的「埋葬與喪禮」——偉特明確說明「相同」後加上儀式性的終結，這是承認失敗並正式告別的時刻，哀悼是必要的過程。'
+    }
   },
   {
     id: 55,
-    name: "寶劍六",
-    englishName: "Six of Swords",
-    number: "6",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["渡過難關", "旅行", "心靈療癒", "漸入佳境", "默默陪伴"],
-    description: "船夫划著小船，載著一位披著斗篷的母親與孩童走向遠方平靜的水域。船上插著六柄寶劍，代表雖然他們帶著過去的傷痛，但正在默默地渡過難關，前往安全的彼岸。",
+    name: '寶劍六',
+    englishName: 'Six of Swords',
+    number: '6',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名船夫划著小船，船上有一個蒙著頭的女子與一名小孩，船頭插著六把寶劍。他們從波濤洶湧的水域駛向平靜的水面，代表從困難到安穩的過渡。',
+    keywords: ['水上旅途', '路線', '方式', '使者', '特使', '說明', '告白', '公開', '求愛提案'],
     upright: {
-      title: "正位：渡過風波與漸入佳境",
-      meaning: "這是一張代表「過渡」與「療癒」的牌。最艱難的風暴（左側起伏的波浪）已經過去，你正在前往平靜安全的未來（右側平滑的水域）。雖然你此時依舊感到有些沉重與疲憊，但請相信情況正在一天天變好。也非常適合旅行或搬家。",
-      love: "感情在經歷了爭吵或危機後，進入平緩的修復期。雙方願意給彼此時間，共同渡過這段磨合期。",
-      career: "工作上的混亂局勢逐漸平息，新專案重回軌道。職涯出現轉機，適合跳槽、轉崗或出差。",
-      advice: "耐心地渡過這段過渡期。不要回頭看風波，堅定地朝平靜的彼岸航行，時間會療癒一切。"
+      meaning: '【偉特原著·正位】\n原文：\'Journey by water, route, way, envoy, commissionary, expedient.\'\n\n直譯：水上旅途、路線、方式、使者、特使、權宜之計。',
+      love: '【依原著關鍵詞】感情中的水上旅途（journey by water）代表關係的過渡與移動，通過使者（envoy）的溝通找到前進的路線（route），以權宜之計（expedient）化解困局。',
+      career: '【依原著關鍵詞】工作上以使者（envoy）或特使（commissionary）的身份執行任務，找到前進的路線（route）與方式（way），水上旅途象徵必要的轉移。',
+      advice: '【偉特原著核心】偉特的「權宜之計」（expedient）——六號劍不是完美的解決，而是當下最可行的過渡，從洶湧到平靜的旅程已經開始，方向是正確的。'
     },
     reversed: {
-      title: "逆位：進退兩難、逃避問題、計畫滯礙或舊病復發",
-      meaning: "代表你在過渡的路上遭遇了阻礙，感到進退兩難。你可能在抗拒改變，試圖逃避現實的根本問題，或者之前的風波重演，讓你重新陷入混亂中。",
-      love: "感情中的核心問題並未解決，雙方逃避溝通，導致關係卡在不上不下的尷尬狀態，甚至重蹈覆轍。",
-      career: "跳槽或創業計劃受阻，工作進度延宕。面臨逃避不得的職場危機，被迫硬著頭皮面對。",
-      advice: "逃避解決不了解藥。停止無意義的退縮，鼓起勇氣，直面眼前的風浪，才能真正上岸。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 110 C35 90, 65 90, 85 110" stroke="#dfb86c" stroke-width="2" stroke-linecap="round"/>
-      <path d="M25 60 L25 110 M35 50 L35 110 M45 40 L45 110 M55 40 L55 110 M65 50 L65 110 M75 60 L75 110" stroke="#dfb86c" stroke-width="1.2"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Declaration, confession, publicity; also a proposal of love.\'\n\n直譯：聲明、告白、公開化；亦指愛的提案。',
+      love: '【依原著關鍵詞】感情中逆位帶來告白（confession）與「愛的提案」（proposal of love）——私下的感情公開化（publicity），需要勇氣的聲明（declaration）。',
+      career: '【依原著關鍵詞】工作上事情公開化（publicity），聲明（declaration）公諸於世，告白（confession）帶來新的可能或責任。',
+      advice: '【偉特原著核心】逆位的「愛的提案」（proposal of love）——水上的旅途在逆位中化為公開的告白，秘密的行進反而帶來坦誠的宣告。'
+    }
   },
   {
     id: 56,
-    name: "寶劍七",
-    englishName: "Seven of Swords",
-    number: "7",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["投機取巧", "欺騙", "秘密行動", "逃避責任", "孤軍奮戰"],
-    description: "一名男子鬼鬼祟祟地抱著五柄寶劍溜走，回頭看著遠方營地中立著的另外兩柄寶劍。他神情狡黠，象徵著投機取巧、不誠實的行為或試圖用非傳統手段解決問題。",
+    name: '寶劍七',
+    englishName: 'Seven of Swords',
+    number: '7',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名男子踮腳潛行，懷中抱著五把寶劍，身後的地上留有兩把。他回頭張望軍營，面帶得意的微笑，像是剛完成了一次偷竊或策略性的撤退。',
+    keywords: ['設計', '企圖', '願望', '希望', '自信', '爭吵', '失敗的計劃', '好的建議', '謠言'],
     upright: {
-      title: "正位：投機取巧與秘密的計謀",
-      meaning: "這是一張警示牌。它可能代表你身邊出現了欺騙、隱瞞或不誠實的投機行為（如竊取功勞、背後中傷）。在另一層意思上，也暗示你目前不宜強攻，應採取智取、迂迴或非傳統的計謀來解決困境，但切勿違背誠信原則。",
-      love: "關係中可能存在隱瞞與秘密，一方對感情不夠坦誠，有欺騙或逃避責任的嫌疑。需要防範謊言。",
-      career: "職場上防範小人投機取巧、剽竊創意或商業間諜。做決定要留下字據憑證，切忌投機取巧。",
-      advice: "行事要光明磊落，防人之心不可無。如果想走捷徑，請三思是否能承擔曝光後的誠信代價。"
+      meaning: '【偉特原著·正位】\n原文：\'Design, attempt, wish, hope, confidence; also quarrelling, a plan that may fail, annoyance.\'\n\n直譯：設計、企圖、願望、希望、自信；亦指爭吵、可能失敗的計劃、惱怒。',
+      love: '【依原著關鍵詞】感情中充滿設計（design）與企圖（attempt），帶著希望（hope）與自信（confidence）行動，但偉特同時警示「可能失敗的計劃」（a plan that may fail）。',
+      career: '【依原著關鍵詞】工作上有精心的設計（design）與企圖（attempt），充滿希望（hope）與自信（confidence），但計劃有失敗的風險（a plan that may fail），需注意爭吵（quarrelling）。',
+      advice: '【偉特原著核心】「可能失敗的計劃」（a plan that may fail）——七號劍的策略性行動背後有自信，但偉特的警示是：過度的自信可能使計劃失敗，需保持審慎。'
     },
     reversed: {
-      title: "逆位：東窗事發、良心發現、揭露真相或放棄投機",
-      meaning: "代表隱瞞的秘密即將「東窗事發」，投機取巧的行為被當場揭穿。在正面意義上，也象徵你決定放棄不誠實的做法，良心發現，主動坦白事實並承擔起應有的責任。",
-      love: "感情中的謊言與秘密被揭穿，雙方必須直面血淋淋的真相。這是一場誠信的清算與重建。",
-      career: "商業欺詐或灰色交易曝光，面臨信譽危機或法律處罰。適合及時回頭、誠實認錯。",
-      advice: "回歸誠實的坦途。謊言需要更多的謊言來圓，及早向相關的人坦白，承擔責任，重新做人。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 20 L50 110 M35 110 H65 M30 50 L40 70 M70 50 L60 70" stroke="#dfb86c" stroke-width="1.5"/>
-      <circle cx="50" cy="120" r="4" stroke="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Good advice, counsel, instruction, slander, babbling.\'\n\n直譯：好的建議、忠告、指導、誹謗、饒舌。',
+      love: '【依原著關鍵詞】感情中帶來好的建議（good advice）與忠告（counsel），但誹謗（slander）與饒舌（babbling）可能破壞信任，需辨別真正的忠告與惡意的謠言。',
+      career: '【依原著關鍵詞】工作上好的建議（good advice）與指導（instruction）到來，但誹謗（slander）與饒舌（babbling）在職場蔓延，需謹慎辨別。',
+      advice: '【偉特原著核心】逆位的「誹謗與饒舌」（slander, babbling）——策略性的秘密行動在逆位中轉為言辭上的傷害，需防止不負責任的言語造成損失。'
+    }
   },
   {
     id: 57,
-    name: "寶劍八",
-    englishName: "Eight of Swords",
-    number: "8",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["受困", "自我限制", "孤立無援", "思想牢籠", "看不清路"],
-    description: "女子雙眼被蒙住，身體被繩索寬鬆地綑綁，四周環繞著八柄插在泥土中的寶劍。她腳下是一片泥濘的水窪，但繩索與寶劍其實很鬆，只要她摘下眼罩，就能輕易掙脫。",
+    name: '寶劍八',
+    englishName: 'Eight of Swords',
+    number: '8',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名被蒙住眼睛、被鬆散綑綁的女子站立，周圍有八把寶劍插在地上圍繞著她。她其實可以逃脫，但因蒙眼而不自知。背景是黑暗與遠方的城堡。',
+    keywords: ['壞消息', '激烈的悲憤', '危機', '責難', '衝突', '誣告', '疾病', '不安', '困難', '意外'],
     upright: {
-      title: "正位：自我設限與思想的牢籠",
-      meaning: "你感到被困在某種局勢中，孤立無援、動彈不得。但寶劍八告訴你：這只是一個「思想的牢籠」。束縛你的繩索很鬆，四周的寶劍也沒有封死出路。是你內心的恐懼與悲觀蒙住了雙眼。只要你願意用理智看待現實，你隨時可以重獲自由。",
-      love: "在感情中感到無比委屈、受困，扮演著「受害者」的角色，但其實離不離開的選擇權一直握在你手中。",
-      career: "工作上感到力不從心、被制度或環境卡死。這多半是你自我設限的幻覺，試著尋求其他突破管道。",
-      advice: "解開蒙住雙眼的悲觀，別再扮演無能為力的受害者。你的理智與雙腳一直都是自由的。"
+      meaning: '【偉特原著·正位】\n原文：\'Bad news, violent chagrin, crisis, censure, power in trammels, conflict, calumny; also sickness.\'\n\n直譯：壞消息、激烈的悲憤、危機、責難、被束縛的力量、衝突、誣告；亦指疾病。',
+      love: '【依原著關鍵詞】感情中的壞消息（bad news）帶來激烈的悲憤（violent chagrin），被束縛的力量（power in trammels）使人無法自由，衝突（conflict）與誣告（calumny）傷害關係。',
+      career: '【依原著關鍵詞】工作上危機（crisis）、責難（censure）與衝突（conflict）並發，誣告（calumny）可能損害名譽，疾病（sickness）暗示身心壓力。',
+      advice: '【偉特原著核心】「被束縛的力量」（power in trammels）——八號劍的困境往往是自己的心智造成的，蒙眼的束縛可以解除，但需先意識到自己其實有能力逃脫。'
     },
     reversed: {
-      title: "逆位：打破束縛、思想覺醒、重獲自由、走出低谷",
-      meaning: "這是一張代表「解脫」的吉牌。你終於決定摘下悲觀的眼罩，解開自我設限的繩索，看清局勢並勇敢地走出困境。你不再受外界輿論或內心恐懼的影響，重獲人生的主導權。",
-      love: "從一段痛苦、窒息的委屈關係中清醒過來，決定分手或重整自我，不再為對方的脾氣買單。",
-      career: "思維開闊，找到了解決工作瓶頸的全新方案。突破自我限制，主動開創新的職涯路徑。",
-      advice: "勇敢地走出泥濘，大步向前。你已經重獲自由，不要再回頭看那個曾經困住你的思想牢籠。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="25" y="30" width="50" height="90" rx="6" stroke="#dfb86c" stroke-width="1.5" stroke-dasharray="3 3"/>
-      <path d="M20 75 H80" stroke="#dfb86c" stroke-width="2"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Disquiet, difficulty, opposition, accident, treachery; what is unforeseen; fatality.\'\n\n直譯：不安、困難、對立、意外、背叛；未預料的事；命定。',
+      love: '【依原著關鍵詞】感情中充滿不安（disquiet）與對立（opposition），意外（accident）與背叛（treachery）使關係陷入危機，未預料的事（what is unforeseen）改變一切。',
+      career: '【依原著關鍵詞】工作上遭遇意外（accident）、對立（opposition）與背叛（treachery），命定的（fatality）困難帶來不安（disquiet）。',
+      advice: '【偉特原著核心】逆位的「命定」（fatality）——困難在逆位中帶有命運的色彩，意外與背叛是偉特最嚴峻的逆位組合之一，需防禦未預料的打擊。'
+    }
   },
   {
     id: 58,
-    name: "寶劍九",
-    englishName: "Nine of Swords",
-    number: "9",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["焦慮", "噩夢", "失眠", "悲觀絕望", "無謂的恐懼"],
-    description: "男子深夜在床上突然驚醒，雙手捂臉，神情痛苦、絕望。他身後的牆上懸掛著九柄寶劍，被子上有黃道十二宮圖騰。代表著極度的焦慮、內疚與被想像中的噩夢所折磨。",
+    name: '寶劍九',
+    englishName: 'Nine of Swords',
+    number: '9',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名人物從夢中驚坐而起，雙手掩面，床頭的牆上有九把寶劍整齊排列。床上的被單有玫瑰和占星符號。整個畫面是午夜的恐懼與噩夢的氣氛。',
+    keywords: ['死亡', '失敗', '流產', '延誤', '失望', '絕望', '監禁', '懷疑', '羞恥'],
     upright: {
-      title: "正位：極度焦慮、失眠與精神折磨",
-      meaning: "這是一張代表「精神高壓」的牌。你正被極度的焦慮、恐懼、內疚或噩夢所折磨，常常在深夜輾轉反側、失眠。然而，寶劍九的痛苦多半是「想像出來的」。你的擔憂被悲觀的思緒放大了十倍，現實並沒有那麼絕望。",
-      love: "感情中出現嚴重的焦慮與不安全感，因為過度猜忌伴侶而自我折磨。小心將無端的擔憂變成現實的衝突。",
-      career: "工作壓力爆表，面臨嚴重的精神內耗與職業倦怠。失眠多夢，需要注意心理健康的調適。",
-      advice: "把燈點亮！將你的擔憂寫在紙上或與信任的朋友傾訴。暴露在日光下的恐懼，往往會瞬間消散。"
+      meaning: '【偉特原著·正位】\n原文：\'Death, failure, miscarriage, delay, deception, disappointment, despair.\'\n\n直譯：死亡、失敗、流產（失敗）、延誤、欺騙、失望、絕望。',
+      love: '【依原著關鍵詞】感情中充滿絕望（despair）與失望（disappointment），欺騙（deception）帶來深刻的傷痛，延誤（delay）使痛苦延長，關係如「流產」（miscarriage）般無疾而終。',
+      career: '【依原著關鍵詞】工作上失敗（failure）與流產的計劃（miscarriage），延誤（delay）與欺騙（deception）帶來絕望（despair），是偉特最沉重的牌之一。',
+      advice: '【偉特原著核心】偉特以「死亡」居首但並非字面意思——九號劍的恐懼與絕望是真實的，但如同夢中的噩夢，天明後往往沒有想象中那麼嚴重。'
     },
     reversed: {
-      title: "逆位：焦慮消散、走出噩夢、直面問題、尋求幫助",
-      meaning: "代表最嚴重的焦慮與精神折磨即將過去。你開始從悲觀的死胡同中走出來，願意直面問題的真貌，不再被無端的恐懼綁架。這是一張代表「重見曙光」與「心理療癒」的牌。",
-      love: "停止了無意義的猜忌與內耗，關係重現光明；或者是從一段讓你無比焦慮的毒性關係中徹底解脫。",
-      career: "精神壓力得到緩解，失眠狀況改善。你開始以理智、務實的心態來解決工作上的繁瑣問題。",
-      advice: "感謝這個醒悟的時刻。好好休息，多與陽光、大自然接觸，讓心靈磁場重新恢復純淨。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 20 H85 M15 35 H85 M15 50 H85 M15 65 H85 M15 80 H85 M15 95 H85 M15 110 H85" stroke="#dfb86c" stroke-width="1"/>
-      <path d="M50 15 L50 135 M30 15 V135 M70 15 V135" stroke="#dfb86c" opacity="0.3"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Imprisonment, suspicion, doubt, reasonable fear, shame.\'\n\n直譯：監禁、懷疑、懷疑（自我懷疑）、合理的恐懼、羞恥。',
+      love: '【依原著關鍵詞】感情中感受如監禁（imprisonment）般的困陷，懷疑（suspicion, doubt）破壞信任，羞恥（shame）使人無法坦然，合理的恐懼（reasonable fear）提醒需要謹慎。',
+      career: '【依原著關鍵詞】工作上懷疑（suspicion）與自我懷疑（doubt）侵蝕判斷力，羞恥（shame）帶來心理壓力，監禁（imprisonment）感使人無法自由行動。',
+      advice: '【偉特原著核心】逆位的「合理的恐懼」（reasonable fear）——與正位的絕望不同，逆位的恐懼是「合理的」，這意味著需要正視現實的危險而非自我麻痺。'
+    }
   },
   {
     id: 59,
-    name: "寶劍十",
-    englishName: "Ten of Swords",
-    number: "10",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["徹底終結", "谷底", "痛苦的犧牲", "黎明將至", "解脫"],
-    description: "男子俯臥在黑色的荒涼地面上，背部被十柄寶劍狠狠刺穿，鮮血染紅了水域。然而，遠方的地平線上，漆黑的夜空邊緣正升起一片金黃色的朝陽，象徵著痛苦已達頂峰，黎明即將降臨。",
+    name: '寶劍十',
+    englishName: 'Ten of Swords',
+    number: '10',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一個人物面朝下躺在地上，後背插有十把寶劍。背景是黑色的天空，但地平線出現金黃色的曙光。整個圖像象徵徹底的終結，但曙光暗示黑暗後的黎明。',
+    keywords: ['痛苦', '折磨', '眼淚', '悲傷', '荒涼', '利益', '利潤', '成功', '青睞', '力量', '權威'],
     upright: {
-      title: "正位：徹底的終結與谷底重生的契機",
-      meaning: "這張牌表面上極為血腥，實則蘊含著「物極必反」的希望。代表某個局面的徹底完結、崩潰或慘痛的失敗。然而，痛苦已經達到了頂點，再無惡化的可能。你正處於谷底，接下來的每一步，都是向上的重生。黎明已在眼前。",
-      love: "感情遭遇毀滅性的結束（如驟然分手、離婚），讓你痛徹心扉。但這也代表一段不健康的折磨徹底終結。",
-      career: "工作項目徹底宣告失敗，或是遭遇嚴重的背叛而離職。接受這份終結，這是你轉型重生的契機。",
-      advice: "接受這個徹底的結束，不要再做無謂的掙扎。置之死地而後生，大步跨向黎明吧。"
+      meaning: '【偉特原著·正位】\n原文：\'Whatsoever is intimated by the design; also pain, affliction, tears, sadness, desolation. It is not especially a card of violent death.\'\n\n直譯：凡圖像所暗示的一切；亦指痛苦、折磨、眼淚、悲傷、荒涼。它並非特別指暴力死亡之牌。',
+      love: '【依原著關鍵詞】感情中的痛苦（pain）、折磨（affliction）與眼淚（tears），悲傷（sadness）與荒涼（desolation）帶來徹底的終結感；偉特特別澄清「不是暴力死亡之牌」。',
+      career: '【依原著關鍵詞】工作上遭遇痛苦的折磨（affliction）與悲傷（sadness），荒涼（desolation）感如十把劍刺穿，但偉特澄清這不是最極端的結局。',
+      advice: '【偉特原著核心】偉特特意澄清「並非暴力死亡之牌」——這是重要的提示，十號劍的徹底感來自精神上的崩潰而非實際的極端，黎明之光在地平線上。'
     },
     reversed: {
-      title: "逆位：死裡逃生、勉強維持、抗拒結束或緩慢康復",
-      meaning: "代表你勉強避開了一場毀滅性的打擊，或者是舊的痛苦正在緩慢康復中。在極端情況下，也代表你抗拒接受某個局面的終結，苦苦拖延，拒絕讓心靈步入新生。",
-      love: "感情分合不斷、勉強維持，雖然逃過了徹底破裂的命運，但核心問題依舊在折磨彼此。",
-      career: "公司重組中勉強保住職位，但工作環境惡劣。或者專案遭遇重創，正在緩慢地進行資金回暖。",
-      advice: "有時候徹底的結束才是真正的慈悲。別抗拒改變，原諒過去，給自己一個重生的機會。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 130 C70 120, 80 100, 80 80 H20 C20 100, 30 120, 50 130 Z" fill="none" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M50 10 L50 80 M35 15 L35 80 M65 15 L65 80" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Advantage, profit, success, favour, but none of these are permanent; also power and authority.\'\n\n直譯：利益、利潤、成功、青睞，但這些都不是永久的；亦指力量與權威。',
+      love: '【依原著關鍵詞】感情中迎來利益（advantage）與青睞（favour），但偉特明確警示「這些都不是永久的」（none of these are permanent），需把握短暫的好轉時機。',
+      career: '【依原著關鍵詞】工作上帶來利潤（profit）、成功（success）與力量（power），但偉特的警示是：這些成果不會持久，需趁此時機鞏固。',
+      advice: '【偉特原著核心】「但這些都不是永久的」——逆位的成功是短暫的曙光，如同十號劍圖像中的地平線金光，需要把握但不可依賴。'
+    }
   },
   {
     id: 60,
-    name: "寶劍侍從",
-    englishName: "Page of Swords",
-    number: "Page",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["警惕", "好奇心", "心智活躍", "蒐集資訊", "八卦小道"],
-    description: "年輕的侍從雙手持劍，警惕地看著四周，踩在起伏的綠色山丘上。背景中雲霧翻滾，大風吹拂，象徵著思維的活躍、資訊的流動以及敏銳的防備心。",
+    name: '寶劍侍衛',
+    englishName: 'Page of Swords',
+    number: 'Page',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名年輕人站在高地上，雙手握持一把寶劍（向上舉起），眼神警惕地向周圍張望。風吹過他的衣袍與頭髮，他的姿態顯示準備應付任何突發狀況的警覺性。',
+    keywords: ['權威', '監督', '秘密服務', '警覺', '監視', '審查', '邪惡的一面', '未預見', '疾病'],
     upright: {
-      title: "正位：思維敏銳與蒐集資訊的探索者",
-      meaning: "代表一位聰明、警惕、心智極為活躍且具備強烈好奇心的年輕人。預示著你目前需要蒐集大量的資訊、學習新技能、或者是對周遭的環境保持敏銳的警惕。適合做研究分析或發布新消息。",
-      love: "關係中缺乏感性，雙方處於互相試探、理性分析的階段。單身者可能透過社群媒體密切關注感興趣的對象。",
-      career: "工作上適合擔任資訊收集、資料分析或市調工作。思維敏捷，能快速抓出問題的細節。",
-      advice: "保持好奇心與警惕心，多蒐集客觀資訊。但在探聽消息時，注意避免流於八卦與口舌是非。"
+      meaning: '【偉特原著·正位】\n原文：\'Authority, overseeing, secret service, vigilance, spying, examination.\'\n\n直譯：權威、監督、秘密服務、警覺、監視、審查。',
+      love: '【依原著關鍵詞】感情中充滿警覺（vigilance）與監視（spying），關係中存在秘密服務（secret service）的色彩，審查（examination）是主要的互動方式。',
+      career: '【依原著關鍵詞】工作上承擔監督（overseeing）與秘密服務（secret service）的職責，警覺（vigilance）是其核心特質，審查（examination）帶來洞察力。',
+      advice: '【偉特原著核心】「秘密服務」（secret service）——寶劍侍衛是偉特明確說明有情報收集功能的牌，其警覺性是一把雙刃劍，既能保護也能侵犯。'
     },
     reversed: {
-      title: "逆位：言詞犀利、偏執多疑、八卦是非、信口開河",
-      meaning: "代表思緒流於表面，行事缺乏深思熟慮。你可能表現得過於多疑、偏執，或者在傳播未經證實的流言八卦（信口開河），言詞犀利刻薄，引發人際衝突。",
-      love: "感情中充滿了猜忌與監視（如偷看手機），缺乏信任。雙方對話語帶諷刺，極易引發爭吵。",
-      career: "職場上遭遇功勞被奪、資訊洩漏危機。小心內部人際八卦影響團隊和諧。",
-      advice: "謹言慎行。收回無端的猜忌，在事實未明確前，別輕易對他人發表刻薄的評論。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 30 L50 120 M35 120 H65" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M30 45 L50 25 L70 45" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'More evil side of these qualities; what is unforeseen, unprepared state; sickness also intimated.\'\n\n直譯：這些特質更邪惡的一面；未預見的事、毫無準備的狀態；亦暗示疾病。',
+      love: '【依原著關鍵詞】感情中正位的警覺轉為更邪惡（more evil side）的監視與控制，毫無準備（unprepared state）面對未預見的衝擊（what is unforeseen）。',
+      career: '【依原著關鍵詞】工作上陷入毫無準備的狀態（unprepared state），未預見的衝擊（what is unforeseen）帶來危機，疾病（sickness）暗示壓力對健康的影響。',
+      advice: '【偉特原著核心】逆位的「更邪惡的一面」（more evil side）——偉特直接指明逆位是正位特質的黑暗面，警覺化為偏執，秘密服務化為惡意的監控。'
+    }
   },
   {
     id: 61,
-    name: "寶劍騎士",
-    englishName: "Knight of Swords",
-    number: "Knight",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["風馳電掣", "理智衝勁", "直言不諱", "缺乏同理心", "迅速行動"],
-    description: "騎士身穿閃亮的鎧甲，胯下的駿馬正全速向前飛馳。他高舉寶劍，神情冷峻、果斷，背景中的雲朵被狂風撕裂，象徵著無可阻擋的心智力量、速度與目標的貫徹。",
+    name: '寶劍騎士',
+    englishName: 'Knight of Swords',
+    number: 'Knight',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名騎士騎著白馬全速衝鋒，手持寶劍高舉，神情激烈。馬匹騰空飛馳，風中雲飛，充滿衝勁與勇猛。背景是激烈的戰場氛圍，充滿急速與破壞的能量。',
+    keywords: ['技巧', '英勇', '能力', '防衛', '仇恨', '憤怒', '戰爭', '毀滅', '反對', '抵抗', '魯莽'],
     upright: {
-      title: "正位：心智爆發與風馳電掣的行動力",
-      meaning: "代表一位思維敏捷、雄心勃勃、果斷且直言不諱的行動派。此時適合用理智主導行動，速戰速決地解決繁瑣的問題。你的邏輯思考極強，適合進行辯論、技術攻關或排除障礙。",
-      love: "進展神速但缺乏浪漫溫馨的感情。伴侶說話極其直接、客觀，甚至有些缺乏同理心。",
-      career: "職場上解決問題雷厲風行，效率極高。適合執行難度極高的策略突破。但要注意避免與人起衝突。",
-      advice: "發揮你的聰明才智與執行力，速戰速決。但全速推進時，別忘了體恤旁人的感受與節奏。"
+      meaning: '【偉特原著·正位】\n原文：\'Skill, bravery, capacity, defence, address, enmity, wrath, war, destruction, opposition, resistance, ruin.\'\n\n直譯：技巧、英勇、能力、防衛、靈巧、仇恨、憤怒、戰爭、毀滅、反對、抵抗、毀滅。',
+      love: '【依原著關鍵詞】感情中的激烈衝突——仇恨（enmity）、憤怒（wrath）與戰爭（war）的氛圍，但也有技巧（skill）與英勇（bravery）的面向；此騎士是激烈的存在。',
+      career: '【依原著關鍵詞】工作上技巧（skill）與能力（capacity）俱備，但毀滅（destruction）與反對（opposition）並行，仇恨（enmity）與憤怒（wrath）帶來激烈的競爭。',
+      advice: '【偉特原著核心】偉特在正位就列出「毀滅、仇恨、憤怒、戰爭」——這表明寶劍騎士的能量本身就帶有強烈的破壞性，技巧與英勇只是其中的一部分。'
     },
     reversed: {
-      title: "逆位：剛愎自用、魯莽衝動、言詞傷人、一敗塗地",
-      meaning: "代表你過於傲慢、剛愎自用，行事缺乏周詳計劃而盲目亂衝，導致一敗塗地。這張牌也警告你，說話過於刻薄、冷酷，容易引發劇烈的人際糾紛。",
-      love: "關係中出現激烈的言語爭吵，說話毫不留情、字字誅心。缺乏耐性，容易因為衝動提分手。",
-      career: "工作決策過於主觀且莽撞，導致專案執行一團混亂。與同事、客戶的溝通方式過於粗暴。",
-      advice: "勒住奔馳的韁繩！在做出決定前先深呼吸，理清利弊，切勿意氣用事。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 45 L85 45 M50 20 L50 130" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M45 25 L50 15 L55 25 Z" fill="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Imprudence, incapacity, extravagance.\'\n\n直譯：魯莽輕率、無能、揮霍。',
+      love: '【依原著關鍵詞】感情中因魯莽（imprudence）與無能（incapacity）而造成傷害，揮霍（extravagance）的方式使關係難以維繫。',
+      career: '【依原著關鍵詞】工作上因魯莽（imprudence）與無能（incapacity）而失敗，揮霍（extravagance）使資源耗盡，失去了正位的技巧與能力。',
+      advice: '【偉特原著核心】逆位的「魯莽」（imprudence）——高速衝鋒的騎士在逆位中失去了技巧與方向，只剩下衝動與浪費，無謀的勇氣是自毀。'
+    }
   },
   {
     id: 62,
-    name: "寶劍皇后",
-    englishName: "Queen of Swords",
-    number: "Queen",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["獨立客觀", "言詞犀利", "智慧過人", "界線分明", "直視真相"],
-    description: "皇后端坐在雕刻著天使寶座上，右手垂直高舉寶劍，左手指向前方。她神情嚴肅、冷靜，頭頂有白雲環繞，象徵著分明的界線、卓越的智性與直視真相的勇氣。",
+    name: '寶劍王后',
+    englishName: 'Queen of Swords',
+    number: 'Queen',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名女王端坐於高處的寶座，右手持寶劍筆直指天，左手向前伸出（似乎在迎接或指引）。她表情嚴肅甚至略帶悲傷，寶座上有蝴蝶與天使裝飾。背景是烏雲與風。',
+    keywords: ['寡婦', '女性的悲傷', '貧困', '缺席', '不育', '剝奪', '哀悼', '惡意', '偏執', '欺騙'],
     upright: {
-      title: "正位：獨立理智與分明的界線",
-      meaning: "代表一位極其聰明、客觀、獨立且界線分明的女性形象。她直言不諱，不被情感左右，能直視事情的真相。這張牌鼓勵你保持獨立思考，用邏輯與事實解決問題，並建立明確的個人界線。",
-      love: "關係中保持高度的獨立性，注重理性的溝通與空間。有時代表防備心較強、略顯冷淡的態度。",
-      career: "在職場上展現出卓越的分析能力、寫作或決策長才。說話一針見血，是團隊的理性核心。",
-      advice: "保持客觀與獨立。用理智權衡利弊，建立清楚的底線與邊界，不容許他人隨意越界。"
+      meaning: '【偉特原著·正位】\n原文：\'Widowhood, female sadness and embarrassment, poverty, absence, sterility; privation, separation, mourning, loss.\'\n\n直譯：寡婦、女性的悲傷與困窘、貧困、缺席、不育；剝奪、分離、哀悼、損失。',
+      love: '【依原著關鍵詞】感情中的寡婦（widowhood）象徵失去，女性的悲傷（female sadness）與困窘（embarrassment），分離（separation）與哀悼（mourning）是核心主題，損失（loss）深刻。',
+      career: '【依原著關鍵詞】工作上貧困（poverty）、缺席（absence）與剝奪（privation），不育（sterility）暗示缺乏成果，損失（loss）與哀悼（mourning）的氛圍。',
+      advice: '【偉特原著核心】偉特以「寡婦」為核心意象——寶劍王后理解深刻的失去，她的智慧來自痛苦的淬煉，這種悲傷的力量使她獨立而清醒。'
     },
     reversed: {
-      title: "逆位：刻薄冷酷、怨天尤人、偏見、界線混亂",
-      meaning: "代表你的理智變成了「冷酷」與「偏執」。你可能在溝通中過於刻薄、怨天尤人，或者是陷入了悲觀的偏見中。界線不清，容易被情緒綁架，卻試圖用冷淡來防衛自我。",
-      love: "感情中出現尖酸刻薄的指責、翻舊帳或冷暴力。防備心過度演變成自我孤立與冷酷。",
-      career: "職場上人際關係惡劣，說話不留情面引發反彈。要小心因為偏見做出失準的決策。",
-      advice: "收斂你的刻薄與冷淡。理智需要溫柔的同理心來調和，否則只會將關心你的人越推越遠。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 20 L50 110 M35 110 H65" stroke="#dfb86c" stroke-width="2"/>
-      <circle cx="50" cy="40" r="12" stroke="#dfb86c" stroke-width="1.5"/>
-      <line x1="50" y1="52" x2="50" y2="72" stroke="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Malice, bigotry, artifice, prudery, bale, deceit.\'\n\n直譯：惡意、偏執、人為手段、假正經、傷害、欺騙。',
+      love: '【依原著關鍵詞】感情中的惡意（malice）與欺騙（deceit），偏執（bigotry）扭曲判斷，假正經（prudery）掩蓋真實意圖，人為手段（artifice）製造傷害（bale）。',
+      career: '【依原著關鍵詞】工作上惡意（malice）與偏執（bigotry）破壞職場，人為手段（artifice）製造傷害（bale），欺騙（deceit）成為主要的互動模式。',
+      advice: '【偉特原著核心】逆位的「惡意」（malice）——悲傷的智慧在逆位中化為尖刻的惡意，「假正經」（prudery）最能揭示這種虛偽的面貌。'
+    }
   },
   {
     id: 63,
-    name: "寶劍國王",
-    englishName: "King of Swords",
-    number: "King",
-    suit: "swords",
-    element: "風",
-    elementSymbol: "💨",
-    keywords: ["專業權威", "邏輯大師", "公正無私", "冷靜決策", "智識領袖"],
-    description: "國王端坐在雕刻著蝴蝶的石製寶座上，右手持寶劍微微傾斜，目光堅定、銳利。他神情威嚴，代表著法治、秩序、無私的公平裁決以及卓越的心智掌控。",
+    name: '寶劍國王',
+    englishName: 'King of Swords',
+    number: 'King',
+    suit: 'swords',
+    element: '風',
+    icon: '⚔️',
+    description: '【偉特原著·圖像】一名國王端坐，手持寶劍稍微偏向一側（而非筆直向上），神情嚴肅具有威權。寶座上有蝴蝶（變化）與天使裝飾，背景有樹木在風中搖曳，象徵他在動盪中保持穩定的判斷。',
+    keywords: ['判斷', '所有與判斷相關的概念', '力量', '命令', '權威', '軍事智識', '法律', '殘酷', '邪惡意圖'],
     upright: {
-      title: "正位：客觀公正與心智的權威",
-      meaning: "代表一位極其成熟、理性、公正且具備專業知識的決策者（如律師、醫生、學者或高階主管）。你目前有能力擯棄一切情感干擾，完全基於法律、事實與邏輯做出最客觀的評判。",
-      love: "理性、成熟但可能缺乏浪漫激情的關係。國王代表一位注重平等溝通、理性探討問題的冷靜伴侶。",
-      career: "在職場上展現出卓越的專業權威與邏輯決策力。適合處理合同、法務或進行高難度的學術、技術研究。",
-      advice: "扮演好公正客觀的角色。收集事實，用邏輯與專業知識去權衡局勢，公正無私地做出抉擇。"
+      meaning: '【偉特原著·正位】\n原文：\'Whatsoever arises out of the idea of judgment and all its connexions—power, command, authority, militant intelligence, law, offices of the crown.\'\n\n直譯：凡源自判斷理念及其所有關聯的一切——力量、命令、權威、軍事智識、法律、王室職位。',
+      love: '【依原著關鍵詞】感情中代表具有判斷力（judgment）與權威（authority）的男性，以法律（law）與命令（command）的方式處理關係，軍事智識（militant intelligence）使其處事果斷。',
+      career: '【依原著關鍵詞】工作上代表最高的判斷力（judgment）、命令（command）與法律（law）的權威，軍事智識（militant intelligence）帶來精準的決策，掌管王室職位（offices of the crown）。',
+      advice: '【偉特原著核心】「凡源自判斷理念的一切」——寶劍國王的本質就是純粹的判斷力，不帶私情，以法律與命令實現秩序，是最具公正色彩的國王。'
     },
     reversed: {
-      title: "逆位：專制傲慢、操弄智力、強詞奪理、偏見不公",
-      meaning: "代表你將智慧用在了錯誤的地方（如欺騙、鑽法律漏洞）。行事傲慢、專制暴躁，用言論強詞奪理，做出極不公正的決策。這是一張警告牌，小心濫用威權。",
-      love: "感情中出現冷酷、理智至上的專制控制，用言語羞辱對方或強詞奪理，缺乏絲毫溫情。",
-      career: "職場上面臨不公的管理，合約欺詐或勾心鬥角的職權操弄。要注意防範法律糾紛與信譽危機。",
-      advice: "重拾公平與良知。智慧與知識應當用來守護真理與幫助他人，而非用來欺壓與操弄局勢。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 15 L50 120 M30 120 H70" stroke="#dfb86c" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M35 30 L50 15 L65 30 Z M35 45 H65" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Cruelty, perversity, barbarity, perfidy, evil intention.\'\n\n直譯：殘酷、乖戾、野蠻、背信、邪惡的意圖。',
+      love: '【依原著關鍵詞】感情中展現殘酷（cruelty）與背信（perfidy），乖戾（perversity）扭曲了原本的判斷力，邪惡的意圖（evil intention）主導行為。',
+      career: '【依原著關鍵詞】工作上殘酷（cruelty）與野蠻（barbarity）取代了公正的判斷，背信（perfidy）與邪惡的意圖（evil intention）破壞所有的信任。',
+      advice: '【偉特原著核心】逆位的「邪惡的意圖」（evil intention）——判斷力在逆位中服務於惡意，殘酷與野蠻是最高智識被腐化後的結果，是偉特最嚴峻的逆位之一。'
+    }
   },
 
-  // ==========================================
-  // SUIT 4: PENTACLES (星幣 - 土元素 🌿) - ID 64 to 77
-  // ==========================================
+  // ==================== PENTACLES ====================
   {
     id: 64,
-    name: "星幣一",
-    englishName: "Ace of Pentacles",
-    number: "Ace",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["物質收穫", "新機會", "繁榮", "穩定基礎", "成果落地"],
-    description: "一隻雲中伸出的神聖之手，平托著一枚巨大的星幣。下方是繁花盛開的拱門與整齊的庭院，象徵著物質財富的注入、新的財務契機與繁榮的基石。",
+    name: '錢幣首牌',
+    englishName: 'Ace of Pentacles',
+    number: 'Ace',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一隻從雲中伸出的手捧持一枚巨大的金色錢幣（五芒星圖案），下方有一個花園拱門，拱門通向一條遠方有山丘的小路，花園裡有百合花盛開。',
+    keywords: ['完美的滿足', '幸福', '狂喜', '迅速的情報', '黃金', '財富', '繁榮', '舒適', '邪惡', '壞消息'],
     upright: {
-      title: "正位：財務新機會與穩固的起點",
-      meaning: "代表新的財務機會、工作聘書或創業項目的誕生。這是一張極佳的物質吉牌，代表你的計劃即將落地並帶來實打實的金錢回報。此時適合投資、置產或開創穩健的新事業。",
-      love: "一段務實、穩定且安全感十足的感情。雙方有著共同的物質基礎，關係朝著婚姻穩步前行。",
-      career: "收到滿意的 Offer、晉升加薪的合約，或是一個非常有前景的投資項目啟動。事業基礎穩固。",
-      advice: "抓住眼前的財務與工作機會，腳踏實地地耕耘，這將是通往長期繁榮的穩固地基。"
+      meaning: '【偉特原著·正位】\n原文：\'Perfect contentment, felicity, ecstasy; also speedy intelligence; gold.\'\n\n直譯：完美的滿足、幸福、狂喜；亦指迅速的情報；黃金。',
+      love: '【依原著關鍵詞】感情中帶來完美的滿足（perfect contentment）與狂喜（ecstasy），物質的豐盛（gold）為感情提供穩固的基礎，是幸福（felicity）的源泉。',
+      career: '【依原著關鍵詞】工作上帶來黃金（gold）與完美的滿足（perfect contentment），迅速的情報（speedy intelligence）加速成功，狂喜（ecstasy）來自物質成就。',
+      advice: '【偉特原著核心】「迅速的情報」（speedy intelligence）——錢幣首牌不只是財富，偉特特別列出情報的快速傳遞，提示物質與信息的同步豐盛。'
     },
     reversed: {
-      title: "逆位：財務損失、錯失良機、投資失敗或貪婪浪費",
-      meaning: "代表面臨資金短缺、計劃延遲或投資蒙受損失。你可能錯失了重要的工作機會，或者因為過於貪婪、投機取巧而導致財務漏洞。也象徵入不敷出。",
-      love: "感情中因為金錢、物質問題（如買房、開銷）產生摩擦，關係缺乏安全感與穩定基礎。",
-      career: "工作合約卡關，投資項目虧損。這是一聲警鐘，提醒你此時不宜做高風險的資金投入。",
-      advice: "保守理財，開源節流。重新評估你的財務規劃，切忌投機取巧，踏實走好每一步。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="50" cy="75" r="25" stroke="#dfb86c" stroke-width="2" fill="none"/>
-      <path d="M50 50 L57 66 L74 69 L62 81 L65 98 L50 90 L35 98 L38 81 L26 69 L43 66 Z" fill="url(#goldGrad)" stroke="#dfb86c" stroke-width="1"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'The evil side of wealth, bad intelligence; also great riches. In any case it shows prosperity, comfortable material conditions.\'\n\n直譯：財富的邪惡面、壞消息；亦指巨大的財富。無論如何，它都顯示繁榮、舒適的物質條件。',
+      love: '【依原著關鍵詞】感情中財富的邪惡面（evil side of wealth）顯現，壞消息（bad intelligence）可能到來，但物質上依然繁榮（prosperity）。',
+      career: '【依原著關鍵詞】工作上偉特明確指出「無論如何都顯示繁榮與舒適的物質條件」——即使逆位，錢幣首牌在物質層面依然正面，但需注意財富的邪惡面。',
+      advice: '【偉特原著核心】偉特罕見地在逆位中直接說明「無論如何都顯示繁榮」——這是整副牌中逆位依然最為正面的牌之一，財富在任何方向都成立。'
+    }
   },
   {
     id: 65,
-    name: "星幣二",
-    englishName: "Two of Pentacles",
-    number: "2",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["平衡", "適應力", "多工處理", "資金周轉", "抉擇"],
-    description: "年輕男子在起伏的海浪背景前，一邊起舞一邊雜耍著兩枚星幣，星幣被無限符號（柔性平衡）連結。象徵著在混亂的變局中，維持資源與生活的平衡。",
+    name: '錢幣二',
+    englishName: 'Two of Pentacles',
+    number: '2',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名年輕男子在雜耍兩枚錢幣，錢幣被一條無限大符號形狀的綠色綬帶連接（∞）。他跳舞般地保持平衡，背景是洶湧的海浪中有兩艘船。',
+    keywords: ['歡樂', '娛樂', '消息', '書面訊息', '障礙', '激動', '麻煩', '糾纏', '被迫的歡樂', '愉快的消息'],
     upright: {
-      title: "正位：維持平衡與靈活的適應力",
-      meaning: "代表你目前需要在生活中「一心二用」（多工處理），平衡工作與家庭、兩份收入或不同的生活角色。你的財務可能處於周轉或平衡的狀態。這張牌要求你發揮適應力，彈性應對改變。",
-      love: "感情穩定但生活忙碌，需要協調約會與工作時間。雙方共同理財，尋求物質生活的平衡。",
-      career: "職場上面臨多個項目並進的狀況，需要優秀的時間管理。也代表資金靈活運作，收支平衡。",
-      advice: "保持彈性與幽默感，理清輕重緩急，在生活的動態變化中靈活地跳舞、維持平衡。"
+      meaning: '【偉特原著·正位】\n原文：\'Gaiety, recreation; also news and messages in writing, obstacles, agitation, trouble, embroilment.\'\n\n直譯：歡樂、娛樂；亦指書面消息、障礙、激動、麻煩、糾纏。',
+      love: '【依原著關鍵詞】感情中充滿歡樂（gaiety）與娛樂（recreation），書面消息（news in writing）傳遞情意，但同時有障礙（obstacles）與激動（agitation）的糾纏（embroilment）。',
+      career: '【依原著關鍵詞】工作上在歡樂（gaiety）中面對障礙（obstacles）與麻煩（trouble），消息（news）來來去去，需在激動（agitation）中保持平衡（∞符號）。',
+      advice: '【偉特原著核心】無限大符號∞——偉特的圖像設計暗示永恆的平衡之道，在麻煩與歡樂之間保持流動，靈活應對才是此牌的核心智慧。'
     },
     reversed: {
-      title: "逆位：失去平衡、精疲力竭、財務混亂、多工失敗",
-      meaning: "代表你的生活失去了平衡，工作超載或財務失控，讓你精疲力竭。多工處理失敗，專案進展混亂，面臨資金鏈斷裂或入不敷出的危機。",
-      love: "因為生活或工作壓力過大，忽略了對伴侶的關心，或者雙方常因為經濟周轉問題發生摩擦。",
-      career: "工作量超出極限，專案進度混亂、出錯。財務出現漏洞，需要重整債務或開銷。",
-      advice: "停下雜耍！專注於一件事，先把混亂的收支理清，卸下不合理的重擔，重新建立穩定。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="30" cy="75" r="10" stroke="#dfb86c"/>
-      <circle cx="70" cy="75" r="10" stroke="#dfb86c"/>
-      <path d="M30 65 C40 60, 60 90, 70 85 C60 90, 40 60, 30 65" stroke="#dfb86c" stroke-width="1"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Enforced gaiety, simulated enjoyment; handwriting, letter; composition; pleasant news.\'\n\n直譯：被迫的歡樂、偽裝的享受；筆跡、書信；作文；愉快的消息。',
+      love: '【依原著關鍵詞】感情中的歡樂是「被迫的」（enforced gaiety）與「偽裝的享受」（simulated enjoyment），書信（letter）帶來愉快的消息（pleasant news）。',
+      career: '【依原著關鍵詞】工作上以被迫的歡樂（enforced gaiety）面對現實，書信（handwriting, letter）與文件（composition）帶來愉快的消息（pleasant news）。',
+      advice: '【偉特原著核心】逆位的「偽裝的享受」（simulated enjoyment）——表面的歡樂可能是強迫自己做出的表演，但書信帶來的愉快消息是真實的好兆頭。'
+    }
   },
   {
     id: 66,
-    name: "星幣三",
-    englishName: "Three of Pentacles",
-    number: "3",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["團隊合作", "專業技能", "規劃", "認可", "共同建造"],
-    description: "雕刻師在教堂中工作，一位牧師與一位學者拿著藍圖給予指引。三枚星幣高懸在拱門上，代表著專業技術的展現、跨領域合作以及打下堅實基礎。",
+    name: '錢幣三',
+    englishName: 'Three of Pentacles',
+    number: '3',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名工匠（石匠）站在教堂的拱廊中工作，手持工具，對面有兩名人物（一名修士和一名貴族）看著他的作品並持建築圖紙討論。圖像象徵技藝與專業得到認可。',
+    keywords: ['職業', '貿易', '熟練勞動', '貴族', '聲望', '榮耀', '平庸', '幼稚', '渺小', '軟弱'],
     upright: {
-      title: "正位：團隊協作與專業實力的展現",
-      meaning: "這是一張代表「合作」與「專業」的吉牌。你在工作上的實力備受認可。此時非常適合進行團隊分工、跨部門協作或向有經驗的導師學習。這也是工程、企劃打下穩固根基的良機。",
-      love: "雙方關係像隊友一樣契合，共同規劃未來的房屋或家庭生活。彼此支持，關係健康穩定。",
-      career: "職場上表現亮眼，展現出高度的專業與工匠精神。專案分工明確，進展順利，深得信任。",
-      advice: "善用團隊的力量，尊重每個人的專業分工。精益求精，用腳踏實地的專業實力贏得肯定。"
+      meaning: '【偉特原著·正位】\n原文：\'Métier, trade, skilled labour; also nobility, aristocracy, renown, glory.\'\n\n直譯：職業、貿易、熟練的勞動；亦指貴族身份、貴族、聲望、榮耀。',
+      love: '【依原著關鍵詞】感情中以技藝（skilled labour）的精神對待關係，熟練與用心帶來聲望（renown），如工匠打造傑作般，愛情也需要專業的技巧。',
+      career: '【依原著關鍵詞】工作上展現職業技能（métier）與熟練勞動（skilled labour），獲得貴族的認可（nobility, aristocracy），聲望（renown）與榮耀（glory）隨之而來。',
+      advice: '【偉特原著核心】「熟練的勞動」（skilled labour）——三號錢幣代表專業技藝的體現，工匠在教堂中的作品既是謀生之道，也是留存的藝術，技藝即是價值。'
     },
     reversed: {
-      title: "逆位：缺乏合作、溝通不良、實力不足或工作散漫",
-      meaning: "代表團隊分工出現問題，大家各行其是、缺乏協調（內耗）。你的專業技能可能面臨瓶頸，或者因為做事敷衍、態度散漫，導致專案執行一團混亂。",
-      love: "感情中缺乏協作，遇到矛盾時各執一詞、不願妥協，關係缺乏共同前行的務實規劃。",
-      career: "團隊溝通雞同鴨講，工作進度延宕。個人實力不足卻好大喜功，提案遭到否決。",
-      advice: "放下偏見，重整溝通管道。多虛心學習，提升自己的基本功，切忌做表面功夫。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 20 L80 50 H20 Z" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <circle cx="35" cy="80" r="10" stroke="#dfb86c"/>
-      <circle cx="65" cy="80" r="10" stroke="#dfb86c"/>
-      <circle cx="50" cy="115" r="10" stroke="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Mediocrity, in work and otherwise, puerility, pettiness, weakness.\'\n\n直譯：平庸（在工作和其他方面）、幼稚、渺小、軟弱。',
+      love: '【依原著關鍵詞】感情中以平庸（mediocrity）的方式對待，幼稚（puerility）與渺小（pettiness）的行為使關係缺乏深度，軟弱（weakness）無法支撐長久。',
+      career: '【依原著關鍵詞】工作上僅達平庸水準（mediocrity），幼稚（puerility）與渺小的思維（pettiness）阻礙成長，軟弱（weakness）使技藝無法提升。',
+      advice: '【偉特原著核心】逆位的「平庸」（mediocrity）——技藝精湛的工匠在逆位中變成平庸的勞工，幼稚與渺小是阻礙卓越的最常見陷阱。'
+    }
   },
   {
     id: 67,
-    name: "星幣四",
-    englishName: "Four of Pentacles",
-    number: "4",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["掌控", "守財奴", "安全感", "抗拒改變", "保留"],
-    description: "男子緊抱著一枚星幣，頭頂與腳下各踩著星幣。他神情警惕，坐在城堡前，象徵著對財產與現狀的過度掌控，抗拒分享，也抗拒任何改變。",
+    name: '錢幣四',
+    englishName: 'Four of Pentacles',
+    number: '4',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名男子緊緊地抱著一枚錢幣，頭頂放一枚，腳踩兩枚，緊緊地固守著自己的財富。他坐在城市前方，表情緊張執著，象徵對物質的過度執著。',
+    keywords: ['財產的保障', '執著', '禮物', '遺産', '繼承', '猶豫', '延誤', '反對'],
     upright: {
-      title: "正位：保守理財與過度掌控現狀",
-      meaning: "代表你目前極度追求「安全感」。你行事保守、防備心重，牢牢抓住手中的資源、金錢或權力（守財奴心態）。雖然財務狀況穩定，但過度掌控會讓你陷入停滯、抗拒一切必要的變革。",
-      love: "感情中出現強烈的佔有欲與控制欲，緊抓著過去的觀念不放，缺乏浪漫的流動與安全感。",
-      career: "職場上追求穩定，不願冒任何風險或跳槽。但要注意避免因為防備心太重而排斥新方法或新同事。",
-      advice: "適度儲蓄是好事，但請放鬆你緊繃的雙手。有捨才有得，流通的能量才能帶來源源不絕的豐盛。"
+      meaning: '【偉特原著·正位】\n原文：\'The surety of possessions, cleaving to that which one has, gift, legacy, inheritance.\'\n\n直譯：財產的保障、執著於所擁有之物、禮物、遺贈、繼承。',
+      love: '【依原著關鍵詞】感情中執著（cleaving）於已擁有的關係，對伴侶的保障（surety）是真實的，但禮物（gift）與遺贈（legacy）暗示關係中的物質考量。',
+      career: '【依原著關鍵詞】工作上對財產（possessions）保障（surety）的執著，繼承（inheritance）與遺贈（legacy）帶來物質基礎，禮物（gift）可能來自意外之財。',
+      advice: '【偉特原著核心】「執著於所擁有之物」（cleaving to that which one has）——四號錢幣的執著既是保障也是限制，過度的固守可能阻礙新的豐盛進入。'
     },
     reversed: {
-      title: "逆位：捨得花錢、放手改變、財務漏洞或控制欲瓦解",
-      meaning: "代表你決定打破原有的保守與吝嗇，願意花錢、分享資源或大膽嘗試改變。在另一種情況下，也警告你可能出現財務漏洞、揮霍無度，或原有的控制權受損。",
-      love: "感情中放下了不健康的掌控欲與佔有欲，關係重現寬容；或者因為累積的摩擦，關係徹底走向疏離。",
-      career: "決定打破現狀，勇敢跳槽或投資新領域。但需要注意理財上的風險管理，防範超支。",
-      advice: "學會張開雙手。在精明理財與享受生活、大膽求變之間找到平衡，用開闊的心胸迎向未來。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="25" y="40" width="50" height="70" rx="3" stroke="#dfb86c" stroke-width="1.5" stroke-dasharray="4 2"/>
-      <circle cx="50" cy="75" r="12" stroke="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Suspense, delay, opposition.\'\n\n直譯：懸而未決、延誤、反對。',
+      love: '【依原著關鍵詞】感情中事情懸而未決（suspense），延誤（delay）使關係停滯，反對（opposition）可能來自家庭或外部的阻力。',
+      career: '【依原著關鍵詞】工作上懸而未決（suspense）使局面僵持，延誤（delay）阻礙財務或計劃的推進，反對（opposition）成為主要障礙。',
+      advice: '【偉特原著核心】逆位的「懸而未決」（suspense）——執著的態度導致一切停滯，無法做出決定，需鬆開緊握的手，允許事情自然流動。'
+    }
   },
   {
     id: 68,
-    name: "星幣五",
-    englishName: "Five of Pentacles",
-    number: "5",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["貧困", "孤立", "健康受損", "忽視援助", "共克艱難"],
-    description: "兩個衣衫襤褸的窮人（一個拄著軌杖）在大雪中默默走過教堂彩繪玻璃窗前，窗上繪有五枚星幣。教堂的燈光溫暖，但他們低頭前行，忽視了身邊近在咫尺的溫暖與援助。",
+    name: '錢幣五',
+    englishName: 'Five of Pentacles',
+    number: '5',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】兩名衣衫破舊的人在雪地中艱難前行，一人拄拐，他們經過一個明亮的教堂彩色玻璃窗（五芒星圖案），卻沒有注意到或沒有走進去。象徵在苦難中看不見援助的存在。',
+    keywords: ['物質困境', '愛人', '和諧', '親和力', '混亂', '渾沌', '毀滅', '不和', '揮霍無度'],
     upright: {
-      title: "正位：陷入物質困境與忽視援助",
-      meaning: "代表面臨財務危機、失業、疾病或嚴重的孤立無援。你此時感到身心無比寒冷，但星幣五警告你：別被悲觀的情緒蒙蔽，教堂的門一直開著，溫暖與援助就在你身旁，請勇敢敲門求助。",
-      love: "貧賤夫妻百事哀，感情面臨嚴重的物質與經濟考驗。也代表雙方共同承受著生活的風雪。",
-      career: "工作面臨失業、破產或商業項目虧損。面臨財務吃緊，不要因為面子而拒絕親友的救濟。",
-      advice: "抬起頭來，看看身邊。援助之手一直都在，放下無謂的尊嚴，勇敢求助，溫暖的港灣就在身旁。"
+      meaning: '【偉特原著·正位】\n原文：\'Material trouble above all, whether in the form of destitution or otherwise; for some it is a card of love and lovers; also concordance, affinities.\'\n\n直譯：首要的物質困境，無論是貧困形式或其他；對某些人而言，是愛與戀人之牌；亦指和諧、親和力。',
+      love: '【依原著關鍵詞】偉特明確指出「對某些人而言是愛與戀人之牌」——五號錢幣可能代表在物質困境（material trouble）中共患難的愛情，和諧（concordance）在艱苦中存在。',
+      career: '【依原著關鍵詞】工作上以物質困境（material trouble）為主要特徵，可能是貧困（destitution）或其他形式的物質匱乏，需尋找新的資源。',
+      advice: '【偉特原著核心】偉特的「物質困境首要」——五號錢幣的苦難是有形的，但他同時指出愛與和諧也可能在此存在，困境中仍有溫暖的可能。'
     },
     reversed: {
-      title: "逆位：走出困境、財務回溫、重獲工作、獲得援助",
-      meaning: "這是一張代表「走出風雪」的吉牌。你最艱難的經濟危機或健康問題即將過去，找到了工作、獲得了資金援助或身體康復。你開始步入教堂的溫暖中，迎來希望的春天。",
-      love: "共同熬過了經濟的寒冬，感情基礎更加深厚；單身者告別被孤立的心態，重新建立人際關係。",
-      career: "債務得到緩解，重新獲得工作合約或商業投資。工作重回正軌，前途回暖。",
-      advice: "感謝風雪中陪伴你的人。珍惜重獲的穩定，腳踏實地地重建你的生活與財務金字塔。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30 40 L50 20 L70 40 V120 H30 Z" fill="none" stroke="#dfb86c" stroke-width="1.5"/>
-      <circle cx="50" cy="70" r="10" stroke="#dfb86c" stroke-dasharray="3 3"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Disorder, chaos, ruin, discord, profligacy.\'\n\n直譯：混亂、渾沌、毀滅、不和、揮霍無度。',
+      love: '【依原著關鍵詞】感情中陷入混亂（disorder）與不和（discord），揮霍無度（profligacy）使物質基礎瓦解，渾沌（chaos）取代了曾有的和諧。',
+      career: '【依原著關鍵詞】工作上遭受毀滅（ruin）、混亂（chaos）與不和（discord），揮霍無度（profligacy）加速物質的崩潰，渾沌（disorder）使局面失控。',
+      advice: '【偉特原著核心】逆位的「揮霍無度」（profligacy）——正位的物質困境在逆位中因揮霍而加深，不是外力造成的貧困，而是自我選擇的浪費。'
+    }
   },
   {
     id: 69,
-    name: "星幣六",
-    englishName: "Six of Pentacles",
-    number: "6",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["慈善", "給予與接受", "資源分配", "平等的關係", "貴人相助"],
-    description: "一名富商手持天平，正慷慨地將硬幣分發給兩名跪著的乞丐。他神情平靜、公正，象徵著財務的流動、平等的資源分配、慈善以及施與受的和諧。",
+    name: '錢幣六',
+    englishName: 'Six of Pentacles',
+    number: '6',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名富裕的商人手持天平稱量，另一手將錢幣分施給跪在地上的乞丐（兩人跪拜）。他代表施予者，處於能夠衡量並分配財富的位置。',
+    keywords: ['禮物', '饋贈', '感謝', '注意', '警覺', '現在的繁榮', '慾望', '貪婪', '嫉妒', '幻覺'],
     upright: {
-      title: "正位：貴人相助與平等的資源分配",
-      meaning: "代表施與受的和諧。如果你目前面臨困境，預示著即將有貴人出資相助，合理的薪資或貸款獲批；如果你處於優勢，這張牌鼓勵你慷慨解囊、回饋社會，建立平等的互惠關係。",
-      love: "平等、互相滋養且健康的感情。雙方都願意為彼此付出，情感與物質的流動非常順暢。",
-      career: "職場上遇到願意提攜你的貴人、主管，或者順利簽署平等的商業合約。薪資待遇合理。",
-      advice: "保持慷慨與感恩。不論是扮演給予者還是接受者，都請以感恩、尊重平等的態度對待每個人。"
+      meaning: '【偉特原著·正位】\n原文：\'Presents, gifts, gratification; attention, vigilance; now is the accepted time, present prosperity.\'\n\n直譯：禮物、饋贈、感謝；注意、警覺；現在是被接受的時刻、當前的繁榮。',
+      love: '【依原著關鍵詞】感情中通過禮物（gifts）與饋贈（presents）表達感謝（gratification），「現在是被接受的時刻」（now is the accepted time）——抓住當前的良機表達心意。',
+      career: '【依原著關鍵詞】工作上當前的繁榮（present prosperity）是最好的時機，禮物（gifts）與注意力（attention）帶來成果，警覺（vigilance）確保不錯失良機。',
+      advice: '【偉特原著核心】「現在是被接受的時刻」（now is the accepted time）——六號錢幣的關鍵是「現在」，在繁榮的當下施予與接受，不要推遲。'
     },
     reversed: {
-      title: "逆位：利益輸送不公、貪婪、借貸糾紛、不對等關係",
-      meaning: "代表施與受的平衡被打破。你可能遇到了不對等的關係（一方施捨，一方卑微），或者面臨利益分配不均、財務糾紛或欺詐。也警告你避免過度透支金錢。",
-      love: "感情關係嚴重失衡，一方總是高高在上地施捨，另一方則委曲求全。缺乏平等的尊重與溝通。",
-      career: "職場上遭遇功勞被奪、薪資待遇不公，或是商務合作中有一方試圖強佔所有利益，防範債務糾紛。",
-      advice: "理清不對等的關係。保護自己的利益，拒絕不平等的妥協，同時避免陷入虛榮的施捨心態。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 30 V110 M20 45 H80" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M30 75 Q50 90 70 75" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Desire, cupidity, envy, jealousy, illusion.\'\n\n直譯：慾望、貪婪、嫉妒、妒忌、幻覺。',
+      love: '【依原著關鍵詞】感情中慾望（desire）與嫉妒（jealousy）破壞了給予與接受的平衡，貪婪（cupidity）使關係出現失衡，幻覺（illusion）蒙蔽真實的感情。',
+      career: '【依原著關鍵詞】工作上貪婪（cupidity）與嫉妒（envy, jealousy）取代了公平的分配，幻覺（illusion）使人無法看清財富的真實狀況。',
+      advice: '【偉特原著核心】逆位的「幻覺」（illusion）——施予的天平在逆位中被貪婪與嫉妒扭曲，對財富的幻覺使人追求本不存在的東西。'
+    }
   },
   {
     id: 70,
-    name: "星幣七",
-    englishName: "Seven of Pentacles",
-    number: "7",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["耐心等待", "評估成果", "累積", "選擇方向", "辛勤耕耘"],
-    description: "農夫手持鋤頭，靠在權杖上，看著自己辛勤耕耘的灌木叢中掛著的六枚星幣，另一枚星幣放在他腳邊。他神情深思，象徵著在成果初步展現時，耐心地評估與思索下一步方向。",
+    name: '錢幣七',
+    englishName: 'Seven of Pentacles',
+    number: '7',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名農夫倚靠著鋤頭休息，望著他所種植的灌木上結著的七個錢幣（五芒星）。他神情沉思，正在評估勞動的成果，思考是否應繼續或改變方向。',
+    keywords: ['金錢', '商業', '易貨', '爭吵', '天真', '純粹', '清除', '貸款的焦慮'],
     upright: {
-      title: "正位：耐心等待收穫與階段性評估",
-      meaning: "代表你過去的努力（耕耘）已經開始開花結果，出現了初步的成效。此時不需要急躁，而是要耐心地等待完全成熟的收穫季節。同時，這也是停下腳步、評估當前專案與投資方向的黃金時刻。",
-      love: "感情關係穩健累積，雙方已渡過了最難的磨合期。此時適合靜心思考，如何共同規劃下一步的婚姻與生活。",
-      career: "工作取得了階段性的成果，適合總結得失。此時需要耐心，繼續堅持務實的工作積累，不宜操之過急。",
-      advice: "耕耘需要時間，不要拔苗助長。耐心地守護你的成果，仔細評估，你的汗水終將化為豐盛的報酬。"
+      meaning: '【偉特原著·正位】\n原文：\'Money, business, and barter; also altercation, quarrels; and innocence, ingenuousness, purgation.\'\n\n直譯：金錢、商業、易貨交換；亦指爭吵、口角；以及天真、坦率、清洗。',
+      love: '【依原著關鍵詞】感情中金錢（money）與商業（business）的考量影響關係，可能有爭吵（altercation）但也有天真（innocence）與坦率（ingenuousness）的一面。',
+      career: '【依原著關鍵詞】工作上金錢（money）、商業（business）與易貨（barter）是核心，爭吵（quarrels）可能影響商業關係，天真（innocence）的清洗（purgation）帶來新的開始。',
+      advice: '【偉特原著核心】「清洗」（purgation）——七號錢幣不只是評估成果，偉特指出一種淨化的過程，在商業的現實中保持天真的坦率，是重要的品格。'
     },
     reversed: {
-      title: "逆位：急功近利、徒勞無功、投資失利或半途而廢",
-      meaning: "代表你缺乏耐心，急功近利地想要收穫，導致成果受損。或者你感到目前的耕耘毫無前景、徒勞無功，因而產生了放棄、半途而廢的念頭。也代表財務盲目投資導致虧損。",
-      love: "感情中缺乏長遠的耐心，頻繁因為瑣事而想放棄；或者感到自己的付出沒有得到伴侶的回應。",
-      career: "工作上面臨瓶頸，專案成效不彰。此時容易心灰意冷，在臨門一腳時放棄了長期的堅持。",
-      advice: "找出問題的根源。如果方向真的錯了，及時止損是明智的；如果只是需要時間，請收起急躁，繼續堅持。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30 40 L50 20 L70 40" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <path d="M50 20 L50 120 M20 120 H80" stroke="#dfb86c" stroke-width="2"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Cause for anxiety regarding money which it may be proposed to lend.\'\n\n直譯：關於可能建議出借的金錢所引起的焦慮。',
+      love: '【依原著關鍵詞】感情中因金錢借貸（lend）或財務問題產生焦慮（anxiety），物質的憂慮影響情感的品質。',
+      career: '【依原著關鍵詞】工作上關於出借金錢（lend）的建議引起焦慮（anxiety），財務決策需要謹慎，不確定性帶來不安。',
+      advice: '【偉特原著核心】偉特給出非常具體的逆位描述——關於「出借金錢」（lend）的焦慮，提醒在財務建議上需格外謹慎，不可輕率地借貸。'
+    }
   },
   {
     id: 71,
-    name: "星幣八",
-    englishName: "Eight of Pentacles",
-    number: "8",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["學徒期", "專注工作", "工匠精神", "精益求精", "技能提升"],
-    description: "年輕的工匠坐木凳上，正心無旁騖地雕刻著一枚星幣。牆上整齊懸掛著其他七枚已雕刻完成的星幣，腳下是碎木屑，象徵著心無旁騖的專注、技能的累積與對品質的極致追求。",
+    name: '錢幣八',
+    englishName: 'Eight of Pentacles',
+    number: '8',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名工匠坐在工作台前，正在雕刻錢幣（五芒星），已完成的錢幣整齊地排列在他身邊。他全神貫注於工作，背景有城市的輪廓，代表技藝的學習與精進。',
+    keywords: ['工作', '就業', '委任', '工藝', '準備階段', '野心的喪失', '虛榮', '貪婪', '詭詐'],
     upright: {
-      title: "正位：工匠精神與腳踏實地的修煉",
-      meaning: "這是一張代表「專注」與「技能」的吉牌。你目前正處於學習或工作技能突飛猛進的關鍵期。你心無旁騖，精益求精地做好手邊的每一個細節。腳踏實地的修煉，必將為你帶來長期的行業權威與財富。",
-      love: "感情踏實、穩定。雙方願意用心去經營日常的細節，共同克服困難，感情在日常的陪伴中升華。",
-      career: "工作上表現出極高的專注力與工匠精神。非常適合進修技術、鑽研學術或做細緻的工程。名聲漸增。",
-      advice: "保持你的專注與耐心。細節決定成敗，踏實地做好每一件小事，你正在成為自己領域的專家。"
+      meaning: '【偉特原著·正位】\n原文：\'Work, employment, commission, craftsmanship, skill in craft and business, perhaps in the preparatory stage.\'\n\n直譯：工作、就業、委任、工藝精神、工藝與商業上的技巧，或許是在準備階段。',
+      love: '【依原著關鍵詞】感情中以工藝（craftsmanship）的精神對待，用功（work）地學習與精進，或許處於感情關係的準備階段（preparatory stage）。',
+      career: '【依原著關鍵詞】工作上專注於技藝（craftsmanship）與技巧（skill），就業（employment）穩定，委任（commission）帶來新的工作，或許仍在準備（preparatory stage）中。',
+      advice: '【偉特原著核心】「或許是在準備階段」（preparatory stage）——八號錢幣是學徒的牌，強調勤勉的練習過程，精通技藝需要時間與專注，過程本身即有價值。'
     },
     reversed: {
-      title: "逆位：工作散漫、缺乏耐心、眼高手低、走捷徑或職業倦怠",
-      meaning: "代表你對目前繁瑣的工作感到無比倦怠，做事敷衍了事、缺乏誠意。你也可能流於眼高手低，試圖走捷徑、投機取巧，結果把事情搞砸。缺乏一技之長。",
-      love: "感情關係缺乏用心經營，日常相處變得沉悶且流於敷衍。缺乏對伴侶情感細節的體貼。",
-      career: "工作態度散漫，專案細節漏洞百出。或者因為眼高手低，遲遲無法掌握核心的業務技能。",
-      advice: "重新端正你的態度。成功沒有捷徑，靜下心來，把繁瑣的細節當作修煉，踏實地做好基本功。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="25" y="30" width="50" height="90" rx="3" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <circle cx="40" cy="50" r="5" stroke="#dfb86c"/><circle cx="60" cy="50" r="5" stroke="#dfb86c"/>
-      <circle cx="40" cy="80" r="5" stroke="#dfb86c"/><circle cx="60" cy="80" r="5" stroke="#dfb86c"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Voided ambition, vanity, conceit, exaction, usury; also the possession of skill turned to cunning and intrigue.\'\n\n直譯：落空的野心、虛榮、自負、勒索、高利貸；亦指技巧的擁有轉化為詭詐與陰謀。',
+      love: '【依原著關鍵詞】感情中技巧（skill）被扭曲為詭詐（cunning）與陰謀（intrigue），野心（ambition）落空，虛榮（vanity）與自負（conceit）主導行為。',
+      career: '【依原著關鍵詞】工作上野心落空（voided ambition），技巧轉為詭詐（cunning）與陰謀（intrigue），勒索（exaction）與高利貸（usury）暗示不道德的商業行為。',
+      advice: '【偉特原著核心】「技巧轉化為詭詐與陰謀」（skill turned to cunning and intrigue）——同樣的技能，目的與方向決定了是藝術還是操縱，需警惕才能的腐化。'
+    }
   },
   {
     id: 72,
-    name: "星幣九",
-    englishName: "Nine of Pentacles",
-    number: "9",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["物質獨立", "高雅優渥", "自律", "安全感", "享受成果"],
-    description: "高雅的貴婦身穿繪有葡萄花紋的長袍，悠閒地站在盛開的私人莊園中。一隻馴服的獵鷹立在她的左手上，四周是掛滿金色星幣的葡萄架，象徵著物質的獨立、自律以及優雅的享受成果。",
+    name: '錢幣九',
+    englishName: 'Nine of Pentacles',
+    number: '9',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名優雅的女子站在葡萄園中，手臂上停著一隻訓練好的獵鷹，周圍有豐盛的葡萄與九枚錢幣。背景有城堡的輪廓，整個畫面充滿獨立自主的優雅豐盛。',
+    keywords: ['謹慎', '安全', '成功', '成就', '確定', '辨別力', '無賴行徑', '欺騙', '無效的計劃', '壞信仰'],
     upright: {
-      title: "正位：物質獨立與優雅的貴族生活",
-      meaning: "代表著高度的物質獨立、財務自由、高雅的生活品味與內心的安全感。你通過自律與智慧獲得了豐碩的財富回報，此時可以悠閒地享受辛勤換來的成果。這是一張代表優渥生活與自信的牌。",
-      love: "單身者極度享受獨立、高品質的單身生活，散發出迷人且尊貴的氣息。戀愛中代表雙方經濟獨立、互相尊重。",
-      career: "事業有成，財務自由。你的專業實力為你帶來了豐厚的收益與崇高的行業地位，能從容安排生活。",
-      advice: "大方地享受你用汗水換來的成果與舒適生活。同時保持你的自律與優雅，這將是你的強大光芒。"
+      meaning: '【偉特原著·正位】\n原文：\'Prudence, safety, success, accomplishment, certitude, discernment.\'\n\n直譯：謹慎、安全、成功、成就、確定、辨別力。',
+      love: '【依原著關鍵詞】感情中帶來安全感（safety）與確定（certitude），以謹慎（prudence）與辨別力（discernment）評估關係，成就（accomplishment）帶來自信的從容。',
+      career: '【依原著關鍵詞】工作上成功（success）與成就（accomplishment）帶來安全感（safety），謹慎（prudence）與辨別力（discernment）是決策的基礎，確定性（certitude）增強自信。',
+      advice: '【偉特原著核心】「辨別力」（discernment）——九號錢幣的女士不只是富裕，她的成功來自精準的辨別力，謹慎的判斷是真正財富的守護者。'
     },
     reversed: {
-      title: "逆位：物質匱乏、虛榮超支、依賴他人、安全感破滅",
-      meaning: "代表雖然表面裝得很有錢（虛榮心），實則財務吃緊、超支嚴重。你也可能因為過度依賴他人而失去了個人的獨立與尊嚴，生活環境混亂，安全感瓦解。",
-      love: "感情中可能因為金錢或物質利益而依附對方，失去了人格的獨立；或者關係中充滿了攀比與虛榮。",
-      career: "工作上成效受阻，財務管理混亂。小心因為投機取巧或盲目揮霍而陷入債務危機中。",
-      advice: "退回務實的軌道。放下不必要的虛榮與超支，重新建立個人財務的獨立與內在的自律。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="50" cy="70" rx="30" ry="40" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <path d="M50 30 L50 110 M30 70 H70" stroke="#dfb86c" opacity="0.3"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Roguery, deception, voided project, bad faith.\'\n\n直譯：無賴行徑、欺騙、無效的計劃、惡意（壞的信義）。',
+      love: '【依原著關鍵詞】感情中出現無賴行徑（roguery）與欺騙（deception），計劃無效（voided project），惡意（bad faith）使信任瓦解。',
+      career: '【依原著關鍵詞】工作上無賴行徑（roguery）與欺騙（deception）破壞商業關係，無效的計劃（voided project）浪費資源，惡意（bad faith）使合作無法繼續。',
+      advice: '【偉特原著核心】逆位的「惡意」（bad faith）——優雅的成功在逆位中被無賴行徑侵蝕，欺騙取代了謹慎，計劃的無效是惡意的必然結果。'
+    }
   },
   {
     id: 73,
-    name: "星幣十",
-    englishName: "Ten of Pentacles",
-    number: "10",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["家族傳承", "財富積累", "基業長青", "安全感", "傳統"],
-    description: "在古老繁華的城堡拱門前，坐著一位身穿華服、撫摸著兩隻獵犬的老人。前方是一對恩愛的年輕夫妻與孩童，十枚星幣在畫面中組成了生命之樹的幾何圖案，象徵著家族財富的傳承與基業長青。",
+    name: '錢幣十',
+    englishName: 'Ten of Pentacles',
+    number: '10',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名老人坐在豪宅入口，兩隻狗在旁，遠處有年輕夫婦與孩童。牆上的紋章、十枚錢幣以希伯來式的生命之樹排列。整個畫面是家族財富傳承的縮影。',
+    keywords: ['收穫', '財富', '家族', '家族傳承', '記錄', '家族世系', '機遇', '命運', '損失', '搶劫'],
     upright: {
-      title: "正位：家族興旺與長期的繁榮傳承",
-      meaning: "代表物質與家庭幸福的終極圓滿。象徵著穩固的基業、家族財富的傳承、長遠的財務安全感以及對傳統價值的遵循。你可能獲得遺產、置產成功、或是建立了一個能長青發展的穩健項目。",
-      love: "極為穩定、獲得家族支持且物質基礎深厚的婚姻關係。雙方共同為了家族基業與下一代打拼。",
-      career: "在大企業、公家機關或歷史悠久的行業中發展順遂。適合建立長期的退休計劃、信託基金或實業項目。",
-      advice: "重視家庭與傳統的核心價值。著眼於長遠的規劃與基業傳承，別被一時的短期投機所迷惑。"
+      meaning: '【偉特原著·正位】\n原文：\'Gain, riches; family matters, archives, extraction, the abode of a family.\'\n\n直譯：收穫、財富；家族事務、家族記錄、世系淵源、家族的居所。',
+      love: '【依原著關鍵詞】感情中涉及家族（family matters）的認可與傳承，家族的居所（abode of a family）成為感情的背景，世系（extraction）與家族記錄（archives）影響關係。',
+      career: '【依原著關鍵詞】工作上收穫（gain）與財富（riches）到來，家族事務（family matters）與世系（extraction）帶來資源，家族記錄（archives）是重要的資產。',
+      advice: '【偉特原著核心】「家族的居所」（abode of a family）——十號錢幣代表世代積累的財富與傳承，不只是個人的成功，而是家族共同構建的豐盛。'
     },
     reversed: {
-      title: "逆位：家族內耗、爭奪產權、財務崩瓦、名聲受損",
-      meaning: "代表穩固的基業出現動搖。可能發生家族內部的財產爭奪、遺產糾紛、或者是長期的財務規劃失算，面臨商業項目破產或名譽受損的危机。抗拒傳統。",
-      love: "家庭內部因為金錢、房產或長輩觀念不合而產生嚴重對立。關係缺乏實質的穩定基礎。",
-      career: "企業面臨內部糾紛、資金鏈斷裂或合夥人撤資危機。此時不宜做重大的資產轉移或長期擴張。",
-      advice: "理清內部的債務與利益紛爭。回歸誠信的傳統準則，用心處理家庭成員間的分歧，和氣生財。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 15 L35 45 L50 75 L65 45 Z" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <path d="M50 75 L35 105 L50 135 L65 105 Z" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Chance, fatality, loss, robbery, games of hazard; sometimes gift, dowry, pension.\'\n\n直譯：機遇、命運、損失、搶劫、賭博；有時指禮物、嫁妝、養老金。',
+      love: '【依原著關鍵詞】感情中家族財富因機遇（chance）與命運（fatality）發生變化，可能涉及嫁妝（dowry）或損失（loss），賭博（games of hazard）式的冒險影響穩定。',
+      career: '【依原著關鍵詞】工作上命運（fatality）帶來損失（loss）或搶劫（robbery），賭博（games of hazard）的冒險方式危及財富，但也可能獲得禮物（gift）或養老金（pension）。',
+      advice: '【偉特原著核心】逆位的「命運」（fatality）——家族財富的穩固在逆位中遭遇命運的衝擊，偉特同時列出「有時是禮物」，暗示這種不穩定中仍有意外之喜。'
+    }
   },
   {
     id: 74,
-    name: "星幣侍從",
-    englishName: "Page of Pentacles",
-    number: "Page",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["務實學習", "新起點", "財務消息", "耐心專注", "打好基礎"],
-    description: "年輕的侍從雙手平托著一枚星幣，神情無比專注、虔誠。他站在綠草如茵、背景有鬱鬱蔥蔥樹林與遠山的土地上，代表著務實的學習與新事物的播種。",
+    name: '錢幣侍衛',
+    englishName: 'Page of Pentacles',
+    number: 'Page',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名年輕男子站在花卉盛開的平原上，雙手捧持一枚發光的錢幣，凝神專注地仰望它。背景有山丘、花園與遠方的樹叢。他的神情充滿求知慾與專注力。',
+    keywords: ['申請', '學習', '獎學金', '反思', '管理', '規則', '消息', '揮霍', '放蕩', '奢侈', '不利消息'],
     upright: {
-      title: "正位：腳踏實地學習與財務商機",
-      meaning: "代表一位務實、專注、求知欲強且腳踏實地的年輕人。也預示著你即將開始一個新的工作、學習技能的課程，或收到關於商業、理財的好消息。這張牌鼓勵你耐心專注，打好基礎。",
-      love: "一段務實、認真且注重未來的感情。單身者可能遇到踏實可靠、願意一起為未來奮鬥的伴侶。",
-      career: "非常適合開始新的專業技能深造、開拓新的理財計劃或實習。你的專注與務實將獲得肯定。",
-      advice: "像個學徒一樣保持謙遜與專注。踏實地做好基本功，耐心地灌溉你剛播下的財務與技能種子。"
+      meaning: '【偉特原著·正位】\n原文：\'Application, study, scholarship, reflection; also news, messages and the bringer thereof; also rule, management.\'\n\n直譯：申請、學習、獎學金、反思；亦指消息、訊息及其傳遞者；亦指規則、管理。',
+      love: '【依原著關鍵詞】感情中以學習（study）與反思（reflection）的態度對待，帶來消息（news）與訊息（messages），以規則（rule）與管理（management）的方式構建穩定的關係。',
+      career: '【依原著關鍵詞】工作上展現申請（application）的精神、學習（study）的熱情與獎學金（scholarship）般的專注，消息（news）的傳遞與管理（management）是其職責。',
+      advice: '【偉特原著核心】「獎學金與反思」（scholarship, reflection）——錢幣侍衛是最具求知精神的侍衛牌，他的成長來自對知識與物質世界的謹慎探索。'
     },
     reversed: {
-      title: "逆位：眼高手低、缺乏規劃、財務損失、學習散漫",
-      meaning: "代表你對學習或工作缺乏耐心，行事散漫，流於眼高手低。你也可能做出了缺乏常識的理財決策，導致財務損失，或者是計劃因粗心大意而中途夭折。",
-      love: "感情中缺乏對未來的實質規劃，生活態度散漫，或者因為物質開銷問題產生不和睦的矛盾。",
-      career: "工作中做事敷衍，缺乏專業的技能累積。不宜盲目投資未經證實的投機項目。",
-      advice: "收回好高騖遠的心思。重新審視你的基礎規劃，沉下心來把基本功學好，別想著一步登天。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 35 L50 120" stroke="#dfb86c" stroke-width="1.5"/>
-      <circle cx="50" cy="25" r="10" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M30 125 H70" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Prodigality, dissipation, liberality, luxury; unfavourable news.\'\n\n直譯：揮霍、放蕩、揮霍（過度的慷慨）、奢侈；不利的消息。',
+      love: '【依原著關鍵詞】感情中揮霍（prodigality）與奢侈（luxury）使關係缺乏穩定的物質基礎，不利的消息（unfavourable news）打擊信心，放蕩（dissipation）使人分心。',
+      career: '【依原著關鍵詞】工作上揮霍（prodigality）與放蕩（dissipation）破壞了學習的積累，奢侈（luxury）消耗資源，不利的消息（unfavourable news）帶來挑戰。',
+      advice: '【偉特原著核心】逆位的「揮霍」（prodigality）——謹慎的學習者在逆位中淪為揮霍者，過度的慷慨（liberality）與奢侈是求知精神的反面。'
+    }
   },
   {
     id: 75,
-    name: "星幣騎士",
-    englishName: "Knight of Pentacles",
-    number: "Knight",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["穩健前行", "刻苦耐勞", "最靠譜", "守舊", "完成目標"],
-    description: "騎士身穿厚重的鎧甲，胯下的黑色駿馬四蹄著地，站立在翻耕好的肥沃黃色土地上。他右手穩穩托著星幣，神情平靜、務實，代表著絕對的穩健、耐心與使命必達的責任感。",
+    name: '錢幣騎士',
+    englishName: 'Knight of Pentacles',
+    number: 'Knight',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名騎士靜靜地坐在黑色重馬上（馬幾乎靜止不動），手持一枚錢幣仔細端詳。背景是農田的平原，他的姿態穩重而沉靜，與其他衝鋒陷陣的騎士截然不同。',
+    keywords: ['實用', '服務', '利益', '責任', '正直', '怠惰', '閒散', '停滯', '平靜', '氣餒', '粗心'],
     upright: {
-      title: "正位：靠譜穩健與使命必達",
-      meaning: "這是所有騎士牌中最「穩健、靠譜」的牌。代表一位踏實、刻苦耐勞、極具責任感且循序漸進的執行者。雖然他的前進速度不快，但他四腳著地，絕不冒險，必定會以最高的品質完成目標。",
-      love: "感情雖然缺乏浪漫與激情，但無比穩定、忠誠且安全感十足。伴侶是一個極具肩膀、踏實可靠的人。",
-      career: "職場上表現出極高的敬業度與耐力，是主管最信賴的執行核心。適合進行繁瑣、需要極高精準度的專案。",
-      advice: "保持你的耐心與穩健步調。循序漸進，踏實地把手邊的任務執行到位，安全與品質是你的最強王牌。"
+      meaning: '【偉特原著·正位】\n原文：\'Utility, serviceableness, interest, responsibility, rectitude—all on the normal and external plane.\'\n\n直譯：實用、服務性、利益、責任感、正直——皆在正常且外部的層面上。',
+      love: '【依原著關鍵詞】感情中展現實用（utility）與責任感（responsibility），以服務（serviceableness）的心態對待伴侶，正直（rectitude）是最重要的特質，一切都在正常的日常層面（normal plane）上。',
+      career: '【依原著關鍵詞】工作上以實用（utility）、服務（serviceableness）與責任（responsibility）為核心，正直（rectitude）帶來穩定的進展，在正常的外部層面（external plane）上扎實推進。',
+      advice: '【偉特原著核心】「皆在正常且外部的層面上」——錢幣騎士不追求神秘或卓越，而是以穩定的實用主義完成每日的工作，踏實才是真正的力量。'
     },
     reversed: {
-      title: "逆位：停滯不前、守舊頑固、缺乏動力、無聊沉悶",
-      meaning: "代表你行事過於保守、頑固，抗拒任何改變，導致事情卡在原地、停滯不前。或者你陷入了極度的職業倦怠，做事拖延、缺乏前進的動力，生活顯得沉悶無聊。",
-      love: "感情生活變得像公式般枯燥乏味，雙方缺乏情調，或者因為固執己見而讓溝通陷入死胡同。",
-      career: "工作進度嚴重拖延、原地踏步。缺乏創新的勇氣，墨守成規，容易錯失發展良機。",
-      advice: "打破你的墨守成規。適度給生活增加一些新鮮感與變化，勇敢跨出舒適圈，嘗試新方法。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 35 L50 115" stroke="#dfb86c" stroke-width="2"/>
-      <circle cx="50" cy="120" r="6" stroke="#dfb86c" stroke-width="1.5"/>
-      <path d="M30 45 L50 30 L70 45 Z" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Inertia, idleness, repose of that kind, stagnation; also placidity, discouragement, carelessness.\'\n\n直譯：惰性、懶惰、那種（消極的）休息、停滯；亦指平靜（無動力的）、氣餒、粗心大意。',
+      love: '【依原著關鍵詞】感情中惰性（inertia）與停滯（stagnation）使關係缺乏進展，氣餒（discouragement）蒙上愛情，懶惰（idleness）的粗心大意（carelessness）傷害伴侶。',
+      career: '【依原著關鍵詞】工作上惰性（inertia）、懶惰（idleness）與停滯（stagnation）阻礙發展，氣餒（discouragement）使人失去動力，粗心大意（carelessness）帶來損失。',
+      advice: '【偉特原著核心】逆位的「惰性」（inertia）——責任感的喪失帶來消極的靜止，這與正位中積極的穩重截然不同，停滯是自我放棄的結果。'
+    }
   },
   {
     id: 76,
-    name: "星幣皇后",
-    englishName: "Queen of Pentacles",
-    number: "Queen",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["實業天后", "母性滋養", "繁榮富庶", "安全踏實", "大自然"],
-    description: "皇后端坐在雕刻著山羊與果實的寶座上，神情溫柔、滿足地低頭端詳懷抱中的巨大星幣。她四周環繞著盛開的花叢與兔子，代表著母愛的滋養、大自然的富饒與物質生活的安全舒適。",
+    name: '錢幣王后',
+    englishName: 'Queen of Pentacles',
+    number: 'Queen',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名王后坐在一個花草盛開的寶座上，雙手捧持一枚錢幣，低頭凝視著它，神情溫柔而沉思。寶座飾有山羊頭（摩羯座）、天使與果實，背景有花園與兔子（生育力）。',
+    keywords: ['富足', '慷慨', '壯麗', '安全', '自由', '邪惡', '懷疑', '猶豫', '恐懼', '不信任'],
     upright: {
-      title: "正位：物質滋養與安全踏實的生活",
-      meaning: "代表一位溫柔、踏實、極具理財天賦且善於照顧家庭與實業的女性形象。她懂得享受生活、熱愛大自然，並能為身邊的人提供實質的物質與精神滋養。這張牌鼓勵你用務實且慈悲的心去打理生活。",
-      love: "充滿溫馨、滋養且物質無憂的穩定關係。伴侶是一位擅長打理家務、溫暖且極具安全感的守護者。",
-      career: "在職場上展現出優秀的管理與理財天賦，深受信任。適合從事房產、餐飲、社群福利或自然環保相關行業。",
-      advice: "用心打理你的生活細節，給自己和家人創造一個溫馨舒適的環境。親近大自然，滋養你的身心。"
+      meaning: '【偉特原著·正位】\n原文：\'Opulence, generosity, magnificence, security, liberty.\'\n\n直譯：富足、慷慨、壯麗、安全、自由。',
+      love: '【依原著關鍵詞】感情中帶來富足（opulence）與慷慨（generosity）的滋養，壯麗（magnificence）的付出使關係充滿安全感（security）與自由（liberty）。',
+      career: '【依原著關鍵詞】工作上帶來富足（opulence）、慷慨（generosity）的待遇，壯麗（magnificence）的成就帶來安全感（security）與自由（liberty）。',
+      advice: '【偉特原著核心】偉特的「自由」（liberty）——錢幣王后的富足不是囤積，而是能夠自由（liberty）地慷慨付出，財富帶來的是選擇的自由。'
     },
     reversed: {
-      title: "逆位：財務焦慮、依賴他人、虛榮、忽視家庭或吝嗇",
-      meaning: "代表你目前財務狀況感到無比焦慮，或者因為依附他人而失去了個人的獨立性。你也可能流於虛榮浮誇，忽視了對家庭的關心與陪伴，或者表現得過於自私與吝嗇。",
-      love: "感情中出現因為經濟不穩定而產生的強烈焦慮，或者因為過度忙於工作而忽略了家庭關係的經營。",
-      career: "工作上面臨財務吃緊，專案管理混亂。小心因為投機取巧或盲目花費而導致信譽受損。",
-      advice: "理清你的財務基本盤，停止不必要的焦慮與虛榮。多花時間陪伴家人，回歸務實安穩的軌道。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 25 L50 120" stroke="#dfb86c" stroke-width="2"/>
-      <ellipse cx="50" cy="50" rx="18" ry="18" stroke="#dfb86c" stroke-width="1.5" stroke-dasharray="3 2"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Evil, suspicion, suspense, fear, mistrust.\'\n\n直譯：邪惡、懷疑、懸而未決、恐懼、不信任。',
+      love: '【依原著關鍵詞】感情中充滿懷疑（suspicion）與恐懼（fear），不信任（mistrust）破壞關係，懸而未決（suspense）的狀態帶來不安，邪惡（evil）暗示惡意的存在。',
+      career: '【依原著關鍵詞】工作上充滿懷疑（suspicion）、恐懼（fear）與不信任（mistrust），邪惡（evil）可能潛伏在商業關係中，懸而未決（suspense）阻礙決策。',
+      advice: '【偉特原著核心】逆位的「不信任」（mistrust）——慷慨的王后在逆位中化為疑神疑鬼的恐懼者，富足的安全感消失，取而代之的是對一切的懷疑。'
+    }
   },
   {
     id: 77,
-    name: "星幣國王",
-    englishName: "King of Pentacles",
-    number: "King",
-    suit: "pentacles",
-    element: "土",
-    elementSymbol: "🌿",
-    keywords: ["實業家", "金融巨頭", "絕對穩定", "可靠支柱", "成功富庶"],
-    description: "國王端坐在雕刻著公牛的寶座上，右手拿權杖，左手平托著星幣，神情沉穩、威嚴。他身穿繪滿葡萄花紋的長袍，腳踏城堡的石地，代表著實業的成功、金融帝國的建立與絕對的安全感。",
+    name: '錢幣國王',
+    englishName: 'King of Pentacles',
+    number: 'King',
+    suit: 'pentacles',
+    element: '土',
+    icon: '💰',
+    description: '【偉特原著·圖像】一名國王坐在以牛頭（金牛座）裝飾的寶座上，手持一枚錢幣與一根權杖，穿著繪有葡萄藤圖案的袍服。腳邊有盔甲的靴子，背景是花園與城堡，展示物質繁榮的高峰。',
+    keywords: ['英勇', '智識', '商業能力', '成功', '數學天賦', '惡行', '軟弱', '醜陋', '乖戾', '腐敗', '危險'],
     upright: {
-      title: "正位：商業巨頭與絕對可靠的物質支柱",
-      meaning: "代表一位成熟、踏實、極具商業頭腦且財務成就頂尖的領導者形象。你目前擁有強大的物質掌控力與安全感，是團隊與家庭最可靠的經濟支柱。這張牌鼓勵你用務實的智慧去擴張與守護你的實業帝國。",
-      love: "無比穩定、忠誠且經濟基礎極為優渥的伴侶關係。國王代表一位有肩膀、能為你提供一輩子安全感的人。",
-      career: "在商業、金融、房產或大企業中取得了輝煌的成就。你的決策極具遠見與穩健性，深受客戶尊敬。",
-      advice: "用務實與穩健的態度去打理你的事業與財務。扮演好保護者與穩定核心的角色，基業長青。"
+      meaning: '【偉特原著·正位】\n原文：\'Valour, realising intelligence, business and normal intellectual aptitude, sometimes mathematical gifts; success in these paths.\'\n\n直譯：英勇、實現性的智識、商業與正常的智識能力，有時是數學天賦；在這些道路上的成功。',
+      love: '【依原著關鍵詞】感情中代表英勇（valour）且具有實現能力（realising intelligence）的成熟男性，在物質層面（business aptitude）為感情提供強大的支撐。',
+      career: '【依原著關鍵詞】工作上以英勇（valour）與實現性的智識（realising intelligence）推動商業（business）成功，數學天賦（mathematical gifts）可能是其特長，在這些領域成就非凡。',
+      advice: '【偉特原著核心】「實現性的智識」（realising intelligence）——錢幣國王的智識不是抽象的，而是能夠實際變現的能力，他將思想轉化為真實的財富。'
     },
     reversed: {
-      title: "逆位：商人欺詐、守舊頑固、財務危機、冷酷自私",
-      meaning: "代表商業上的誠信危機或嚴重的財務糾紛。你可能遇到了過度投機的商業夥伴，或者你在決策上過於頑固守舊、抗拒改變，導致資產嚴重流失。也警告你避免過度貪婪自私。",
-      love: "關係中充斥著物質算計與冷漠，缺乏實質的溫情。伴侶性格頑固、自私或面臨經濟危機。",
-      career: "面臨投資失利、合夥欺詐或債務違約的商業危機。要注意管理方式避免過於唯利是圖與刻板。",
-      advice: "誠實守信是商業與人生的最高準則。放下你的執著與貪婪，認清利益糾紛，用合法的途徑重新建立秩序。"
-    },
-    icon: `<svg viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 15 L50 120 M25 120 H75" stroke="#dfb86c" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="50" cy="50" r="18" stroke="#dfb86c" stroke-width="1.5" fill="none"/>
-      <path d="M38 50 H62" stroke="#dfb86c" stroke-width="1.5"/>
-    </svg>`
+      meaning: '【偉特原著·逆位】\n原文：\'Vice, weakness, ugliness, perversity, corruption, peril.\'\n\n直譯：惡行、軟弱、醜陋、乖戾、腐敗、危險。',
+      love: '【依原著關鍵詞】感情中惡行（vice）與腐敗（corruption）侵蝕關係，乖戾（perversity）與醜陋（ugliness）的行為帶來危險（peril），軟弱（weakness）使人無法承擔責任。',
+      career: '【依原著關鍵詞】工作上惡行（vice）與腐敗（corruption）破壞商業誠信，危險（peril）潛伏，乖戾（perversity）與醜陋（ugliness）使合作無法繼續，軟弱（weakness）帶來失敗。',
+      advice: '【偉特原著核心】逆位的「腐敗」（corruption）——物質能力的國王在逆位中以「腐敗」告終，偉特的「危險」（peril）是最後的警示，財富若建立在惡行之上終將帶來危險。'
+    }
   }
 ];
 
-// Exporting the module for browser usage
-if (typeof window !== 'undefined') {
-  window.minorCards = minorCards;
-} else if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== 'undefined' && module.exports) {
   module.exports = minorCards;
 }

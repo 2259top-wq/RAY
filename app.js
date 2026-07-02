@@ -388,14 +388,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Upright
-    document.getElementById('modal-info-upright-title').textContent = card.upright.title;
+    document.getElementById('modal-info-upright-title').textContent = '正位 △';
     document.getElementById('modal-info-upright-meaning').textContent = card.upright.meaning;
     document.getElementById('modal-info-upright-love').textContent = card.upright.love;
     document.getElementById('modal-info-upright-career').textContent = card.upright.career;
     document.getElementById('modal-info-upright-advice').textContent = card.upright.advice;
 
     // Reversed
-    document.getElementById('modal-info-reversed-title').textContent = card.reversed.title;
+    document.getElementById('modal-info-reversed-title').textContent = '逆位 ▽';
     document.getElementById('modal-info-reversed-meaning').textContent = card.reversed.meaning;
     document.getElementById('modal-info-reversed-love').textContent = card.reversed.love;
     document.getElementById('modal-info-reversed-career').textContent = card.reversed.career;
@@ -767,17 +767,25 @@ document.addEventListener('DOMContentLoaded', () => {
             </span>
             <span class="analysis-element-badge">元素：${card.element}</span>
           </div>
-          <p class="analysis-meaning-desc">
-            <strong>✦ 綜合涵意：</strong> ${details.meaning}
-          </p>
-          <p class="analysis-meaning-desc">
-            <strong>💕 愛情解讀：</strong> ${details.love}
-          </p>
-          <p class="analysis-meaning-desc">
-            <strong>💼 事業與財務：</strong> ${details.career}
-          </p>
+          <div class="analysis-meaning-section">
+            <p class="analysis-meaning-main">${details.meaning}</p>
+          </div>
+          <div class="analysis-detail-grid">
+            <div class="analysis-detail-item">
+              <span class="detail-label">關係・情感</span>
+              <span class="detail-value">${details.love}</span>
+            </div>
+            <div class="analysis-detail-item">
+              <span class="detail-label">事業・財務</span>
+              <span class="detail-value">${details.career}</span>
+            </div>
+          </div>
           <div class="analysis-advice-box">
-            <strong>🌟 星星的啟示：</strong> ${details.advice}
+            <span class="advice-label">偉特的核心詮釋</span>
+            <p>${details.advice}</p>
+          </div>
+          <div class="analysis-keywords">
+            ${(card.keywords || []).map(k => `<span class="kw-tag">${k}</span>`).join('')}
           </div>
         </div>
       `;
