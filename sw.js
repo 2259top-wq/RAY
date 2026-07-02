@@ -9,15 +9,14 @@ const IMAGE_CACHE = 'aetheria-images-v4';
 
 // Core files to cache on install
 const PRECACHE_URLS = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/app.js',
-  '/cards.js',
-  '/minor_cards.js',
-  '/manifest.json',
-  '/assets/tarot_card_back.png',
-  '/assets/cosmic_background.png',
+  './',
+  'index.html',
+  'style.css',
+  'app.js',
+  'cards.js',
+  'minor_cards.js',
+  'assets/tarot_card_back.png',
+  'assets/cosmic_background.png',
 ];
 
 // ─── Install: Pre-cache critical files ───

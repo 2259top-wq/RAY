@@ -2,7 +2,7 @@
   "name": "AETHERIA 星寰塔羅學院",
   "short_name": "星寰塔羅",
   "description": "78張完整塔羅牌學習與互動占卜平台，Alphonse Mucha Art Nouveau風格插畫。",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#0d0a1a",
   "theme_color": "#0d0a1a",
@@ -36,14 +36,14 @@
       "name": "今日運勢",
       "short_name": "每日一牌",
       "description": "查看今天的塔羅牌運勢",
-      "url": "/#daily",
+      "url": "index.html#daily",
       "icons": [{ "src": "assets/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "立即占卜",
       "short_name": "占卜",
       "description": "開始互動牌陣占卜",
-      "url": "/#spreads",
+      "url": "index.html#spreads",
       "icons": [{ "src": "assets/icon-192.png", "sizes": "192x192" }]
     }
   ],
