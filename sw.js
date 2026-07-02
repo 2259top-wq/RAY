@@ -12,6 +12,7 @@ const PRECACHE_URLS = [
   './',
   'index.html',
   'style.css',
+  'homepage_extra.css',
   'app.js',
   'cards.js',
   'minor_cards.js',
