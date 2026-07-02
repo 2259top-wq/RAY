@@ -623,17 +623,35 @@
   /* ── Library Grid ── */
   .library-grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 14px !important;
+    gap: 12px !important;
+    width: 100% !important;
+    justify-items: center !important;
   }
-  .library-card {
-    min-height: 210px;
-    border-radius: 12px;
+  .library-card-wrapper {
+    width: 100% !important;
+    max-width: 160px !important;
+    display: flex !important;
+    justify-content: center !important;
   }
-  .library-card .card-artwork {
-    height: 100px;
+  .tarot-card {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 170 / 260 !important;
   }
-  .library-card h4 {
-    font-size: 0.85rem;
+  .card-front-design, .card-back-design {
+    padding: 10px !important; /* Slightly reduce padding on mobile cards */
+  }
+  .card-front-design .card-header {
+    font-size: 0.75rem !important;
+  }
+  .card-front-design .card-footer-info {
+    font-size: 0.7rem !important;
+  }
+  .card-front-design .card-cn-name {
+    font-size: 0.8rem !important;
+  }
+  .card-front-design .card-en-name {
+    font-size: 0.55rem !important;
   }
 
   /* ── Spread Options ── */

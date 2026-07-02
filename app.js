@@ -181,11 +181,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Home Page CTA Buttons binding
-  document.getElementById('home-cta-spreads').addEventListener('click', () => navigateTo('section-spreads'));
-  document.getElementById('home-cta-guide').addEventListener('click', () => navigateTo('section-guide'));
-  document.getElementById('feat-guide').addEventListener('click', () => navigateTo('section-guide'));
-  document.getElementById('feat-library').addEventListener('click', () => navigateTo('section-library'));
-  document.getElementById('feat-spreads').addEventListener('click', () => navigateTo('section-spreads'));
+  document.getElementById('home-cta-spreads')?.addEventListener('click', () => navigateTo('section-spreads'));
+  document.getElementById('home-cta-guide')?.addEventListener('click', () => navigateTo('section-guide'));
+  document.getElementById('feat-guide')?.addEventListener('click', () => navigateTo('section-guide'));
+  document.getElementById('feat-library')?.addEventListener('click', () => navigateTo('section-library'));
+  document.getElementById('feat-spreads')?.addEventListener('click', () => navigateTo('section-spreads'));
 
 
   /* ==========================================================================
