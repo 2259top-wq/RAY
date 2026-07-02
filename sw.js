@@ -3,9 +3,9 @@
  * PWA 離線快取策略：Cache-first for assets, Network-first for pages
  */
 
-const CACHE_NAME = 'aetheria-tarot-v4';
-const STATIC_CACHE = 'aetheria-static-v4';
-const IMAGE_CACHE = 'aetheria-images-v4';
+const CACHE_NAME = 'aetheria-tarot-v5';
+const STATIC_CACHE = 'aetheria-static-v5';
+const IMAGE_CACHE = 'aetheria-images-v5';
 
 // Core files to cache on install
 const PRECACHE_URLS = [
