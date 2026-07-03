@@ -3,9 +3,9 @@
  * PWA 離線快取策略：Cache-first for assets, Network-first for pages
  */
 
-const CACHE_NAME = 'aetheria-tarot-v5';
-const STATIC_CACHE = 'aetheria-static-v5';
-const IMAGE_CACHE = 'aetheria-images-v5';
+const CACHE_NAME = 'aetheria-tarot-v6';
+const STATIC_CACHE = 'aetheria-static-v6';
+const IMAGE_CACHE = 'aetheria-images-v6';
 
 // Core files to cache on install
 const PRECACHE_URLS = [
@@ -55,7 +55,7 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET' || url.origin !== location.origin) return;
 
   // Strategy 1: Cache-first for card images (large files)
-  if (url.pathname.startsWith('/assets/card_') || url.pathname.startsWith('/assets/')) {
+  if (url.pathname.includes('/assets/')) {
     event.respondWith(
       caches.open(IMAGE_CACHE).then(async (cache) => {
         const cached = await cache.match(request);
@@ -68,7 +68,6 @@ self.addEventListener('fetch', (event) => {
           }
           return response;
         } catch {
-          // Return placeholder if offline and image not cached
           return new Response('', { status: 404, statusText: 'Offline' });
         }
       })
@@ -77,7 +76,7 @@ self.addEventListener('fetch', (event) => {
   }
 
   // Strategy 2: Network-first for HTML/JS/CSS (always try fresh)
-  if (url.pathname === '/' || url.pathname.endsWith('.html') ||
+  if (url.pathname.endsWith('/') || url.pathname.endsWith('.html') ||
       url.pathname.endsWith('.js') || url.pathname.endsWith('.css')) {
     event.respondWith(
       fetch(request).then((response) => {
@@ -103,35 +102,5 @@ self.addEventListener('fetch', (event) => {
       });
       return cached || fetchPromise;
     })
-  );
-});
-
-// ─── Background sync for offline actions ───
-self.addEventListener('sync', (event) => {
-  if (event.tag === 'sync-readings') {
-    console.log('[SW] Background sync: syncing saved readings');
-  }
-});
-
-// ─── Push notifications (future feature) ───
-self.addEventListener('push', (event) => {
-  if (!event.data) return;
-  const data = event.data.json();
-  event.waitUntil(
-    self.registration.showNotification(data.title || '星寰塔羅', {
-      body: data.body || '今日塔羅運勢已更新，點擊查看！',
-      icon: '/assets/icon-192.png',
-      badge: '/assets/icon-192.png',
-      tag: 'daily-tarot',
-      requireInteraction: false,
-      data: { url: data.url || '/' }
-    })
-  );
-});
-
-self.addEventListener('notificationclick', (event) => {
-  event.notification.close();
-  event.waitUntil(
-    clients.openWindow(event.notification.data?.url || '/')
   );
 });
